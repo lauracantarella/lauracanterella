@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 ---
  
-  
+      {% include './landing-slider.njk' %}
     <div id=description class="anchor con-display f-display pada pbot">
         {{ content | safe }}  
     </div> 
@@ -39,5 +39,5 @@ layout: layouts/base.njk
     </div>
 
     <script async src="{{ '/_static/js/projectopen.js' | url }}"></script>
-    {% include './landing-slider.njk' %}
+
     {% include './main-slider.njk' %}
