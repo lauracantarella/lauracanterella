@@ -1,57 +1,59 @@
 
 {
     "nav": [ 
-    {
-       "name": "home",
-       "action": "linkto",
-       "target": "/"
-    },
-    {
-        "name": "IMMAGINI",
-        "action": "linkto",  
-        "target": "/#slider"
-    },
-    {
-        "name": "LAVORI", 
-        "action": "linkto", 
-        "target": "/#lavori"
-    },
-    {
-        "name": "didattica",
-        "action": "linkto",
-        "target": "/didattica/"
-    },
-    {
-        "name": "FOTOGRAFIA D'ARCHITETTURA",
-        "action": "linkto",
-        "target": "/fotografia-d-architettura/"
-    },
-    {
-        "name": "stampe",
-        "action": "linkto",
-        "target": "/stampe/"
-    },
-    {
-        "name": "bio & Cv",
-        "action": "linkto",
-        "target": "/bio-e-cv/"
-    },
-    {
-        "name": "contatti",
-        "action": "linkto",
-        "target": "/contatti/"
-    },
-    {
-        "name": "english",
-        "action": "action",
-        "target": "togglelanguage"
-    },
-    {
-        "name": "dark mode",
-        "action": "action",
-        "dark": true,
-        "target": "toggledark"
-    }
+            {
+            "name": "home",
+            "action": "linkto",
+            "target": "/"
+            },
+            {
+                "name": "IMMAGINI",
+                "action": "linkto",  
+                "target": "/#slider"
+            },
+            {
+                "name": "LAVORI", 
+                "action": "linkto", 
+                "target": "/#lavori"
+            },
+            {
+                "name": "didattica",
+                "action": "linkto",
+                "target": "/didattica/"
+            },
+            {
+                "name": "FOTOGRAFIA D'ARCHITETTURA",
+                "action": "linkto",
+                "target": "/fotografia-d-architettura/"
+            },
+            {
+                "name": "stampe",
+                "action": "linkto",
+                "target": "/stampe/"
+            },
+            {
+                "name": "bio & Cv",
+                "action": "linkto",
+                "target": "/bio-e-cv/"
+            },
+            {
+                "name": "contatti",
+                "action": "linkto",
+                "target": "/contatti/"
+            },
+            {
+                "name": "english",
+                "action": "action",
+                "target": "togglelanguage"
+            },
+            {
+                "name": "dark mode",
+                "action": "action",
+                "dark": true,
+                "target": "toggledark"
+            }
+        
+        
     ],
     "copyright": [ 
     {

@@ -1,4 +1,4 @@
 {
     "locale": "it",
-    "permalink": "/{{ locale }}/{{ page.fileSlug }}"
+    "permalink": "/{{ title | slugify }}/"
 }
