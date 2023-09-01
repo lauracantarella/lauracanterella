@@ -1,0 +1,44 @@
+---
+layout: layouts/base.njk
+---
+
+
+ <div class="subpage">
+      {# {% if media%} #}
+
+   {# {% import './main-slider.njk' %} #}
+   
+ {# {% include './main-slider.njk' %} #}
+ {# {% endif %} #}
+        <div class="con-display f-display pada pbot">
+            {{ content | safe }}
+        </div>
+        {% if yearlist %}
+        <div class="pada">
+            {%- for item in yearlist -%}
+            <div class="con-cv">
+                <span class="f-menu cv-year">{{item.year}}</span>
+                <ul class="f-para cv-ul">
+                    {%- for data in item.data -%}
+                     <li>{{ data | in_markdownify | safe }}</li>
+                    {%- endfor -%}
+                </ul>
+            </div>
+            {%- endfor -%}
+        </div>
+        {% endif %}
+        <div class="con-link pada">
+
+            {%- for item in links -%}
+            {% if item.action == "linkto"%}
+                    <a href="{% if item.target=="mailto" %}mailto:{%if item.emailaddress%}{{item.emailaddress |trim| urlencode |safe }}{%endif%}{%if item.emailsubject%}?subject={{item.emailsubject |  urlencode |safe}}{%endif%}{%if item.emailcontent%}&body={{item.emailcontent | urlencode| safe}}{%endif%}{% else %}{{ item.target  | url }}{% endif %}" {% if item.target == "mailto" %}target="_blank"{% endif %} data-target="data-target="{% if 'slider' in item.target %}slider{% else%}{{ item.target | trim }}{%endif%}"" class="btn-link {% if item.dark == true-%}dark{% endif %}">{{item.name}}</a>
+                {% elif item.action == "action" %}
+                    <span data-target="{{ item.target |trim }}" id="{{ item.target | trim }}" class="btn-link {% if item.dark == true-%}dark{% endif %}">{{item.name}}</span>
+                {% endif %}
+                {%- endfor -%}
+        </div>
+</div>
+
+  {% include 'layouts/main-slider.njk' %}
+
+{# {%if item.emailaddress%}{{item.emailaddress |trim| urlencode |safe }}{%endif%}{%if item.emailsubject%}{{item.emailsubject | safe| urlencode}}{%endif%}{%if item.emailcontent%}{{item.emailcontent | urlencode safe}}{%endif%} #}

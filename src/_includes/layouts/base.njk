@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="{{lang}}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ metadata.title | upper }} {% if title%} → {{ title | upper}} {% endif %}</title>
+    <meta name="description" content="{{ description or metadata.description }}"> 
+    <meta name="author" content="{{ metadata.author }}">
+    <meta name="theme-color" content="{{ metadata.themecolor }}"/>
+    <link rel="icon" href="{{ '/_static/icons/favicon.ico' | url }}">
+    <link rel="apple-touch-icon" href="{{ '/_static/icons/apple-touch-icon.png' | url }}">
+    <link rel="manifest" href="{{ '/_static/icons/site.webmanifest' | url }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>      
+</head>
+
+<body id="{{title | safe }}">
+ 
+{% include './nav.njk' %}
+
+<main id=main-page>
+{# {% include './fakenav.njk' %} #}
+ {%block content %}
+
+        {{ content | safe }}   
+
+ {%endblock content %}
+ {% include './footer.njk' %}
+</main>
+
+
+
+
+  {% set css %}
+   
+    {% include "./css/structure.css" %}
+    {% include "./css/text.css" %} 
+  {% endset %}
+  <style>{{ css | safe }}</style>
+<script async src="{{ '/_static/js/snippet.js' | url }}"></script>
+</body>
+
+</html>
+ {# <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    
+<script defer type="text/javascript" src="https://community.theor.org/sites/theor/modules/contrib/campaignion/campaignion_webform_widget/js/embed.js"></script>
+<script defer type="text/javascript">
+var referer = window.location.href;
+window.onload = function() {
+  var options = {
+    src : 'https://community.theor.org/petition?embed=1&source=widget&external_referer=' +  referer,
+    domain : 'https://community.theor.org',
+    element : 'embed'
+  };
+  if (IframeResize.load(options)) {
+    var link = document.getElementById(options.element + '-fallback-link');
+    if (link) {
+      link.style.display = 'none';
+    } 
+  }
+}
+</script> #}

@@ -1,0 +1,5 @@
+{
+    "slug": "/{{ title | slugify }}/",
+    "tags": "page",
+    "layout": "layouts/subpage.njk"
+}

@@ -1,0 +1,57 @@
+<div  class="con-slider hidden" id="con-main-slider"> 
+    <div  class="con-slider" id="main-slider"> 
+        {% set counter = 0 %}
+        {% set homepage = false %}
+        {% if permalink == '/index.html' %}
+        {% set homepage = true %}
+        {% endif %}
+        {% if homepage %} 
+        {% for item in collections.project  |  sortByOrder %}
+            <div class="con-slide con-imgfit" id="slide-{{counter}}" title="{{item.data.title}}">
+            <div class=text-center>
+                <div class="f-title ">{{ item.data.title}}</div>
+                <div class="f-menu">{{ item.data.category}}</div>
+                <div class="f-menu">{{ item.data.role}}</div>
+                <div class="f-menu">{{ item.data.year}}</div>
+            </div>  
+             {% set counter = counter + 1 %} 
+            </div>  
+            {% for img in item.data.media %}
+                <div class="con-slide con-imgfit" id="slide-{{counter}}" title="{{item.data.title}}">
+                       
+                            {% if img.type == 'image' %}
+                            {# maybe add scr/ to file path #}
+                            {% set alt = 'No alt was provided yet.' %}
+                            {% if img.alt !== null %} {% set alt = img.alt %}{% endif %} 
+                            {% imagefit img.file, alt, "100%" %} 
+                            {% elif img.type == 'video'%}
+                            {% endif %} 
+                            {% set counter = counter + 1 %} 
+                </div>  
+            {% endfor %}  
+        {% endfor %}
+        {% else %}
+        {%- for img in media -%}
+            <div class="con-slide con-imgfit" id="slide-{{counter}}" title="{{title}}">
+            {% if img.type == 'image' %}
+            {# maybe add scr/ to file path #}
+            {% set alt = 'No alt was provided yet.' %}
+            {% if img.alt !== null %} {% set alt = img.alt %}{% endif %} 
+            {% imagefit img.file, alt, "100%" %} 
+            {% elif img.type == 'video'%}
+            {% endif %}
+            {% set counter = counter + 1 %} 
+            </div>  
+        {% endfor %}
+        {% endif %}
+       
+      
+    </div> 
+    <div id=main-controls class=controls>
+            <div class="prev">
+            </div>
+            <div class="next" >
+            </div>  
+    </div> 
+</div>
+<script src="{{ '/_static/js/slider2.js' | url }}"></script>

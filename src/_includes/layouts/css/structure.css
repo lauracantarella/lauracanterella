@@ -1,0 +1,392 @@
+body{
+    padding: 0;
+    margin: 0;
+    
+}
+
+#main-page{
+    background-color: var(--cbg);
+    color: var(--ctext);
+    width: 100vw;
+    height: calc(100vh - var(--hei-h));
+    position: fixed;
+    overflow: scroll;
+    top: var(--hei-h);
+   
+}
+
+
+
+
+/* NAV Menu */
+header{
+ box-shadow: 0 0px 11px -3px var(--cshadow);
+ overflow: hidden;
+ max-height: var(--hei-h);
+ width: 100vw;
+ background-color: var(--cbg);
+ position: fixed;
+ transition: max-height .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+ z-index: 100;
+}
+header.mock{
+    position: relative;
+    z-index: 0;
+    height: var(--hei-h);
+    box-shadow: 0 0 0;
+}
+
+.head{
+    padding: var(--pad-menu) var(--pad-a) ;
+}
+
+
+#arrow{
+    display: inline-block;
+    transition: transform .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+.cross{
+    padding: 0 var(--pad-a);
+    font-size: 1.3em;
+    line-height: .9;
+    position: fixed;
+    right: 0;
+    background-color: var(--cbg);
+}
+
+.con-link{
+    padding-bottom: var(--pad-d) ;
+    overflow: auto;
+    float: left;
+}
+
+#con-menu-left{
+    white-space: nowrap;
+    height: 20px;
+    overflow: hidden;
+    float: left;
+
+}
+
+
+.marquee:hover, marquee:active{
+    -moz-animation: stopm 2s linear infinite;
+    -webkit-animation: stopm 2s linear infinite;
+    animation: stopm 2s linear infinite;
+    
+}
+
+@keyframes stopm {
+    100% {
+      -moz-transform: translateX(0%);
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%);
+    }
+  }
+
+@keyframes marquee {
+    0% {
+      -moz-transform: translateX(0%);
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%)
+    }
+    100% {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
+
+/* FOOTER */
+
+footer{
+width: 100%;
+overflow: auto;
+  padding:  calc(var(--pad-menu) + var(--pad-e))var(--pad-a) var(--pad-menu);
+}
+.foot-left{
+    float: left;
+    
+}
+.foot-right{
+    float: right;
+
+}
+
+/* SUBPAGES */
+
+.con-display{
+    padding-top: 1.2em;
+    /* padding-bottom: .8em; */
+}
+
+.subpage{
+    min-height: 73vh;
+}
+
+/* CV page */
+
+.con-cv{
+    display: flex;
+    flex-direction: row;
+    align-items: first baseline;
+}
+
+.cv-year{
+    flex: 0 0 2em;
+}
+
+.cv-ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: var(--pad-a);
+}
+
+/* Homepage */
+/* Projects */
+
+/* SLIDERS */
+
+.con-slider{
+    /* margin-top: var(--hei-h); */
+    height: calc(100vh - var(--hei-h));
+    width: 100vw;
+    position: relative;
+   
+}
+
+#con-main-slider{
+    position: fixed;
+    background-color: var(--cbg);
+    z-index: 200;
+    top: var(--hei-h);
+}
+
+.con-slide{
+width: 100%;
+height: 100%;
+
+}
+
+/* Images slider */
+
+.text-center{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 25%;
+    height: 100%;
+}
+
+.text-center .f-title:first-child{
+    padding-bottom: var(--pad-c);
+}
+
+.con-imgbg{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;   
+}
+
+.con-imgfit{   
+    max-height: 100vh;
+    max-width: 100vw;
+}
+
+.con-imgfit picture{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+picture, img{
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+}
+
+
+.controls{
+    width: 100%;
+    height: 100%;
+    display: flex;
+   position: absolute;
+   z-index: 100;
+   top: 0;
+
+}
+
+.prev, .next{
+    width: 50%;
+    height: 100%;
+}
+
+.prev{
+    cursor: w-resize;
+}
+.next{
+    cursor: e-resize;
+}
+
+#works>div:last-child{
+    border-bottom: 1px solid var(--ctext);
+}
+
+
+.con-project{
+    padding-top: var(--pad-c);
+    height: calc(var(--pad-c)*2+80.5px);
+    /* word-break: break-all;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+     -ms-hyphens: auto;
+    hyphens: auto; */
+}
+
+
+#lavori::after{
+    position: fixed;
+    left: 0;
+    pointer-events: none;
+    width: 100%;
+    z-index: 1;
+    content: '';
+    height: 45vh;
+ 
+}
+#lavori::after{
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(255,255,255,0.5018207111946341) 0%, rgba(255,255,255,0.5018207111946341) 38%, rgba(255,255,255,0) 100%);
+}
+
+/* #lavori::before{
+    top: 0;
+    background: linear-gradient(180deg, rgba(255,255,255,0.5018207111946341) 0%, rgba(255,255,255,0.5018207111946341) 38%, rgba(255,255,255,0) 100%);
+    
+} */
+
+
+
+
+
+
+.con-title{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding-bottom: var(--pad-c);
+    height: var(--hei-b);
+}
+
+.con-title>span:not(:last-child){
+    padding-right: var(--pad-a);
+
+}
+.ptitle{
+    flex: 0 0 40%;
+}
+.pcat{
+    flex: 0 0 30%;
+}
+.prole{
+flex: 0 0 21%;
+}
+.pyear{
+    text-align: right;
+    flex: 0 0 9%;
+}
+
+.con-contents{
+    max-height: 0;
+    -webkit-transition: all 1s ease;
+   -moz-transition: all 1s ease;
+   -o-transition: all 1ss ease;
+   -ms-transition: all 1s ease;
+   transition: all 1s ease;
+    overflow: hidden;
+}
+
+.psum{
+    padding-top: var(--pad-d);
+}
+
+.pdes{
+    padding: var(--pad-d) 0;
+}
+@media (max-width: 1080px) {
+
+.marquee {
+    -moz-animation: marquee 10s linear infinite;
+    -webkit-animation: marquee 10s linear infinite;
+    animation: marquee 10s linear infinite;
+}
+}
+@media (max-width: 810px) {
+
+   
+    .ptitle{
+        flex: 0 0 47%;
+    }
+    .pcat{
+        flex: 0 0 28%;
+    }
+    .prole{
+    flex: 0 0 20%;
+    }
+    .pyear{
+        text-align: right;
+        flex: 0 0 5%;
+    }
+    .foot-right{
+        float: left;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .text-center{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 10%;
+        height: 100%;
+    }
+    .con-title{
+       flex-direction: column;
+    }
+    .ptitle, .pcat{
+        padding-bottom: .8em;
+    }
+    .con-title>span:not(:last-child){
+        padding-right: 0;
+    }
+    .con-title>span{
+        flex-basis: auto;
+    }
+
+    .con-cv{
+        flex-direction: column;
+    }
+    
+    .cv-year{
+      flex: auto;
+    }
+    
+    .cv-ul{
+        padding: 0;
+        padding-bottom: var(--pad-btn);
+    }
+}
+
+
+

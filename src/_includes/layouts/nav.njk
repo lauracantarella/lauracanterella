@@ -1,0 +1,23 @@
+<header id="menumore">
+    <div class="head f-menu" >
+        <div id="con-menu-left">
+            <span class="name btn btn-menu">{{ metadata.author | upper }}</span>
+            <span class="btn btn-menu" id="arrow">→</span>
+        <a class="loc" id=loc href=""> {% if permalink !== '/index.html' %} {{title | upper }} {% endif %}</a>
+         </div>
+        <span id=close-cross class="cross btn hidden">✗</span>
+    </div>
+    <div class="con-link pada" id="menu-link">
+        {%- for item in menuitems.nav -%}
+        {% if item.action == "linkto"%}     
+            <a href="{{ item.target  | url }}" data-target="{% if 'slider' in item.target %}slider{% else%}{{ item.target | trim }}{%endif%}" class="btn-link{% if item.dark == true-%} dark{% endif %}">{{item.name}}</a>
+        {% elif item.action == "action" %}
+            <span id="nav-{{ item.target }}" data-target="{{ item.target | trim }}" class="btn-link {% if item.dark == true -%} dark{% endif %}">{{item.name}}</span>
+         {% endif %}
+        {%- endfor -%}
+       
+    </div>
+
+</header>
+
+<script async src="{{ '/_static/js/menuopen.js' | url }}"></script>

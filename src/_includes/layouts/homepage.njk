@@ -1,0 +1,43 @@
+---
+layout: layouts/base.njk
+---
+ 
+  
+    <div id=description class="anchor con-display f-display pada pbot">
+        {{ content | safe }}  
+    </div> 
+    <div id=lavori class=anchor title="{{menuitems.nav[2].name}}"><span id=works></span>
+    {% set slidecount = 0 %}   
+    {%- for item in collections.project |  sortByOrder -%}
+     <div class="con-project pada btop" lang=it id="{{ item.data.title | slugify }}">
+        <div class="con-title" data-target="{{ item.data.title | truncate (5, true, "") | slugify  | trim }}">
+            <span class="f-title ptitle">{{ item.data.title}}</span>
+            <span class="f-menu pcat">{{ item.data.category}}</span>
+            <span class="f-menu prole">{{ item.data.role}}</span>
+            <span class="f-menu pyear">{{ item.data.year}}</span>
+        </div>
+        <div class="con-contents" id="{{ item.data.title | truncate (5, true, "") | slugify }}">
+            <div class="f-title psum">{{ item.data.summary | in_markdownify }}</div>
+            <div class="f-para pdes">{{ item.templateContent | safe }}</div>
+            <div class="f-menu con-link">
+                {%- for link in item.data.links -%}
+                {% if link.action == "linkto" %}     
+                    <a href="{{ link.target  | url }}" data-target="{{ link.target | trim }}" class="btn-link{% if link.dark == true -%} dark{% endif %}">{{link.name}}</a>
+                {% elif link.action == "action" %}
+                    <span data-target="{{link.target | trim}}" data-slide="{{-slidecount-}}" class="btn{{link.target | trim}} btn-link{% if link.dark == true -%} dark{% endif %}">{{link.name}}</span>
+                {% endif %}
+                {%- endfor -%}
+                {% for img in item.data.media %}
+                {% set slidecount = slidecount + 1 %}
+                {% endfor %}
+                {% set slidecount = slidecount + 1 %}
+            </div>
+        </div>
+     </div>
+   
+    {%- endfor -%}
+    </div>
+
+    <script async src="{{ '/_static/js/projectopen.js' | url }}"></script>
+    {% include './landing-slider.njk' %}
+    {% include './main-slider.njk' %}
