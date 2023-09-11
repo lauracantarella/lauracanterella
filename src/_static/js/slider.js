@@ -27,7 +27,7 @@ var customizedFunction = function (info, eventName) {
     var len = info.slideCount // total slides 
     if (cur>=len) {
         setTimeout(() => {
-       disableslider()
+       //disableslider()
           }, 1700);
        
         

@@ -45,7 +45,7 @@ module.exports = function(eleventyConfig) {
                 quality: 90
             },
             outputDir: "./_site/_static/images/compressed/",
-            urlPath: "/_static/images/compressed",
+            urlPath: "/_static/images/compressed/",
             useCache: true
 		});
 
