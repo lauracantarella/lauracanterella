@@ -1,11 +1,11 @@
 <footer>
     <div class="foot-left">
-        {%- for item in menuitems.copyright -%}
+        {%- for item in menuitems.copyright[locale] -%}
                <span id="{{item.name}}" class="f-menu">{{item.name}}</span>
         {%- endfor -%}
     </div>
     <div class="foot-right">
-        {%- for item in menuitems.footer -%}  
+        {%- for item in menuitems.footer[locale] -%}  
             <a href="{{ item.target  | url }}"  class="f-menu foot-link">{{item.name}}</a>
         {%- endfor -%}
     </div>

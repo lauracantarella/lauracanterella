@@ -1,0 +1,319 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+  # name: gitlab
+  # repo: mar_ver/verdeil.net # Path to your GitLab repository
+  # branch: main # Branch to update (optional; defaults to master)
+
+media_folder: "/_static/images/"
+#public_folder: "//"
+#display_url: https://verdeil.net
+
+collections:
+# Global data
+  - label: "General Information"
+    description: "Setup contact info, colors of homepage, footer menu, countdown date"
+    name: "globals"
+    files:
+      - label: "Contact & General info"
+        name: "_data"
+        delete: false
+        file: "/src/_data/metadata.json"
+        fields:
+          - {label: "Site Name", name: "title", widget: "string"}
+          - {label: "Site Url", name: "url", widget: "string"}
+          - {label: "Site Meta Description", name: "description", widget: "string"}
+          - label: About the Foundation
+            name: organisation
+            required: false
+            widget: object
+            fields:
+              - {label: Name, name: name, widget: string, required: true}
+              - {label: Website name, name: website, widget: string, required: false}
+              - {label: Site url, name: url, widget: string, required: false}
+          - label: List of contact details (used for footer)
+            name: contact_footer
+            required: true
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string, required: false}
+              - {label: Page url, name: url, widget: string, required: false}
+          - label: Color sections in Homepage (in hex format, e.i. '#fff')
+            name: color
+            required: true
+            widget: object
+            fields:
+              - {label: Color banner 1, name: a, widget: string, required: true}
+              - {label: Color banner 2, name: b, widget: string, required: true}
+              - {label: Color banner 3, name: c, widget: string, required: true}
+              - {label: Color banner 4, name: d, widget: string, required: true}
+              - {label: Color banner 5, name: e, widget: string, required: true}
+              - {label: Color banner 6, name: f, widget: string, required: true}
+              - {label: Color banner 7, name: g, widget: string, required: true}
+          - {label: Homepage Countdown number (YYYY-MM-DD), name: counter, widget: date, required: true, format: 'YYYY-MM-DD'}
+          - {label: Homepage Countdown date (spelled out), name: date, widget: string, required: false}
+          - label: Kanta's community Signatories (sentence)
+            name: kantamanto_signatories
+            widget: object
+            required: true
+            fields: 
+              - {label: Sentence, name: sentence, widget: string, required: true}
+
+#HOMEPAGE SECTION
+
+  - label: "Homepage - sections"
+    description: "Text and visuals of each section of homepage, except colors and counter (handled in General Info)"
+    name: "sections"
+    files:
+      - label: "Video Section" 
+        name: "video-section"
+        delete: false
+        media_folder: '/src/_static/images'
+        public_folder: "/_static/images"
+        file: "/src/sections/video_home.md"
+        fields:
+          - {label: "Key sentence (overlay)", name: "keyphrase", widget: "string",  required: false}
+          - {label: "Background video file", name: "mainvideo", widget: "file" ,  required: false}
+      - label: "What is Waste Colonialism?"
+        name: "what-is-waste-colonialism"
+        delete: false
+        media_folder: '/src/_static/images'
+        public_folder: "/_static/images"
+        file: "/src/sections/waste-colonialism_home.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Introduction (left, top)", name: "intro", widget: "markdown", minimal: true,  required: false}  
+          - label: "Key Facts list(left, under the intro)" 
+            name: keyfacts
+            widget: list
+            field: { name: "item", widget: "markdown", minimal: true,  required: false}
+          - {label: "Excerpt (right, top, before readmore)", name: "excerpt", widget: "markdown", minimal: true,  required: false}
+          - {label: "Read More Content ", name: "body", widget: "markdown",  required: false}    
+      #WHAT iS EPR?
+      - label: "What is EPR?"
+        name: "what-is-epr"
+        delete: false
+        media_folder: 'src/_static/images'
+        public_folder: "/_static/images"
+        file: "/src/sections/what-is-epr.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Introduction (left, top)", name: "intro", widget: "markdown", minimal: true,  required: false}
+          - {label: "visual left", name: "visual", widget: "image",  required: false}    
+          - {label: "Quote (left, under intro)", name: "quote", widget: "markdown", minimal: true,  required: false}  
+          - {label: "Excerpt (right, top, before readmore)", name: "excerpt", widget: "markdown", minimal: true,  required: false}
+          - {label: "Read More Content ", name: "body", widget: "markdown",  required: false}    
+      #WHAT iS EPR FOR TEXTILES?
+      - label: "What is the status of EPR for Textiles"
+        name: "epr-for-textiles"
+        delete: false
+        media_folder: '/src/_static/images'
+        public_folder: "/_static/images"
+        file: "/src/sections/epr-for-textiles.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Video ID string (from youtube)", name: "video_id", widget: "string"}
+          - {label: "description (under video)", name: "description", widget: "markdown", minimal: true,  required: false}
+          - {label: "Excerpt (right, top, before readmore)", name: "excerpt", widget: "markdown", minimal: true,  required: false}
+          - {label: "Read More Content ", name: "body", widget: "markdown",  required: false}    
+      #WHAT Could EPR BE?
+      - label: "What could EPR Become?"
+        name: "what-epr-could-become"
+        delete: false
+        media_folder: '/src/_static/images'
+        public_folder: "/_static/images"
+        file: "src/sections/what-epr-could-become.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Introduction", name: "intro", widget: "markdown", minimal: true,  required: false}
+          - {label: "visual (right)", name: "visual_right", widget: "image",  required: false}  
+          - label: "List" 
+            name: actions
+            widget: list
+            fields: 
+              - { name: "title", widget: "string",  required: false}
+              - { name: "description", widget: "markdown", minimal: true, required: false}  
+      - label: "Take Action (Act Now!)"
+        name: "take-action"
+        delete: false
+        media_folder: '/src/_static/images'
+        public_folder: "/_static/images"
+        file: "src/sections/take-action_home.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Introduction", name: "intro", widget: "markdown", minimal: true,  required: false}
+          - label: "Actions" 
+            name: actions
+            widget: list
+            fields: 
+              - { label: Action title, name: "title", widget: "markdown", minimal: true, required: true}
+              - { label: Descritption (if any), name: "description", widget: "markdown", minimal: true, required: false}  
+      - label: "Slider community kantamanto"
+        name: "community-slider"
+        delete: false
+        file: "src/sections/Community_home.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+         
+         
+
+
+#FAQ Questions
+  - name: "questions" # Used in routes, e.g., /admin/collections/blog
+    label: "FAQ Questions" # Used in the UI
+    sortable_fields: ['question', 'order', 'date']
+    description: "1 page per FAQ question, contains question and answer"
+    folder: "/src/questions" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    identifier_field: question
+    #slug: "{{ date }}"  # Filename template, e.g., YYYY-MM-DD-title.md
+    fields:
+      - { label: "Question", name: "question", widget: "string", required: true }
+      - { label: "Order ranking", name: "order", widget: "number", valueType: int, required: false }
+      - { label: "Answer", name: "body", widget: "markdown", default: "This question was not yet answered."}
+
+#Testimonials
+  - name: "testimonials" # Used in routes, e.g., /admin/collections/blog
+    label: "Testimonials" # Used in the UI
+    sortable_fields: ['name', 'order']
+    description: "Community testimonials pages (1 per person, used in Homepage slider + Kanta's Community page)"
+    folder: "/src/testimonials" # The path to the folder where the documents are stored
+    media_folder: '/src/_static/pictures'
+    public_folder: "/_static/pictures"
+    create: true # Allow users to create new documents in this collection
+    identifier_field: name
+    #slug: "{{ name }}{{  }}"  # Filename template, e.g., YYYY-MM-DD-title.md
+    fields:
+      - { label: "Name Surname", name: "name", widget: "string", required: true }
+      - { label: "Order ranking", name: "order", widget: "number", valueType: int, required: false }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Job or role", name: "job", widget: "string" }
+      - { label: "Quote", name: "quote", widget: "string", required: false }
+      - label: List of facts on this person
+        name: list
+        required: false
+        widget: list
+        fields:
+          - {label: fact, name: fact, widget: string, required: false}
+
+#Subpages
+  - label: "Resources Category"
+    description: "Subpages under Resources> in the menu"
+    name: "resources"
+    files:
+      - label: "Read&Learn" 
+        name: "read-and-learn"
+        delete: false
+        file: "/src/pages/resources/read-and-learn.md"
+        fields:
+          - {label: "Page title", name: "title", widget: "string"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/read-and-learn.njk"}
+          - label: Lists of resources
+            name: lists
+            required: false
+            widget: list
+            fields:
+              - {label: List title, name: title, widget: string, required: true}
+              - label: List items 
+                name: content
+                widget: list 
+                required: false
+                fields:
+                  - {label: List item , name: name, widget: markdown, minimal: true,  required: false} 
+   #POSITON PAER
+  - label: "Position paper"
+    description: "postion paper PDF"
+    name: "position-paper"
+    media_folder: '/src/'
+    public_folder: "/"
+    files:
+      - label: "Position Paper" 
+        name: "position-paper"
+        delete: false
+        file: "/src/pages/position-paper/position-paper.md"
+        fields:
+          - {label: "Title of page", name: "title", widget: "string"}
+          - label: Navigation
+            name: eleventyNavigation
+            widget: object
+            required: true
+            fields:
+              - {label: Key (title), name: key, widget: string, required: true} 
+              - {label: Order (left to right in header menu), name: order, widget: number, required: true} 
+              - {label: url of PDF, name: url, widget: file, required: true} 
+              - {label: Target (blank), name: target, widget: hidden, default: 'blank'} 
+  #ALLIES
+  - label: "Allies"
+    description: "Allies Logo list page: add allies to the list and add their logo."
+    name: "allies"
+    media_folder: '/src/_static/allies'
+    public_folder: "/_static/allies"
+    files:
+      - label: "Allies" 
+        name: "allies"
+        delete: false
+        file: "src/pages/community/allies.md"
+        fields:
+          - {label: "Title of page", name: "title", widget: "string"}
+          - label: Navigation
+            name: eleventyNavigation
+            widget: object
+            required: true
+            fields:
+              - {label: Key (title in header menu), name: key, widget: string, required: true} 
+              - {label: Order (left to right in header menu), name: order, widget: number, required: true} 
+          - label: Allies list (display as grid)
+            name: allies 
+            widget: list
+            required: false
+            fields:
+              - {label: "Logo file" , hint: "(preferably compressed: width is max. 250px )", name: logo, widget: image, required: true}
+              - {label: Quote (with brackets), name: quote, widget: markdown, minimal: true, required: false} 
+              - {label: Name and Organisation, name: name, widget: string, required: false}  
+ #SPeak-Volumes
+  - label: "Speak Volumes page"
+    description: "Speak Volumes brands logo list page: add brands to the list, add their logo and their social media visuals"
+    name: "speakvolumes"
+    media_folder: '/src/_static/allies'
+    public_folder: "/_static/allies"
+    files:
+      - label: "Speak Volumes" 
+        name: "speakvolumes"
+        delete: false
+        file: "src/pages/community/speakvolumes.md"
+        fields:
+          - {label: "Title of page", name: "title", widget: "string"}
+          - label: Navigation
+            name: eleventyNavigation
+            widget: object
+            required: true
+            fields:
+              - {label: Key (title in header menu), name: key, widget: string, required: true} 
+              - {label: Order (left to right in header menu), name: order, widget: number, required: true} 
+          - label: Participants (display as grid)
+            name: brands 
+            widget: list
+            required: false
+            fields:
+              - {label: "Logo file" , hint: "(preferably compressed: width is max. 250px )", name: logo, widget: image, required: true}
+              - {label: Quote (with brackets), name: quote, widget: markdown, minimal: true, required: false} 
+              - {label: Name and Organisation, name: name, widget: string, required: false}  
+              - {label: Visual (in slider), name: "visual",  widget: "image",  required: false}
+              - {label: Url of the visual's source (see more), name: url, widget: string, required: false}  
+             
+
+        
+
+# Special pages (404, Privacy Policy, etc.)
+  - name: "special-pages" # Used in routes, e.g., /admin/collections/blog
+    label: "Special pages" # Used in the UI
+    description: "Other pages for specific use cases (404, Privacy Policy, etc.)"  
+    folder: "/src/specials" # The path to the folder where the documents are stored
+    create: false # Allow users to create new documents in this collection
+    slug: "{{ slug }}"  # Filename template, e.g., YYYY-MM-DD-title.md
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/specials.njk"}
+      - {label: "url (if specific)", name: "permalink", widget: "hidden", default: "layouts/specials.njk", required: false}
+      - { label: "Title of page", name: "title", widget: "string" }
+      - { label: "Content of page", name: "body", widget: "markdown" }
+ 
