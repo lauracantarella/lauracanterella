@@ -22,7 +22,7 @@ var slider2 = tns({
     var cur2 = info2.displayIndex -1 // get current slide starting from 1 
     console.log(cur2)
     title= document.getElementById("slide-"+cur2).getAttribute('title');
-    console.log(title)
+   // console.log(title)
     document.getElementById("loc").innerText=title;
   
   }
