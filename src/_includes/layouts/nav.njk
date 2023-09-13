@@ -8,9 +8,21 @@
         <span id=close-cross class="cross btn hidden">✗</span>
     </div>
     <div class="con-link pada" id="menu-link">
-        {%- for item in menuitems.nav -%}
-        {% if item.action == "linkto"%}     
-            <a href="{{ item.target  | url }}" data-target="{% if 'slider' in item.target %}slider{% else%}{{ item.target | trim }}{%endif%}" class="btn-link{% if item.dark == true-%} dark{% endif %}">{{item.name}}</a>
+        {% set pcode = "home" %}
+          {% set pointerurl = '/' %}
+        {% if pcode %}
+             {% set pcode = pagecode %}
+        {% endif %}
+        {% for item in collections.page %}
+            {% if item.data.pagecode == pcode and item.url !== page.url %}
+                {% set pointerurl = item.url %}
+            {% endif %}
+        {% endfor %}
+
+        {%- for item in menuitems.nav[locale]-%}
+        {% if item.action == "linkto"%}            
+   
+            <a href="{% if item.target == "language"%}{{pointerurl}}{% else %}{{ item.target  | url }}{% endif %}" data-target="{% if 'slider' in item.target %}slider{% else%}{{ item.target | trim }}{%endif%}" class="btn-link{% if item.dark == true-%} dark{% endif %}">{{item.name}}</a>
         {% elif item.action == "action" %}
             <span id="nav-{{ item.target }}" data-target="{{ item.target | trim }}" class="btn-link {% if item.dark == true -%} dark{% endif %}">{{item.name}}</span>
          {% endif %}

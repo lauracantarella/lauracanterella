@@ -2,11 +2,12 @@
     <div  class="con-slider" id="main-slider"> 
         {% set counter = 0 %}
         {% set homepage = false %}
-        {% if permalink == '/index.html' %}
+        {% if '/index.html' in permalink %}
         {% set homepage = true %}
         {% endif %}
         {% if homepage %} 
-        {% for item in collections.project  |  sortByOrder %}
+         {% set project = collections["project_" + locale] %}
+        {% for item in project |  sortByOrder %}
             <div class="con-slide con-imgfit" id="slide-{{counter}}" title="{{item.data.title}}">
             <div class=text-center>
                 <div class="f-title ">{{ item.data.title}}</div>

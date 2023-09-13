@@ -8,7 +8,8 @@ layout: layouts/base.njk
     </div> 
     <div id=lavori class=anchor title="{{menuitems.nav[2].name}}"><span id=works></span>
     {% set slidecount = 0 %}   
-    {%- for item in collections.project |  sortByOrder -%}
+    {% set project = collections["project_" + locale] %}
+    {%- for item in project |  sortByOrder -%}
      <div class="con-project pada btop" lang=it id="{{ item.data.title | slugify }}">
         <div class="con-title" data-target="{{ item.data.title | truncate (5, true, "") | slugify  | trim }}">
             <span class="f-title ptitle">{{ item.data.title}}</span>

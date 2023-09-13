@@ -1,6 +1,6 @@
 ---
 title: Didattica
-pagecode : teaching
+pagecode: teaching
 yearlist: 
     - year: 2023
       data:

@@ -1,6 +1,6 @@
-
 {
-    "nav": [ 
+    "nav": {
+    "it": [ 
             {
             "name": "home",
             "action": "linkto",
@@ -43,8 +43,8 @@
             },
             {
                 "name": "english",
-                "action": "action",
-                "target": "togglelanguage"
+                "action": "linkto",
+                "target": "language"
             },
             {
                 "name": "dark mode",
@@ -55,15 +55,80 @@
         
         
     ],
-    "copyright": [ 
+
+    "en": [ 
+        {
+        "name": "home",
+        "action": "linkto",
+        "target": "/en/"
+        },
+        {
+            "name": "IMAGES",
+            "action": "linkto",  
+            "target": "/en/#slider"
+        },
+        {
+            "name": "WORKS", 
+            "action": "linkto", 
+            "target": "/en/#works"
+        },
+        {
+            "name": "didattica",
+            "action": "linkto",
+            "target": "/en/didattica/"
+        },
+        {
+            "name": "FOTOGRAFIA D'ARCHITETTURA",
+            "action": "linkto",
+            "target": "/en/fotografia-d-architettura/"
+        },
+        {
+            "name": "stampe",
+            "action": "linkto",
+            "target": "/en/prints/"
+        },
+        {
+            "name": "bio & Cv",
+            "action": "linkto",
+            "target": "/en/bio-e-cv/"
+        },
+        {
+            "name": "contatti",
+            "action": "linkto",
+            "target": "/en/contatti/"
+        },
+        {
+            "name": "italiano",
+            "action": "linkto",
+            "target": "language"
+        },
+        {
+            "name": "dark mode",
+            "action": "action",
+            "dark": true,
+            "target": "toggledark"
+        }
+    ]
+
+    },
+    "copyright": {
+        "it": [ 
     {
        "name": "© LAURA CANTARELLA",
         "target": ""
-    }
-],
-
-    "footer": [ 
+    }],
+    "en": [ 
         {
+           "name": "© LAURA CANTARELLA",
+            "target": ""
+        }]
+
+    },
+
+    "footer": {
+        "it": [ 
+  
+    {
            "name": "google maps",
            "action": "linkto",
            "target": "/"
@@ -88,7 +153,35 @@
         "action": "linkto",
         "target": "/note-legali/"
     }
-]
-
+],
+    "en": [ 
+    
+    {
+    "name": "google maps",
+    "action": "linkto",
+    "target": "/"
+    },
+    {
+    "name": "instagram",
+    "action": "linkto",
+    "target": "/"
+    },
+    {
+    "name": "linkedin",
+    "action": "linkto",
+    "target": "/"
+    },
+    {
+    "name": "privacy",
+    "action": "linkto",
+    "target": "/privacy-policy/"
+    },
+    {
+    "name": "note legali",
+    "action": "linkto",
+    "target": "/note-legali/"
+    }
+    ]
+    }
 
 }

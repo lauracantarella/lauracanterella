@@ -17,6 +17,15 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/*.pdf");
 
 
+    eleventyConfig.addCollection("project_en", function (collection) {
+        return collection.getFilteredByGlob("./src/en/projects/*.md");
+      });
+
+      eleventyConfig.addCollection("project_it", function (collection) {
+        return collection.getFilteredByGlob("./src/it/projects/*.md");
+      });
+
+
     eleventyConfig.addPlugin(EleventyI18nPlugin, {
         // any valid BCP 47-compatible language tag is supported
         defaultLanguage: "it", // Required, this site uses "en"

@@ -1,5 +1,6 @@
 ---
 title: Bio E Cv
+pagecode:  bio
 yearlist: 
     - year: 2023
       data:

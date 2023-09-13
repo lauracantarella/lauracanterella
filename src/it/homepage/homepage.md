@@ -1,9 +1,8 @@
 ---
-layout: /layouts/homepage.njk
 title: "Home"
 permalink: /index.html
 media: 
-    - file: src/_static/images/placeholder3.png
+    - file: ./src/_static/images/placeholder3.png
       filephone:  src/_static/images/phone3.png
       type: image
       alt: This text is shown when the image isn't visible and for visually impaired people.
@@ -11,7 +10,7 @@ media:
       type: image
       alt: This text is shown when the image isn't visible and for visually impaired people.
     - file: src/_static/images/placeholder2.png
-      filephone:  src/_static/images/phone2.png
+      filephone:  ./src/_static/images/phone2.png
       type: image
       alt: This text is shown when the image isn't visible and for visually impaired people.
    

@@ -1,6 +1,6 @@
 ---
-title: Didattica
-pagecode : teaching
+title: Resume
+pagecode: bio
 yearlist: 
     - year: 2023
       data:

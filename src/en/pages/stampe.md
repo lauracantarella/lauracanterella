@@ -1,5 +1,5 @@
 ---
-title: Stampe
+title: Prints
 pagecode: prints
 links:
     - name: print gallery

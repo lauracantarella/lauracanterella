@@ -184,6 +184,7 @@ height: 100%;
 
 .text-center .f-title:first-child{
     padding-bottom: var(--pad-c);
+    font-size: 2em;
 }
 
 .con-imgbg{
