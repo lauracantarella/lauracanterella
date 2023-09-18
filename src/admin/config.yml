@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to main)
 media_folder: "_static/images/"
-public_folder: "/_static/images/"
+#public_folder: "/_static/images/"
 #display_url: https://verdeil.net
 
 collections:
@@ -11,7 +11,7 @@ collections:
   #SUBPAGEs
   - name: 'pages' # Used in routes, e.g., /admin/collections/blog
     label: 'Subpages' # Used in the UI
-    folder: 'it/pages/' # The path to the folder where the documents are stored
+    folder: '/it/pages/' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in front matter
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog' }
