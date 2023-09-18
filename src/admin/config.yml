@@ -1,6 +1,6 @@
 backend:
-  name: git-gateway
-  branch: main # Branch to update (optional; defaults to main)
+  name: gitlab
+  #branch: main # Branch to update (optional; defaults to main)
 media_folder: "_static/images/"
 #public_folder: "/_static/images/"
 #display_url: https://verdeil.net
