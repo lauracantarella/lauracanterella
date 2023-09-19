@@ -4,7 +4,7 @@ backend:
   auth_type: pkce # Required for pkce
   app_id: c3619f8c1e57f147d8a7a11a090873a5da1a32bc203481e9918f66f0c2735fb2
   #branch: main # Branch to update (optional; defaults to main)
-media_folder: "_static/images"
+media_folder: "src/_static/images"
 public_folder: "/_static/images"
 #display_url: https://verdeil.net
 
@@ -12,16 +12,77 @@ collections:
 # Global data
 
   #SUBPAGEs
-  - name: 'pages' # Used in routes, e.g., /admin/collections/blog
+  - name: 'subpages' # Used in routes, e.g., /admin/collections/blog
     label: 'Subpage' # Used in the UI
-    folder: '/it/pages/' # The path to the folder where the documents are stored
+    folder: 'src/it/pages/' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in front matter
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Page Label', name: 'pagecode', widget: 'string' }
-      - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
-      - { label: 'Rating (scale of 1-5)', name: 'rating', widget: 'number' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - name: layout
+        description: 'Layout for subpage'
+        label: 'Layout'
+        default: 'layouts/subpage.njk'
+        required: false
+        widget: select
+        options:
+        - label: Normal Subpage
+          value: layouts/subpage.njk
+        - label: Privacy Policy Layout
+          value: layouts/legal.njk
+      - { label: 'Page Label', description: 'Identifier of the page. Must be the same in all languages.' ,name: 'page', widget: 'string', default: 'home', required: true}
+      - { label: 'Main content', description: 'Text content (displays in big with the normal page layout)',name: 'body', widget: 'markdown', required: false }
+      - name: 'yearlist'
+        required: false
+        collapsed: true
+        label: 'List by year'
+        description: 'content field for CV or other year lists'
+        widget: 'object'
+        summary: 'Year list'
+        fields:
+        - name: year
+          label: Year 
+          widget: 'datetime'
+          date_format: 'yyyy'
+          required: true 
+        - name: data
+          label: Contents
+          widget: list
+          fields:
+          - name: item
+            label: Item
+            widget: string
+      - name: 'links'
+        required: false
+        collapsed: true
+        label: 'Button links'
+        widget: 'object'
+        fields:
+        - name: name
+          label: Button label
+          widget: 'string'
+          required: true 
+        - name: action
+          label: Function
+          widget: select
+          options:
+          - label: Action
+            description: 'anything that's not a link'
+            value: action
+          - label: Link to page
+            value: linkto
+        - name: target 
+          label: Target 
+          widget: select
+          options:
+          - label: Image gallery
+            value: slider
+          - label: Mailto (opens in email) 
+            value: mailto
+          fields:
+          - name: item
+            label: Item
+            widget: string
+  
 
 
 
