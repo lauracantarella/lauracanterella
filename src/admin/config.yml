@@ -8,6 +8,24 @@ media_folder: "src/_static/images"
 public_folder: "/_static/images"
 #display_url: https://verdeil.net
 
+media_library:
+  max_file_size: 2000000
+
+logo_url: /_static/icons/android-chrome-192x192.png
+
+i18n:
+  # Required and can be one of multiple_folders, multiple_files or single_file
+  # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
+  # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
+  # single_file - persists a single file in `<folder>/<slug>.<extension>`
+  structure: multiple_folders
+  # Required - a list of locales to show in the editor UI
+  locales: [it, en]
+  # Optional, defaults to the first item in locales.
+  # The locale to be used for fields validation and as a baseline for the entry.
+  defaultLocale: it
+
+
 collections:
 # Global data
 
@@ -25,11 +43,11 @@ collections:
         required: false
         widget: select
         options:
-        - label: Normal Subpage
+        - label: Normal page layout
           value: layouts/subpage.njk
         - label: Privacy Policy Layout
           value: layouts/legal.njk
-      - { label: 'Page Label', description: 'Identifier of the page. Must be the same in all languages.' ,name: 'page', widget: 'string', default: 'home', required: true}
+      - { label: 'Page Label', description: 'Identifier of the page. Must be the same in all languages.' ,name: 'pagecode', widget: 'string', default: 'home', required: true}
       - { label: 'Main content', description: 'Text content (displays in big with the normal page layout)',name: 'body', widget: 'markdown', required: false }
       - name: 'yearlist'
         required: false
@@ -45,7 +63,7 @@ collections:
           date_format: 'yyyy'
           required: true 
         - name: data
-          label: Contents
+          label: Items for that year
           widget: list
           fields:
           - name: item
@@ -68,7 +86,7 @@ collections:
           - label: Action
             description: 'anything that is not a link'
             value: action
-          - label: Link to page
+          - label: Link to a page / mail to 
             value: linkto
         - name: target 
           label: Target 
@@ -78,6 +96,10 @@ collections:
             value: slider
           - label: Mailto (opens in email) 
             value: mailto
+          - label: URL
+            value: ''
+
+
           fields:
           - name: item
             label: Item
