@@ -49,6 +49,7 @@ collections:
         label: 'Layout'
         default: 'layouts/subpage.njk'
         required: false
+        hint: Select layout style
         widget: select
         options:
         - label: Normal page layout
@@ -62,7 +63,8 @@ collections:
         required: false
         collapsed: true
         label: 'Media gallery'
-        label_singular: media
+        summary: "Media slider"
+        label_singular: Media
         hint: 'Add media to the page image slider'
         widget: 'list'
         fields:
@@ -89,6 +91,7 @@ collections:
         required: false
         collapsed: true
         label: 'List by year'
+        label_singular: year
         hint: 'content field for CV or other year lists'
         widget: 'list'
         fields:
@@ -103,6 +106,7 @@ collections:
           step: 1
         - name: data
           label: Items for that year
+          label_singular: item
           widget: list
           fields:
           - name: item
@@ -112,13 +116,13 @@ collections:
       - name: 'links'
         required: false
         collapsed: true
+        label_singular: Button
         label: 'Button links'
         widget: 'list'
         fields:
         - name: name
           label: Label
           widget: 'string'
-          required: false 
         - name: action
           label: Function
           widget: select
