@@ -30,6 +30,10 @@ collections:
 # Global data
 
   #SUBPAGEs
+  - name: it
+    label: Italian site
+    create: false
+    folder: src/it/
 
   - name: 'subpages' # Used in routes, e.g., /admin/collections/blog
     label: 'Subpage' # Used in the UI
