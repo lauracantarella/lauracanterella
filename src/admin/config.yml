@@ -115,20 +115,18 @@ collections:
         label: 'Button links'
         widget: 'list'
         fields:
-        - name: Button 
-          - name: name
-            label: Label
-            widget: 'string'
-            required: false 
-          - name: action
-            label: Function
-            widget: select
-            options:
-            - label: Action
-              description: 'anything that is not a link'
-              value: action
-            - label: Link to a page / mail to 
-              value: linkto
+        - name: name
+          label: Label
+          widget: 'string'
+          required: false 
+        - name: action
+          label: Function
+          widget: select
+          options:
+          - label: Action
+            value: action
+          - label: Link to a page / mail to 
+            value: linkto
         - name: target 
           label: Target 
           widget: select
