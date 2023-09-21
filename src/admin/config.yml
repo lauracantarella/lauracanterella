@@ -139,31 +139,27 @@ collections:
             value: ''
 
 
-        - name: 'nested-field-filtered-collection'
-          label: 'Nested Field Filtered Collection'
-          folder: '_field_condition'
-          create: true
-          fields:
-          - name: type
-            label: Type
-            widget: select
-            options:
-              - value: type1
-                label: Type 1
-              - value: type2
-                label: Type 2
-          - name: value1
-            label: Value 1
-            widget: string
-            condition:
-              field: type
-              value: type1
-          - name: value2
-            label: Value 2
-            widget: text
-            condition:
-              field: type
-              value: type2
+        
+        - name: type
+          label: Type
+          widget: select
+          options:
+            - value: type1
+              label: Type 1
+            - value: type2
+              label: Type 2
+        - name: value1
+          label: Value 1
+          widget: string
+          condition:
+            field: type
+            value: type1
+        - name: value2
+          label: Value 2
+          widget: text
+          condition:
+            field: type
+            value: type2
     
 
 
