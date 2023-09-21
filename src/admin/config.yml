@@ -34,6 +34,9 @@ collections:
     label: Italian site
     create: false
     folder: src/it/
+    nested:
+      depth: 100 # max depth to show in the collection tree
+      summary: '{{title}}' 
 
   - name: 'subpages' # Used in routes, e.g., /admin/collections/blog
     label: 'Subpage' # Used in the UI
@@ -55,7 +58,7 @@ collections:
       - { label: 'Page Label', description: 'Identifier of the page. Must be the same in all languages.' ,name: 'pagecode', widget: 'string', default: 'home', required: true}
       - { label: 'Main content', description: 'Text content (displays in big with the normal page layout)',name: 'body', widget: 'markdown', required: false }
       #Media 
-       - name: 'media'
+      - name: 'media'
         required: false
         collapsed: true
         label: 'Media gallery'
