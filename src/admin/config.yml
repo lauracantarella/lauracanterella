@@ -36,7 +36,7 @@ collections:
     folder: src/it/
     nested:
       depth: 100 # max depth to show in the collection tree
-      summary: '{{title}}' 
+      path: { label: 'Path', index_file: 'index' }
 
   - name: 'subpages' # Used in routes, e.g., /admin/collections/blog
     label: 'Subpage' # Used in the UI
