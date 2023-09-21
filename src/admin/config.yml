@@ -140,10 +140,10 @@ collections:
 
 
         - name: 'nested-field-filtered-collection'
-        label: 'Nested Field Filtered Collection'
-        folder: '_field_condition'
-        create: true
-        fields:
+          label: 'Nested Field Filtered Collection'
+          folder: '_field_condition'
+          create: true
+          fields:
           - name: type
             label: Type
             widget: select
@@ -164,7 +164,7 @@ collections:
             condition:
               field: type
               value: type2
-      
+    
 
 
 
