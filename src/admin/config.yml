@@ -29,14 +29,14 @@ i18n:
 collections:
 # Global data
 
-  #SUBPAGEs
-  - name: it
-    label: Italian site
-    create: false
-    folder: src/it/
-    nested:
-      depth: 100 # max depth to show in the collection tree
-      path: { label: 'Path', index_file: 'index' }
+  # SUBPAGEs
+  # - name: it
+  #   label: Italian site
+  #   create: false
+  #   folder: src/it/
+  #   nested:
+  #     depth: 100 # max depth to show in the collection tree
+  #     path: { label: 'Path', index_file: 'index' }
 
   - name: 'subpages' # Used in routes, e.g., /admin/collections/blog
     label: 'Subpage' # Used in the UI
