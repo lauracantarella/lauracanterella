@@ -57,13 +57,14 @@ collections:
         - label: Privacy Policy Layout
           value: layouts/legal.njk
       - { label: 'Page Label', description: 'Identifier of the page. Must be the same in all languages.' ,name: 'pagecode', widget: 'string', default: 'home', required: true}
-      - { label: 'Main content', collapsed: true, description: 'Text content (displays in big with the normal page layout)',name: 'body', widget: 'markdown', required: false }
+      - { label: 'Main content', collapsed: true, hint: 'Text content (displays in big with the normal page layout)',name: 'body', widget: 'markdown', required: false }
       #Media 
       - name: 'media'
         required: false
         collapsed: true
         label: 'Media gallery'
         label_singular: Media
+        summary: media info
         hint: 'Add media to the page image slider'
         widget: 'list'
         fields:
@@ -90,7 +91,7 @@ collections:
         required: false
         collapsed: true
         label: 'List by year'
-        label_singular: year
+        label_singular: Year
         hint: 'content field for CV or other year lists'
         widget: 'list'
         fields:
@@ -100,8 +101,6 @@ collections:
           value_type: 'int'
           min: 1900
           max: 2100
-          default: 2023
-          required: false
           step: 1
         - name: data
           label: Items for that year
@@ -123,16 +122,18 @@ collections:
         fields:
         - name: name
           label: Label
+          hint: Button name
           widget: 'string'
           required: false
         - name: action
+          hint: select Function
           label: Function
           widget: select
           required: false
           options:
-          - label: Action
+          - label: Action (do something)
             value: action
-          - label: Link to a page / mail to 
+          - label: 'Link to a page / mail to:' 
             value: linkto
         - name: target 
           required: false
@@ -143,8 +144,69 @@ collections:
             value: slider
           - label: 'mailto: (opens in email)'
             value: mailto
-          - label: url
-            value: ''
+          - label: url (link to somewhere)
+            value: 'type url '
+        - name: target
+          label: Button target 
+          hint: Select button target
+          required: false
+          widget: selection
+          condition:
+            field: action
+            value: action
+          options:
+          - label: Media gallery 
+            value: slider
+        - name: target
+          label: Button target 
+          hint: Select button target
+          required: false
+          widget: selection
+          condition:
+            field: action
+            value: linkto
+          options:
+          - label: 'mailto: (pre-written email opens in user's email box)'
+            value: mailto
+          - label: url (link to somewhere)
+            value: 'type url'
+        - name: emailaddress
+          label: e-mail address 
+          hint: enter email address of recipient 
+          widget: string 
+          condition:
+            field: target
+            value: mailto
+        - name: emailsubject
+          label: e-mail subject
+          hint: enter email subject 
+          widget: string
+          condition:
+            field: target
+            value: mailto
+        - name: emailcontent
+          label: e-mail body text
+          hint: enter email content
+          widget: markdown
+          condition:
+            field: target
+            value: mailto
+          
+
+
+
+
+
+
+        - name: value2
+          label: Value 2
+          widget: text
+          required: false
+          condition:
+            field: type
+            value: linkto
+
+          
 
 
         
