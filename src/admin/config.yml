@@ -136,17 +136,6 @@ collections:
             value: action
           - label: 'Link to a page / mail to:' 
             value: linkto
-        - name: target 
-          required: false
-          label: Target 
-          widget: select
-          options:
-          - label: Media gallery 
-            value: slider
-          - label: 'mailto: (opens in email)'
-            value: mailto
-          - label: url (link to somewhere)
-            value: 'type url '
         - name: target
           label: Button target 
           hint: Select button target
