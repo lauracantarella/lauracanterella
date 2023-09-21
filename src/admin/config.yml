@@ -63,7 +63,6 @@ collections:
         required: false
         collapsed: true
         label: 'Media gallery'
-        summary: "Media slider"
         label_singular: Media
         hint: 'Add media to the page image slider'
         widget: 'list'
@@ -108,6 +107,7 @@ collections:
           label: Items for that year
           label_singular: item
           widget: list
+          required: false
           fields:
           - name: item
             label: Item
@@ -118,20 +118,24 @@ collections:
         collapsed: true
         label_singular: Button
         label: 'Button links'
+        hint: 'Add button links'
         widget: 'list'
         fields:
         - name: name
           label: Label
           widget: 'string'
+          required: false
         - name: action
           label: Function
           widget: select
+          required: false
           options:
           - label: Action
             value: action
           - label: Link to a page / mail to 
             value: linkto
         - name: target 
+          required: false
           label: Target 
           widget: select
           options:
@@ -139,12 +143,13 @@ collections:
             value: slider
           - label: 'mailto: (opens in email)'
             value: mailto
-          - label: URL
+          - label: url
             value: ''
 
 
         
         - name: type
+          required: false
           label: Type
           widget: select
           options:
@@ -154,6 +159,7 @@ collections:
               label: Type 2
         - name: value1
           label: Value 1
+          required: false
           widget: string
           condition:
             field: type
@@ -161,6 +167,7 @@ collections:
         - name: value2
           label: Value 2
           widget: text
+          required: false
           condition:
             field: type
             value: type2
