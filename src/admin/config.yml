@@ -147,7 +147,7 @@ collections:
           options:
           - label: Media gallery 
             value: slider
-        - name: target
+        - name: targe2
           label: Button target 
           hint: Select button target
           required: false
