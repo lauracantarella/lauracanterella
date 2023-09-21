@@ -100,6 +100,7 @@ collections:
           widget: number
           value_type: 'int'
           min: 1900
+          defaut: 0000
           max: 2100
           step: 1
         - name: data
@@ -166,7 +167,7 @@ collections:
             field: action
             value: linkto
           options:
-          - label: 'mailto: (pre-written email opens in user's email box)'
+          - label: 'mailto: (pre-written email opens in user email box)'
             value: mailto
           - label: url (link to somewhere)
             value: 'type url'
