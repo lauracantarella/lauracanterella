@@ -56,13 +56,14 @@ collections:
         - label: Privacy Policy Layout
           value: layouts/legal.njk
       - { label: 'Page Label', description: 'Identifier of the page. Must be the same in all languages.' ,name: 'pagecode', widget: 'string', default: 'home', required: true}
-      - { label: 'Main content', description: 'Text content (displays in big with the normal page layout)',name: 'body', widget: 'markdown', required: false }
+      - { label: 'Main content', collapsed: true, description: 'Text content (displays in big with the normal page layout)',name: 'body', widget: 'markdown', required: false }
       #Media 
       - name: 'media'
         required: false
         collapsed: true
         label: 'Media gallery'
-        description: 'Add media to the page image slider'
+        label_singular: media
+        hint: 'Add media to the page image slider'
         widget: 'list'
         fields:
         - name: file
@@ -88,9 +89,8 @@ collections:
         required: false
         collapsed: true
         label: 'List by year'
-        description: 'content field for CV or other year lists'
+        hint: 'content field for CV or other year lists'
         widget: 'list'
-        summary: ''
         fields:
         - name: year
           label: Year 
