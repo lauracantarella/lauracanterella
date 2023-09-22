@@ -349,7 +349,8 @@ collections:
 
 #SUBPAGES 
   - name: 'subpages' # Used in routes, e.g., /admin/collections/blog
-    label: 'Subpage' # Used in the UI
+    label: 'Subpages' # Used in the UI
+    label_singular: Subpage
     folder: 'src/it/pages/' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in front matter
@@ -495,10 +496,60 @@ collections:
           condition:
             field: action
             value: mailto
-          
+
+ # Homepage 
+  - label: "Homepage"
+    description: "Setup the homepage settings"
+    name: "homepage folder"
+    files:
+      - label: "Homepage file"
+        name: homepage
+        delete: false
+        file: "src/it/homepage/homepage.md"
+        fields:
+          - name: title
+            required: true
+            label: Title
+            widget: string
+          - name: permalink
+            required: true
+            hidden: true
+            widget: string
+          - { label: 'Main content', collapsed: true, hint: 'Text content (displays in big at the top)',name: 'body', widget: 'markdown', required: true }
+          #Media 
+          - name: 'media' 
+            required: false
+            collapsed: true
+            label: 'Media gallery'
+            label_singular: Media
+            hint: 'Add media to the page image slider'
+            widget: 'list'
+            fields:
+            - name: file
+              required: false
+              label: media path
+              widget: image
+            - name: filephone
+              required: false
+              label: Media path for phone viewport 
+              hint: expects a vertical image. if not provided, it will simply show the cropped horizontal image. 
+              widget: image
+            - name: type
+              required: false
+              label: Type of media
+              default: image
+              widget: select
+              options:
+              - label: Image
+                value: image
+              - label: Video 
+                value: video
+            
+
 #PROJECTS 
   - name: 'projects' # Used in routes, e.g., /admin/collections/blog
     label: 'Projects' # Used in the UI
+     label_singular: Project
     folder: 'src/it/projects/' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields:  # The fields for each document, usually in front matter
