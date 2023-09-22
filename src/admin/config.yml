@@ -16,11 +16,34 @@ logo_url: /_static/icons/android-chrome-192x192.png
 collections:
 
   
-   
+#Site settings
+ - label: "Site settings"
+   description: "Metadata & General information of the site."
+   name: "metadata folder"
+    files:
+      - label: "Metadata file"
+        name: metadata
+        delete: false
+        file: "src/_data/metadata.json"
+        fields:
+          - name: title
+            label: Site title (displays in tab)
+            hint: displays in tab and in google search
+            widget: string
+          - name: author
+            label: Author
+            hint: displays in google search
+            widget: string
+          - name: description
+            label: Description (displays in tab)
+            hint: displays in google search (below the title)
+            widget: string
+
+
  # NAVGATION MENU
   - label: "Navigation"
     description: "Setup the main navigation menu, the footer and copyright info"
-    name: "navigation"
+    name: "_data"
     files:
       - label: "Navigation settings"
         name: menuitems
@@ -513,8 +536,7 @@ collections:
             widget: string
           - name: permalink
             required: true
-            hidden: true
-            widget: string
+            widget: hidden
           - { label: 'Main content', collapsed: true, hint: 'Text content (displays in big at the top)',name: 'body', widget: 'markdown', required: true }
           #Media 
           - name: 'media' 
@@ -556,6 +578,11 @@ collections:
     - name: title
       label: Title 
       widget: string 
+      required: true
+    - name: order
+      label: Order of appearance
+      hint: 1 is a the top   
+      widget: number
       required: true
     - name: category
       label: Category 

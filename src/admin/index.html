@@ -11,9 +11,16 @@
     <script src="https://unpkg.com/@staticcms/app@^3.0.0/dist/static-cms-app.js"></script>
     <script>
       window.CMS.init();
+
     </script>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   </body>
+  {% set css %}
+   
+    {% include "./css/structure.css" %}
+    {% include "./css/text.css" %} 
+  {% endset %}
+  <style>{{ css | safe }}</style>
 </html>
  
