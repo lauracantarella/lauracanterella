@@ -159,24 +159,143 @@ collections:
             field: action
             value: mailto
           
-#SUBPAGES 
+#PROJECTS 
   - name: 'projects' # Used in routes, e.g., /admin/collections/blog
     label: 'Projects' # Used in the UI
     folder: 'src/it/projects/' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields:  # The fields for each document, usually in front matter
     - name: title
-      label: Project title 
+      label: Title 
       widget: string 
       required: true
-    - name: title
-      label: Project title 
+    - name: category
+      label: Category 
+      hint: Type of work, medium, etc.
       widget: string 
       required: true
+    - name: role
+      label: Role
+      hint: Role played in project
+      widget: string 
+      required: true
+    - name: year 
+      label: Year
+      hint: Year or period of project 
+      widget: string 
+      required: true
+    - name: summary 
+      collapsed: true
+      label: Project summary
+      hint: short text.
+      widget: text
+      required: true
+    - name: body
+      collapsed: true
+      label: Longer description
+      hint: longer text.
+      widget: markdown
+      required: false
+  #Media 
+    - name: 'media' 
+      required: false
+      collapsed: true
+      label: 'Media gallery'
+      label_singular: Media
+      summary: media info
+      hint: 'Add media to the page image slider'
+      widget: 'list'
+      fields:
+      - name: file
+        required: false
+        label: media path
+        widget: image
+      - name: type
+        required: false
+        label: Type of media
+        default: image
+        widget: select
+        options:
+        - label: Image
+          value: image
+        - label: Video 
+          value: video
+      - name: alt
+        required: false
+        default: 'null'
+        label: Alt text
+        hint: This text is shown when the image isn't visible and for visually impaired people.
+        widget: string
+  #Buttons      
+    - name: 'links'
+      required: false
+      collapsed: true
+      label_singular: Button
+      label: 'Button links'
+      hint: 'Add button links'
+      widget: 'list'
+      fields:
+      - name: name
+        label: Label
+        required: false
+        hint: Button name
+        widget: 'string'
+      - name: action
+        required: false
+        hint: Select button function
+        label: Function
+        widget: select
+        options:
+        - label: Image gallery (open image slider)
+          value: slider
+        - label: 'Link to a page / url' 
+          value: linkto
+        - label: 'Send email (mailto: pre-written email opens in user email box)' 
+          value: mailto
+        - label: 'Language switcher' 
+          value: language
+        - label: 'Toggle dark mode' 
+          value: darkmode
+      - name: target
+        required: false
+        label: Button target 
+        hint: Enter link target (url)
+        widget: string
+        condition:
+          field: action
+          value: linkto
+      - name: emailaddress
+        collapsed: true
+        required: false
+        label: e-mail address 
+        hint: enter email address of recipient 
+        widget: string 
+        condition:
+          field: action
+          value: mailto
+      - name: emailsubject
+        collapsed: true
+        required: false
+        label: e-mail subject
+        hint: enter email subject 
+        widget: string
+        condition:
+          field: action
+          value: mailto
+      - name: emailcontent
+        required: false
+        collapsed: true
+        label: e-mail body text
+        hint: enter email content
+        widget: markdown
+        condition:
+          field: action
+          value: mailto
+  
 
 
 
-       
+      
 
 
    
