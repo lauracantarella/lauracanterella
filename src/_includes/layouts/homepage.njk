@@ -24,13 +24,13 @@ layout: layouts/base.njk
             <div class="f-menu con-link">
                 {%- for item in item.data.links -%}
                     {% if item.action == "linkto"%}
-                        <a href="{{ item.target  | url }}" target="_blank" data-target="{% if 'slider' in item.target %}slider{% else%}{{ item.target | trim }}{%endif%}" class="btn-link {% if item.dark == true-%} dark{% endif %}">{{item.name}}</a>
+                        <a href="{{ item.target  | url }}" {% if item.newtab == true %}target="_blank"{% endif %} data-target="{% if 'slider' in item.target %}slider{% else%}{{ item.target | trim }}{%endif%}" class="btn-link {% if item.dark == true-%} dark{% endif %}">{{item.name}}</a>
                     {% elif item.action == "mailto"%}
                             <a href="mailto:{%if item.emailaddress%}{{item.emailaddress |trim| urlencode |safe }}{%endif%}{%if item.emailsubject%}?subject={{item.emailsubject |  urlencode |safe}}{%endif%}{%if item.emailcontent%}&body={{item.emailcontent | urlencode| safe}}{%endif%}" target="_blank" data-target="mailto" class="btn-link {% if item.dark == true-%}dark{% endif %}">{{item.name}}</a>
                     {% elif item.action == "slider" %}
                             <span data-target="slider"  data-slide="{{-slidecount-}}" class="btn-link {% if item.dark == true-%} dark{% endif %}">{{item.name}}</span>
                     {% elif item.action == "language" %}
-                            <a href="{{pointerurl}}" target="_blank" data-target="language-switcher" class="btn-link {% if item.dark == true-%} dark{% endif %}">{{item.name}}</a>
+                            <a href="{{pointerurl}}" {% if item.newtab == true %}target="_blank"{% endif %} data-target="language-switcher" class="btn-link {% if item.dark == true-%} dark{% endif %}">{{item.name}}</a>
                     {% endif %}
                 {% endfor %}
                 {% for img in item.data.media %}

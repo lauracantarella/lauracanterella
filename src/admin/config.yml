@@ -37,7 +37,95 @@ collections:
           - name: description
             label: Description (displays in tab)
             hint: displays in google search (below the title)
+            widget: text
+      - label: "404 Not Found - IT"
+        name: notfoundit
+        delete: false
+        file: "src/it/404.md"
+        fields:
+          - name: title
+            label: Page title
             widget: string
+          - name: layout
+            widget: hidden
+          - name: permalink
+            widget: hidden
+          - name: body
+            label: main content
+            widget: markdown
+          - name: 'links'
+                    required: false
+                    collapsed: true
+                    label_singular: Button
+                    label: 'Button links'
+                    hint: 'Add button links'
+                    widget: 'list'
+                    fields:
+                    - name: name
+                      label: Label
+                      required: false
+                      hint: Button name
+                      widget: 'string'
+                    - name: dark
+                      label: Dark button 
+                      widget: boolean
+                      default: false
+                    - name: newtab
+                      label: Opens in a new tab
+                      widget: boolean
+                      default: false
+                    - name: action
+                      required: false
+                      hint: Select button function
+                      label: Function
+                      widget: select
+                      options:
+                      - label: Image gallery (open image slider)
+                        value: slider
+                      - label: 'Link to a page / url' 
+                        value: linkto
+                      - label: 'Send email (mailto: pre-written email opens in user email box)' 
+                        value: mailto
+                      - label: 'Language switcher' 
+                        value: language
+                      - label: 'Toggle dark mode' 
+                        value: darkmode
+                    - name: target
+                      required: false
+                      label: Button target 
+                      hint: Enter link target (url)
+                      widget: string
+                      condition:
+                        field: action
+                        value: linkto
+                    - name: emailaddress
+                      collapsed: true
+                      required: false
+                      label: e-mail address 
+                      hint: enter email address of recipient 
+                      widget: string 
+                      condition:
+                        field: action
+                        value: mailto
+                    - name: emailsubject
+                      collapsed: true
+                      required: false
+                      label: e-mail subject
+                      hint: enter email subject 
+                      widget: string
+                      condition:
+                        field: action
+                        value: mailto
+                    - name: emailcontent
+                      required: false
+                      collapsed: true
+                      label: e-mail body text
+                      hint: enter email content
+                      widget: markdown
+                      condition:
+                        field: action
+                        value: mailto
+          
 
 
  # NAVGATION MENU
@@ -75,6 +163,10 @@ collections:
                       widget: 'string'
                     - name: dark
                       label: Dark button 
+                      widget: boolean
+                      default: false
+                    - name: newtab
+                      label: Opens in a new tab
                       widget: boolean
                       default: false
                     - name: action
@@ -148,6 +240,10 @@ collections:
                       widget: 'string'
                     - name: dark
                       label: Dark button 
+                      widget: boolean
+                      default: false
+                    - name: newtab
+                      label: Opens in a new tab
                       widget: boolean
                       default: false
                     - name: action
@@ -246,6 +342,10 @@ collections:
                       label: Dark button 
                       widget: boolean
                       default: false
+                    - name: newtab
+                      label: Opens in a new tab
+                      widget: boolean
+                      default: false
                     - name: action
                       required: false
                       hint: Select button function
@@ -316,6 +416,10 @@ collections:
                       widget: 'string'
                     - name: dark
                       label: Dark button 
+                      widget: boolean
+                      default: false
+                    - name: newtab
+                      label: Opens in a new tab
                       widget: boolean
                       default: false
                     - name: action
@@ -658,6 +762,10 @@ collections:
         label: Dark button 
         widget: boolean
         default: false
+      - name: newtab
+        label: Opens in a new tab
+        widget: boolean
+        default: false
       - name: action
         required: false
         hint: Select button function
@@ -997,18 +1105,3 @@ collections:
 #               - {label: Url of the visual's source (see more), name: url, widget: string, required: false}  
              
 
-        
-
-# # Special pages (404, Privacy Policy, etc.)
-#   - name: "special-pages" # Used in routes, e.g., /admin/collections/blog
-#     label: "Special pages" # Used in the UI
-#     description: "Other pages for specific use cases (404, Privacy Policy, etc.)"  
-#     folder: "/src/specials" # The path to the folder where the documents are stored
-#     create: false # Allow users to create new documents in this collection
-#     slug: "{{ slug }}"  # Filename template, e.g., YYYY-MM-DD-title.md
-#     fields:
-#       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/specials.njk"}
-#       - {label: "url (if specific)", name: "permalink", widget: "hidden", default: "layouts/specials.njk", required: false}
-#       - { label: "Title of page", name: "title", widget: "string" }
-#       - { label: "Content of page", name: "body", widget: "markdown" }
- 
