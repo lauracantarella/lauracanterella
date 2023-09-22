@@ -1,184 +1,234 @@
 {
-    "nav": {
-    "it": [ 
-            {
-            "name": "home",
-            "action": "linkto",
-            "target": "/"
-            },
-            {
-                "name": "IMMAGINI",
-                "action": "linkto",  
-                "target": "/#slider"
-            },
-            {
-                "name": "LAVORI", 
-                "action": "linkto", 
-                "target": "/#lavori"
-            },
-            {
-                "name": "didattica",
-                "action": "linkto",
-                "target": "/didattica/"
-            },
-            {
-                "name": "FOTOGRAFIA D'ARCHITETTURA",
-                "action": "linkto",
-                "target": "/fotografia-d-architettura/"
-            },
-            {
-                "name": "stampe",
-                "action": "linkto",
-                "target": "/stampe/"
-            },
-            {
-                "name": "bio & Cv",
-                "action": "linkto",
-                "target": "/bio-e-cv/"
-            },
-            {
-                "name": "contatti",
-                "action": "linkto",
-                "target": "/contatti/"
-            },
-            {
-                "name": "english",
-                "action": "language"
-            },
-            {
-                "name": "dark mode",
-                "action": "toggledark",
-                "dark": true
-            }
-        
-        
-    ],
-
-    "en": [ 
-        {
+  "nav": {
+    "it": [
+      {
         "name": "home",
         "action": "linkto",
-        "target": "/en/"
-        },
-        {
-            "name": "IMAGES",
-            "action": "linkto",  
-            "target": "/en/#slider"
-        },
-        {
-            "name": "WORKS", 
-            "action": "linkto", 
-            "target": "/en/#works"
-        },
-        {
-            "name": "didattica",
-            "action": "linkto",
-            "target": "/en/didattica/"
-        },
-        {
-            "name": "FOTOGRAFIA D'ARCHITETTURA",
-            "action": "linkto",
-            "target": "/en/fotografia-d-architettura/"
-        },
-        {
-            "name": "stampe",
-            "action": "linkto",
-            "target": "/en/prints/"
-        },
-        {
-            "name": "bio & Cv",
-            "action": "linkto",
-            "target": "/en/bio-e-cv/"
-        },
-        {
-            "name": "contatti",
-            "action": "linkto",
-            "target": "/en/contatti/"
-        },
-        {
-            "name": "italiano",
-            "action": "language"
-        },
-        {
-            "name": "dark mode",
-            "action": "toggledark",
-            "dark": true
-            
-        }
+        "target": "/",
+        "dark": false,
+        "newtab": false
+      },
+      {
+        "name": "IMMAGINI",
+        "action": "linkto",
+        "target": "/#slider",
+        "dark": false,
+        "newtab": false
+      },
+      {
+        "name": "LAVORI",
+        "action": "linkto",
+        "target": "/#lavori",
+        "dark": false,
+        "newtab": false
+      },
+      {
+        "name": "didattica",
+        "action": "linkto",
+        "target": "/didattica/",
+        "dark": false,
+        "newtab": false
+      },
+      {
+        "name": "FOTOGRAFIA D'ARCHITETTURA",
+        "action": "linkto",
+        "target": "/fotografia-d-architettura/",
+        "dark": false,
+        "newtab": false
+      },
+      {
+        "name": "stampe",
+        "action": "linkto",
+        "target": "/stampe/",
+        "dark": false,
+        "newtab": false
+      },
+      {
+        "name": "bio & Cv",
+        "action": "linkto",
+        "target": "/bio-e-cv/",
+        "dark": false,
+        "newtab": false
+      },
+      {
+        "name": "contatti",
+        "action": "linkto",
+        "target": "/contatti/",
+        "dark": false,
+        "newtab": false
+      },
+      {
+        "name": "english",
+        "action": "language",
+        "dark": false,
+        "newtab": false
+      },
+      {
+        "name": "dark mode",
+        "action": "",
+        "dark": true,
+        "newtab": false
+      }
+    ],
+    "en": [
+      {
+        "name": "home",
+        "action": "linkto",
+        "target": "/en/",
+        "dark": false,
+        "newtab": false
+      },
+      {
+        "name": "IMAGES",
+        "action": "linkto",
+        "target": "/en/#slider",
+        "dark": false,
+        "newtab": false
+      },
+      {
+        "name": "WORKS",
+        "action": "linkto",
+        "target": "/en/#works",
+        "dark": false,
+        "newtab": false
+      },
+      {
+        "name": "didattica",
+        "action": "linkto",
+        "target": "/en/didattica/",
+        "dark": false,
+        "newtab": false
+      },
+      {
+        "name": "FOTOGRAFIA D'ARCHITETTURA",
+        "action": "linkto",
+        "target": "/en/fotografia-d-architettura/",
+        "dark": false,
+        "newtab": false
+      },
+      {
+        "name": "stampe",
+        "action": "linkto",
+        "target": "/en/prints/",
+        "dark": false,
+        "newtab": false
+      },
+      {
+        "name": "bio & Cv",
+        "action": "linkto",
+        "target": "/en/bio-e-cv/",
+        "dark": false,
+        "newtab": false
+      },
+      {
+        "name": "contatti",
+        "action": "linkto",
+        "target": "/en/contatti/",
+        "dark": false,
+        "newtab": false
+      },
+      {
+        "name": "italiano",
+        "action": "language",
+        "dark": false,
+        "newtab": false
+      },
+      {
+        "name": "dark mode",
+        "action": "",
+        "dark": true,
+        "newtab": false
+      }
     ]
-
-    },
-    "copyright": {
-        "it": [ 
-    {
-       "name": "© LAURA CANTARELLA",
+  },
+  "copyright": {
+    "it": [
+      {
+        "name": "© LAURA CANTARELLA",
         "target": ""
-    }],
-    "en": [ 
-        {
-           "name": "© LAURA CANTARELLA",
-            "target": ""
-        }]
-
-    },
-
-    "footer": {
-        "it": [ 
-  
-    {
-           "name": "google maps",
-           "action": "linkto",
-           "target": "/"
-    },
-    {
+      }
+    ],
+    "en": [
+      {
+        "name": "© LAURA CANTARELLA",
+        "target": ""
+      }
+    ]
+  },
+  "footer": {
+    "it": [
+      {
+        "name": "google maps",
+        "action": "linkto",
+        "target": "/",
+        "dark": false,
+        "newtab": false
+      },
+      {
         "name": "instagram",
         "action": "linkto",
-        "target": "/"
-    },
-    {
+        "target": "/",
+        "dark": false,
+        "newtab": false
+      },
+      {
         "name": "linkedin",
         "action": "linkto",
-        "target": "/"
-    },
-    {
+        "target": "/",
+        "dark": false,
+        "newtab": false
+      },
+      {
         "name": "privacy",
         "action": "linkto",
-        "target": "/privacy-policy/"
-    },
-    {
+        "target": "/privacy-policy/",
+        "dark": false,
+        "newtab": false
+      },
+      {
         "name": "note legali",
         "action": "linkto",
-        "target": "/note-legali/"
-    }
-],
-    "en": [ 
-    
-    {
-    "name": "google maps",
-    "action": "linkto",
-    "target": "/"
-    },
-    {
-    "name": "instagram",
-    "action": "linkto",
-    "target": "/"
-    },
-    {
-    "name": "linkedin",
-    "action": "linkto",
-    "target": "/"
-    },
-    {
-    "name": "privacy",
-    "action": "linkto",
-    "target": "/privacy-policy/"
-    },
-    {
-    "name": "note legali",
-    "action": "linkto",
-    "target": "/note-legali/"
-    }
+        "target": "/note-legali/",
+        "dark": false,
+        "newtab": false
+      }
+    ],
+    "en": [
+      {
+        "name": "google maps",
+        "action": "linkto",
+        "target": "/",
+        "dark": false,
+        "newtab": false
+      },
+      {
+        "name": "instagram",
+        "action": "linkto",
+        "target": "/",
+        "dark": false,
+        "newtab": false
+      },
+      {
+        "name": "linkedin",
+        "action": "linkto",
+        "target": "/",
+        "dark": false,
+        "newtab": false
+      },
+      {
+        "name": "privacy",
+        "action": "linkto",
+        "target": "/privacy-policy/",
+        "dark": false,
+        "newtab": false
+      },
+      {
+        "name": "note legali",
+        "action": "linkto",
+        "target": "/note-legali/",
+        "dark": false,
+        "newtab": false
+      }
     ]
-    }
-
+  }
 }
