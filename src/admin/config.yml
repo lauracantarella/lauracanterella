@@ -577,9 +577,9 @@ collections:
         hint: Button name
         widget: 'string'
       - name: dark
-          label: Dark button 
-          widget: boolean
-          default: false
+        label: Dark button 
+        widget: boolean
+        default: false
       - name: action
         required: false
         hint: Select button function
