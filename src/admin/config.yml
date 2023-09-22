@@ -11,7 +11,7 @@ public_folder: "/_static/images"
 media_library:
   max_file_size: 4000000
 
-logo_url: /_static/icons/android-chrome-192x192.png
+logo_url: '/_static/icons/android-chrome-192x192.png'
 
 collections:
 
@@ -125,7 +125,94 @@ collections:
               condition:
                 field: action
                 value: mailto
-          
+      - label: "404 Not Found - EN"
+        name: notfoundEN
+        delete: false
+        file: "src/it/404en.md"
+        fields:
+          - name: title
+            label: Page title
+            widget: string
+          - name: layout
+            widget: hidden
+          - name: permalink
+            widget: hidden
+          - name: body
+            label: main content
+            widget: markdown
+          - name: 'links'
+            required: false
+            collapsed: true
+            label_singular: Button
+            label: 'Button links'
+            hint: 'Add button links'
+            widget: 'list'
+            fields:
+            - name: name
+              label: Label
+              required: false
+              hint: Button name
+              widget: 'string'
+            - name: dark
+              label: Dark button 
+              widget: boolean
+              default: false
+            - name: newtab
+              label: Opens in a new tab
+              widget: boolean
+              default: false
+            - name: action
+              required: false
+              hint: Select button function
+              label: Function
+              widget: select
+              options:
+              - label: Image gallery (open image slider)
+                value: slider
+              - label: 'Link to a page / url' 
+                value: linkto
+              - label: 'Send email (mailto: pre-written email opens in user email box)' 
+                value: mailto
+              - label: 'Language switcher' 
+                value: language
+              - label: 'Toggle dark mode' 
+                value: darkmode
+            - name: target
+              required: false
+              label: Button target 
+              hint: Enter link target (url)
+              widget: string
+              condition:
+                field: action
+                value: linkto
+            - name: emailaddress
+              collapsed: true
+              required: false
+              label: e-mail address 
+              hint: enter email address of recipient 
+              widget: string 
+              condition:
+                field: action
+                value: mailto
+            - name: emailsubject
+              collapsed: true
+              required: false
+              label: e-mail subject
+              hint: enter email subject 
+              widget: string
+              condition:
+                field: action
+                value: mailto
+            - name: emailcontent
+              required: false
+              collapsed: true
+              label: e-mail body text
+              hint: enter email content
+              widget: markdown
+              condition:
+                field: action
+                value: mailto
+           
 
 
  # NAVGATION MENU
@@ -291,6 +378,7 @@ collections:
             widget: object
             fields: 
               - name: it
+                collapsed: true
                 label: Italian copyright text
                 widget: object
                 fields: 
@@ -300,16 +388,17 @@ collections:
               - name: en
                 label: English copyright text
                 widget: object
+                collapsed: true
                 fields: 
                   - name: name
                     label: Copyright mention
                     widget: string
-          - name: footer
-            collapsed: true
+          - name: footer     
             label: Footer nav
             widget: object
             fields: 
               - name: it
+                collapsed: true
                 label: Italian footer links
                 label_singular: Footer link 
                 widget: list
@@ -379,6 +468,7 @@ collections:
                       field: action
                       value: mailto
               - name: en
+                collapsed: true
                 label: English footer text
                 widget: list
                 fields: 
