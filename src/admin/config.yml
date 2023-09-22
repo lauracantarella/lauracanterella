@@ -141,22 +141,13 @@ collections:
           - name: nav
             collapsed: true
             label: Main menu 
-            widget: list
-            create: false
+            widget: object
             fields: 
               - name: it
-                label: Italian navigation
+                label: Italian navigation Links
                 hint: fill-in italian menu buttons (in order of appearance)
                 widget: list
                 fields: 
-                  - name: 'links'
-                    required: false
-                    collapsed: true
-                    label_singular: Button
-                    label: 'Button links'
-                    hint: 'Add button links'
-                    widget: 'list'
-                    fields:
                     - name: name
                       label: Label
                       required: false
