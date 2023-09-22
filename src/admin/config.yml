@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   repo: mar-ver/lauracantarella-dev
+  base_url: https://lauracantarella-it.netlify.app/
   # name: gitlab
   # repo: mar_ver/lauracantarelle.it
   # auth_type: pkce # Required for pkce
