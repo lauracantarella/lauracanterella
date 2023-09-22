@@ -23,9 +23,9 @@ collections:
     name: "navigation"
     files:
       - label: "Navigation settings"
-        name: allnav
+        name: menuitems
         delete: false
-        file: "/src/_data/menuitems.json"
+        file: "src/_data/menuitems.json"
         fields:
           - name: nav
             collapsed: true
