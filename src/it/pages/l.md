@@ -3,7 +3,7 @@ title: Loin
 layout: layouts/subpage.njk
 pagecode: home
 media:
-  - type: ""
+  - type: action
     alt: "null"
     file: /_static/images/laptop_website005.jpg
 yearlist:
