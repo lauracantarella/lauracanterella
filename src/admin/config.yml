@@ -44,7 +44,7 @@ collections:
         options:
         - label: Normal page layout
           value: layouts/subpage.njk
-        - label: Privacy Policy Layout
+        - label: Privacy Policy layout
           value: layouts/legal.njk
       - { label: 'Page Label', description: 'Identifier of the page. Must be the same in all languages.' ,name: 'pagecode', widget: 'string', default: 'home', required: true}
       - { label: 'Main content', collapsed: true, hint: 'Text content (displays in big with the normal page layout)',name: 'body', widget: 'markdown', required: false }
@@ -70,7 +70,7 @@ collections:
           - label: Video 
             value: video
         - name: alt
-          default: null
+          default: 'null'
           label: Alt text
           hint: This text is shown when the image isn't visible and for visually impaired people.
           widget: string
