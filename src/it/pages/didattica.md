@@ -4,7 +4,7 @@ pagecode : teaching
 yearlist: 
     - year: 2023
       data:
-        - Enien deligene culpa eosam res untem eatius
+        - Enien deligene c# ulpa eosam res untem eatius
         - itas disintur re ea illanto volorio rerendam iminctatam,.
         - Enien deligene culpa eosam res untem eatius
     - year: 2022

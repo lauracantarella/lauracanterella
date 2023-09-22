@@ -43,14 +43,12 @@
             },
             {
                 "name": "english",
-                "action": "linkto",
-                "target": "language"
+                "action": "language"
             },
             {
                 "name": "dark mode",
-                "action": "action",
-                "dark": true,
-                "target": "toggledark"
+                "action": "toggledark",
+                "dark": true
             }
         
         
@@ -99,14 +97,13 @@
         },
         {
             "name": "italiano",
-            "action": "linkto",
-            "target": "language"
+            "action": "language"
         },
         {
             "name": "dark mode",
-            "action": "action",
-            "dark": true,
-            "target": "toggledark"
+            "action": "toggledark",
+            "dark": true
+            
         }
     ]
 

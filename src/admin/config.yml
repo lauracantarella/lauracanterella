@@ -127,67 +127,54 @@ collections:
           widget: 'string'
           required: false
         - name: action
-          hint: select Function
+          hint: select button function
           label: Function
           widget: select
           required: false
           options:
-          - label: Action (do something)
-            value: action
-          - label: 'Link to a page / mail to:' 
+          - label: Image gallery (open image slider)
+            value: slider
+          - label: 'Link to a page / url' 
             value: linkto
+          - label: 'Send email (mailto: pre-written email opens in user email box)' 
+            value: mailto
+          - label: 'Language switcher' 
+            value: language
+          - label: 'Toggle dark mode' 
+            value: darkmode
         - name: target
           label: Button target 
-          hint: Select button target
+          hint: Enter link target (url)
           required: false
-          widget: selection
-          condition:
-            field: action
-            value: action
-          options:
-          - label: Media gallery 
-            value: slider
-        - name: target2
-          label: Button target 
-          hint: Select button target
-          required: false
-          widget: selection
+          widget: string
           condition:
             field: action
             value: linkto
-          options:
-          - label: 'mailto: (pre-written email opens in user email box)'
-            value: mailto
-          - label: url (link to somewhere)
-            value: 'type url'
         - name: emailaddress
+          collapsed: true
           label: e-mail address 
           hint: enter email address of recipient 
           widget: string 
           condition:
-            field: target
+            field: action
             value: mailto
         - name: emailsubject
+          collapsed: true
           label: e-mail subject
           hint: enter email subject 
           widget: string
           condition:
-            field: target
+            field: action
             value: mailto
         - name: emailcontent
+          collapsed: true
           label: e-mail body text
           hint: enter email content
           widget: markdown
           condition:
-            field: target
+            field: action
             value: mailto
           
-
-  - name: 'subpages' # Used in routes, e.g., /admin/collections/blog
-    label: 'Subpage' # Used in the UI
-    folder: 'src/it/pages/' # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    fields: 
 
 
 

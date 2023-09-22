@@ -10,8 +10,7 @@ links:
       action: linkto
       target: "mailto:francescatambussi.com"
     - name: Pictures
-      action: action
-      target: "slider"
+      action: slider
 media: 
     - file: src/_static/images/placeholder2.png
       filephone:  src/_static/images/phone2.png

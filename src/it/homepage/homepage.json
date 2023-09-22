@@ -1,6 +1,6 @@
 
 {
     "layout": "/layouts/homepage.njk",
-    "tag": "home",
+    "tags": "page",
     "pagecode": "home"
 }

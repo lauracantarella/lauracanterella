@@ -3,7 +3,10 @@ title: Contatti
 pagecode: contact
 links:
     - name: contatto
-      action: linkto
-      target: "mailto:fff"
+      action: mailto
+      target: nothing
+      emailaddress: ii
+      emailsubject: rr
+      emailcontent: ee
 ---
 Contact text.

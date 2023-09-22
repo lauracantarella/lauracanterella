@@ -1,6 +1,5 @@
 ---
 title: "Home"
-pagecode: home
 permalink: /en/index.html
 media: 
     - file: src/_static/images/placeholder3.png

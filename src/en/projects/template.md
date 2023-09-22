@@ -10,7 +10,7 @@ links:
       action: linkto
       target: ""
     - name: Button2
-      action: action
+      action: slider
       target: "slider"
     - name: Button3
       dark: "true"

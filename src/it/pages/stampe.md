@@ -3,14 +3,17 @@ title: Stampe
 pagecode: prints
 links:
     - name: print gallery
-      action: action
-      target: "slider"
+      action: slider
+      dark: true
     - name: Button 2 
-      action: linkto
-      target: "mailto"
+      action: "mailto"
       emailaddress: "prints@lauracantarella.it"
       emailsubject: "email subject"
       emailcontent: "email content"
+    - name: print gallery
+      action: linkto
+      target: https://test.com
+      dark: true 
 media: 
     - file: src/_static/images/laptop_website005.jpg
       type: image
