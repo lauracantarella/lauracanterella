@@ -46,8 +46,8 @@ module.exports = function(eleventyConfig) {
     ///IMAGE PROCESSING-------------------------------------------
     //image background-------------------------------------------
     eleventyConfig.addShortcode("imagebg", async function(src, w) {
-        // let source = path.join(__dirname, "_includes/" , src);
-		let metadata = await Image(src, {
+        source= "src"+src;
+		let metadata = await Image(source, {
 			widths: [w], 
 			formats: ["webp"],
             sharpWebpOptions: {
@@ -63,7 +63,9 @@ module.exports = function(eleventyConfig) {
     });
     //image-main
     eleventyConfig.addShortcode("imagefit", async function(src, alt, sizes) {
-		let metadata = await Image(src, {
+        source= "src" +src;
+        //console.log("SOURCE", source, src)
+        let metadata = await Image(source, {
 			widths: [ 800, 1280, 1920],
 			formats: ["webp", "jpeg"],
             sharpWebpOptions: {

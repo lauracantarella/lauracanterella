@@ -9,35 +9,12 @@ public_folder: "/_static/images"
 #display_url: https://verdeil.net
 
 media_library:
-  max_file_size: 2000000
+  max_file_size: 4000000
 
 logo_url: /_static/icons/android-chrome-192x192.png
 
-i18n:
-  # Required and can be one of multiple_folders, multiple_files or single_file
-  # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
-  # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
-  # single_file - persists a single file in `<folder>/<slug>.<extension>`
-  structure: multiple_folders
-  # Required - a list of locales to show in the editor UI
-  locales: [it, en]
-  # Optional, defaults to the first item in locales.
-  # The locale to be used for fields validation and as a baseline for the entry.
-  defaultLocale: it
-
-
 collections:
-# Global data
-
-  # SUBPAGEs
-  # - name: it
-  #   label: Italian site
-  #   create: false
-  #   folder: src/it/
-  #   nested:
-  #     depth: 100 # max depth to show in the collection tree
-  #     path: { label: 'Path', index_file: 'index' }
-
+#SUBPAGES 
   - name: 'subpages' # Used in routes, e.g., /admin/collections/blog
     label: 'Subpage' # Used in the UI
     folder: 'src/it/pages/' # The path to the folder where the documents are stored
@@ -54,12 +31,12 @@ collections:
         options:
         - label: Normal page layout
           value: layouts/subpage.njk
-        - label: Privacy Policy Layout
+        - label: Privacy Policy layout
           value: layouts/legal.njk
       - { label: 'Page Label', description: 'Identifier of the page. Must be the same in all languages.' ,name: 'pagecode', widget: 'string', default: 'home', required: true}
       - { label: 'Main content', collapsed: true, hint: 'Text content (displays in big with the normal page layout)',name: 'body', widget: 'markdown', required: false }
       #Media 
-      - name: 'media'
+      - name: 'media' 
         required: false
         collapsed: true
         label: 'Media gallery'
@@ -69,20 +46,22 @@ collections:
         widget: 'list'
         fields:
         - name: file
-          required: true
+          required: false
           label: media path
           widget: image
         - name: type
-          required: true
+          required: false
           label: Type of media
+          default: image
           widget: select
           options:
           - label: Image
-            value: action
+            value: image
           - label: Video 
             value: video
         - name: alt
           required: false
+          default: 'null'
           label: Alt text
           hint: This text is shown when the image isn't visible and for visually impaired people.
           widget: string
@@ -96,20 +75,22 @@ collections:
         widget: 'list'
         fields:
         - name: year
-          label: Year 
+          required: false 
+          label: Year
           widget: number
           value_type: 'int'
-          min: 1900
-          defaut: 0000
-          max: 2100
+          min: 1000
+          default: 2000
+          max: 9999
           step: 1
         - name: data
+          required: false
           label: Items for that year
           label_singular: item
           widget: list
-          required: false
           fields:
           - name: item
+            required: false
             label: Item
             widget: string
       #Buttons      
@@ -123,14 +104,14 @@ collections:
         fields:
         - name: name
           label: Label
+          required: false
           hint: Button name
           widget: 'string'
-          required: false
         - name: action
-          hint: select button function
+          required: false
+          hint: Select button function
           label: Function
           widget: select
-          required: false
           options:
           - label: Image gallery (open image slider)
             value: slider
@@ -143,15 +124,16 @@ collections:
           - label: 'Toggle dark mode' 
             value: darkmode
         - name: target
+          required: false
           label: Button target 
           hint: Enter link target (url)
-          required: false
           widget: string
           condition:
             field: action
             value: linkto
         - name: emailaddress
           collapsed: true
+          required: false
           label: e-mail address 
           hint: enter email address of recipient 
           widget: string 
@@ -160,6 +142,7 @@ collections:
             value: mailto
         - name: emailsubject
           collapsed: true
+          required: false
           label: e-mail subject
           hint: enter email subject 
           widget: string
@@ -167,6 +150,7 @@ collections:
             field: action
             value: mailto
         - name: emailcontent
+          required: false
           collapsed: true
           label: e-mail body text
           hint: enter email content
@@ -175,7 +159,20 @@ collections:
             field: action
             value: mailto
           
-
+#SUBPAGES 
+  - name: 'projects' # Used in routes, e.g., /admin/collections/blog
+    label: 'Projects' # Used in the UI
+    folder: 'src/it/projects/' # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields:  # The fields for each document, usually in front matter
+    - name: title
+      label: Project title 
+      widget: string 
+      required: true
+    - name: title
+      label: Project title 
+      widget: string 
+      required: true
 
 
 

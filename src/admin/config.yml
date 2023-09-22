@@ -9,22 +9,9 @@ public_folder: "/_static/images"
 #display_url: https://verdeil.net
 
 media_library:
-  max_file_size: 2000000
+  max_file_size: 4000000
 
 logo_url: /_static/icons/android-chrome-192x192.png
-
-i18n:
-  # Required and can be one of multiple_folders, multiple_files or single_file
-  # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
-  # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
-  # single_file - persists a single file in `<folder>/<slug>.<extension>`
-  structure: multiple_folders
-  # Required - a list of locales to show in the editor UI
-  locales: [it, en]
-  # Optional, defaults to the first item in locales.
-  # The locale to be used for fields validation and as a baseline for the entry.
-  defaultLocale: it
-
 
 collections:
 #SUBPAGES 
@@ -69,7 +56,7 @@ collections:
           widget: select
           options:
           - label: Image
-            value: action
+            value: image
           - label: Video 
             value: video
         - name: alt
@@ -88,19 +75,19 @@ collections:
         widget: 'list'
         fields:
         - name: year
-          label: Year
           required: false 
+          label: Year
           widget: number
           value_type: 'int'
-          min: 1900
-          defaut: 0000
-          max: 2100
+          min: 1000
+          default: 2000
+          max: 9999
           step: 1
         - name: data
+          required: false
           label: Items for that year
           label_singular: item
           widget: list
-          required: false
           fields:
           - name: item
             required: false
@@ -121,9 +108,9 @@ collections:
           hint: Button name
           widget: 'string'
         - name: action
+          required: false
           hint: Select button function
           label: Function
-          required: false
           widget: select
           options:
           - label: Image gallery (open image slider)
@@ -137,9 +124,9 @@ collections:
           - label: 'Toggle dark mode' 
             value: darkmode
         - name: target
+          required: false
           label: Button target 
           hint: Enter link target (url)
-          required: false
           widget: string
           condition:
             field: action
@@ -163,8 +150,8 @@ collections:
             field: action
             value: mailto
         - name: emailcontent
-          collapsed: true
           required: false
+          collapsed: true
           label: e-mail body text
           hint: enter email content
           widget: markdown
@@ -172,7 +159,20 @@ collections:
             field: action
             value: mailto
           
-
+#SUBPAGES 
+  - name: 'projects' # Used in routes, e.g., /admin/collections/blog
+    label: 'Projects' # Used in the UI
+    folder: 'src/it/projects/' # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields:  # The fields for each document, usually in front matter
+    - name: title
+      label: Project title 
+      widget: string 
+      required: true
+    - name: title
+      label: Project title 
+      widget: string 
+      required: true
 
 
 
