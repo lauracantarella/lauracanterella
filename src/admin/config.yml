@@ -50,6 +50,7 @@ collections:
       - { label: 'Main content', collapsed: true, hint: 'Text content (displays in big with the normal page layout)',name: 'body', widget: 'markdown', required: false }
       #Media 
       - name: 'media' 
+        required: false
         collapsed: true
         label: 'Media gallery'
         label_singular: Media
@@ -58,9 +59,11 @@ collections:
         widget: 'list'
         fields:
         - name: file
+          required: false
           label: media path
           widget: image
         - name: type
+          required: false
           label: Type of media
           default: image
           widget: select
@@ -70,6 +73,7 @@ collections:
           - label: Video 
             value: video
         - name: alt
+          required: false
           default: 'null'
           label: Alt text
           hint: This text is shown when the image isn't visible and for visually impaired people.
@@ -99,10 +103,12 @@ collections:
           required: false
           fields:
           - name: item
+            required: false
             label: Item
             widget: string
       #Buttons      
       - name: 'links'
+        
         collapsed: true
         label_singular: Button
         label: 'Button links'
