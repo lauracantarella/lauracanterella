@@ -27,17 +27,7 @@ i18n:
 
 
 collections:
-# Global data
-
-  # SUBPAGEs
-  # - name: it
-  #   label: Italian site
-  #   create: false
-  #   folder: src/it/
-  #   nested:
-  #     depth: 100 # max depth to show in the collection tree
-  #     path: { label: 'Path', index_file: 'index' }
-
+#SUBPAGES 
   - name: 'subpages' # Used in routes, e.g., /admin/collections/blog
     label: 'Subpage' # Used in the UI
     folder: 'src/it/pages/' # The path to the folder where the documents are stored
@@ -69,11 +59,11 @@ collections:
         widget: 'list'
         fields:
         - name: file
-          required: true
+          required: false
           label: media path
           widget: image
         - name: type
-          required: true
+          required: false
           label: Type of media
           widget: select
           options:
@@ -127,7 +117,7 @@ collections:
           widget: 'string'
           required: false
         - name: action
-          hint: select button function
+          hint: Select button function
           label: Function
           widget: select
           required: false
