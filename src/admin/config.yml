@@ -147,7 +147,7 @@ collections:
           options:
           - label: Media gallery 
             value: slider
-        - name: targe2
+        - name: target2
           label: Button target 
           hint: Select button target
           required: false
@@ -183,51 +183,19 @@ collections:
             value: mailto
           
 
+  - name: 'subpages' # Used in routes, e.g., /admin/collections/blog
+    label: 'Subpage' # Used in the UI
+    folder: 'src/it/pages/' # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: 
 
 
 
 
-
-        - name: value2
-          label: Value 2
-          widget: text
-          required: false
-          condition:
-            field: type
-            value: linkto
-
-          
+       
 
 
-        
-        - name: type
-          required: false
-          label: Type
-          widget: select
-          options:
-            - value: type1
-              label: Type 1
-            - value: type2
-              label: Type 2
-        - name: value1
-          label: Value 1
-          required: false
-          widget: string
-          condition:
-            field: type
-            value: type1
-        - name: value2
-          label: Value 2
-          widget: text
-          required: false
-          condition:
-            field: type
-            value: type2
-    
-
-
-
-
+   
 
 #   - label: "General Information"
 #     description: "Setup contact info, colors of homepage, footer menu, countdown date"
