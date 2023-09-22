@@ -16,16 +16,39 @@ logo_url: /_static/icons/android-chrome-192x192.png
 collections:
 
   
-   
+#Site settings
+ - label: "Site settings"
+   description: "Metadata & General information of the site."
+   name: "metadata folder"
+    files:
+      - label: "Metadata file"
+        name: metadata
+        delete: false
+        file: "src/_data/metadata.json"
+        fields:
+          - name: title
+            label: Site title (displays in tab)
+            hint: displays in tab and in google search
+            widget: string
+          - name: author
+            label: Author
+            hint: displays in google search
+            widget: string
+          - name: description
+            label: Description (displays in tab)
+            hint: displays in google search (below the title)
+            widget: string
+
+
  # NAVGATION MENU
   - label: "Navigation"
     description: "Setup the main navigation menu, the footer and copyright info"
-    name: "navigation"
+    name: "_data"
     files:
       - label: "Navigation settings"
-        name: allnav
+        name: menuitems
         delete: false
-        file: "/src/_data/menuitems.json"
+        file: "src/_data/menuitems.json"
         fields:
           - name: nav
             collapsed: true
@@ -349,7 +372,8 @@ collections:
 
 #SUBPAGES 
   - name: 'subpages' # Used in routes, e.g., /admin/collections/blog
-    label: 'Subpage' # Used in the UI
+    label: 'Subpages' # Used in the UI
+    label_singular: Subpage
     folder: 'src/it/pages/' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in front matter
@@ -366,7 +390,7 @@ collections:
           value: layouts/subpage.njk
         - label: Privacy Policy layout
           value: layouts/legal.njk
-      - { label: 'Page Label', description: 'Identifier of the page. Must be the same in all languages.' ,name: 'pagecode', widget: 'string', default: 'home', required: true}
+      - { label: 'Page Label', description: 'Identifier of the page. Must be the same in all languages.' ,name: 'pagecode', widget: 'string', default: 'page', required: true}
       - { label: 'Main content', collapsed: true, hint: 'Text content (displays in big with the normal page layout)',name: 'body', widget: 'markdown', required: false }
       #Media 
       - name: 'media' 
@@ -495,16 +519,70 @@ collections:
           condition:
             field: action
             value: mailto
-          
+
+ # Homepage 
+  - label: "Homepage"
+    description: "Setup the homepage settings"
+    name: "homepage folder"
+    files:
+      - label: "Homepage file"
+        name: homepage
+        delete: false
+        file: "src/it/homepage/homepage.md"
+        fields:
+          - name: title
+            required: true
+            label: Title
+            widget: string
+          - name: permalink
+            required: true
+            widget: hidden
+          - { label: 'Main content', collapsed: true, hint: 'Text content (displays in big at the top)',name: 'body', widget: 'markdown', required: true }
+          #Media 
+          - name: 'media' 
+            required: false
+            collapsed: true
+            label: 'Media gallery'
+            label_singular: Media
+            hint: 'Add media to the page image slider'
+            widget: 'list'
+            fields:
+            - name: file
+              required: false
+              label: media path
+              widget: image
+            - name: filephone
+              required: false
+              label: Media path for phone viewport 
+              hint: expects a vertical image. if not provided, it will simply show the cropped horizontal image. 
+              widget: image
+            - name: type
+              required: false
+              label: Type of media
+              default: image
+              widget: select
+              options:
+              - label: Image
+                value: image
+              - label: Video 
+                value: video
+            
+
 #PROJECTS 
   - name: 'projects' # Used in routes, e.g., /admin/collections/blog
     label: 'Projects' # Used in the UI
+    label_singular: Project
     folder: 'src/it/projects/' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields:  # The fields for each document, usually in front matter
     - name: title
       label: Title 
       widget: string 
+      required: true
+    - name: order
+      label: Order of appearance
+      hint: 1 is a the top   
+      widget: number
       required: true
     - name: category
       label: Category 

@@ -390,7 +390,7 @@ collections:
           value: layouts/subpage.njk
         - label: Privacy Policy layout
           value: layouts/legal.njk
-      - { label: 'Page Label', description: 'Identifier of the page. Must be the same in all languages.' ,name: 'pagecode', widget: 'string', default: 'home', required: true}
+      - { label: 'Page Label', description: 'Identifier of the page. Must be the same in all languages.' ,name: 'pagecode', widget: 'string', default: 'page', required: true}
       - { label: 'Main content', collapsed: true, hint: 'Text content (displays in big with the normal page layout)',name: 'body', widget: 'markdown', required: false }
       #Media 
       - name: 'media' 
