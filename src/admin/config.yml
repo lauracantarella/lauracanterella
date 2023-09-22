@@ -108,7 +108,7 @@ collections:
             widget: string
       #Buttons      
       - name: 'links'
-        
+        required: false
         collapsed: true
         label_singular: Button
         label: 'Button links'
@@ -117,11 +117,13 @@ collections:
         fields:
         - name: name
           label: Label
+          required: false
           hint: Button name
           widget: 'string'
         - name: action
           hint: Select button function
           label: Function
+          required: false
           widget: select
           options:
           - label: Image gallery (open image slider)
