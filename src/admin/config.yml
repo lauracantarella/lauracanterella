@@ -17,9 +17,9 @@ collections:
 
   
 #Site settings
- - label: "Site settings"
-   description: "Metadata & General information of the site."
-   name: "metadata folder"
+  - label: "Site settings"
+    description: "Metadata & General information of the site."
+    name: "metadata folder"
     files:
       - label: "Metadata file"
         name: metadata
