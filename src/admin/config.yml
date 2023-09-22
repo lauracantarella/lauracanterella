@@ -131,7 +131,7 @@ collections:
       - label: "404 Not Found - EN"
         name: notfoundEN
         delete: false
-        file: "src/it/404en.md"
+        file: "src/en/404en.md"
         fields:
           - name: title
             label: Page title
