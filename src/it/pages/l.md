@@ -1,5 +1,5 @@
 ---
-title: L
+title: Loin
 layout: layouts/subpage.njk
 pagecode: home
 media: []
