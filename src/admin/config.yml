@@ -5,7 +5,7 @@ backend:
   # repo: mar_ver/lauracantarelle.it
   # auth_type: pkce # Required for pkce
   # app_id: c3619f8c1e57f147d8a7a11a090873a5da1a32bc203481e9918f66f0c2735fb2
-  #branch: main # Branch to update (optional; defaults to main)
+  branch: main # Branch to update (optional; defaults to main)
 media_folder: "src/_static/images"
 public_folder: "/_static/images"
 #display_url: https://verdeil.net
