@@ -49,8 +49,7 @@ collections:
       - { label: 'Page Label', description: 'Identifier of the page. Must be the same in all languages.' ,name: 'pagecode', widget: 'string', default: 'home', required: true}
       - { label: 'Main content', collapsed: true, hint: 'Text content (displays in big with the normal page layout)',name: 'body', widget: 'markdown', required: false }
       #Media 
-      - name: 'media'
-        required: false
+      - name: 'media' 
         collapsed: true
         label: 'Media gallery'
         label_singular: Media
@@ -59,12 +58,11 @@ collections:
         widget: 'list'
         fields:
         - name: file
-          required: false
           label: media path
           widget: image
         - name: type
-          required: false
           label: Type of media
+          default: image
           widget: select
           options:
           - label: Image
@@ -72,7 +70,7 @@ collections:
           - label: Video 
             value: video
         - name: alt
-          required: false
+          default: null
           label: Alt text
           hint: This text is shown when the image isn't visible and for visually impaired people.
           widget: string
@@ -86,7 +84,8 @@ collections:
         widget: 'list'
         fields:
         - name: year
-          label: Year 
+          label: Year
+          required: false 
           widget: number
           value_type: 'int'
           min: 1900
@@ -104,7 +103,6 @@ collections:
             widget: string
       #Buttons      
       - name: 'links'
-        required: false
         collapsed: true
         label_singular: Button
         label: 'Button links'
@@ -115,12 +113,10 @@ collections:
           label: Label
           hint: Button name
           widget: 'string'
-          required: false
         - name: action
           hint: Select button function
           label: Function
           widget: select
-          required: false
           options:
           - label: Image gallery (open image slider)
             value: slider
@@ -142,6 +138,7 @@ collections:
             value: linkto
         - name: emailaddress
           collapsed: true
+          required: false
           label: e-mail address 
           hint: enter email address of recipient 
           widget: string 
@@ -150,6 +147,7 @@ collections:
             value: mailto
         - name: emailsubject
           collapsed: true
+          required: false
           label: e-mail subject
           hint: enter email subject 
           widget: string
@@ -158,6 +156,7 @@ collections:
             value: mailto
         - name: emailcontent
           collapsed: true
+          required: false
           label: e-mail body text
           hint: enter email content
           widget: markdown
