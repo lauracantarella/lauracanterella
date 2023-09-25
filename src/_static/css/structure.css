@@ -315,11 +315,13 @@ flex: 0 0 21%;
 
 .con-contents{
     max-height: 0;
-    -webkit-transition:  max-heightl 1s ease;
-   -moz-transition:  max-height 1s ease;
-   -o-transition:  max-height 1s ease;
-   -ms-transition:  max-height 1s ease;
-   transition:  max-height 1s ease;
+   
+    -webkit-transition: max-height 1s ease, height 1s ease;;
+    -moz-transition: max-height 1s ease,  height 1s ease;;
+    -o-transition:  max-height 1s ease,  height 1s ease;;
+    -ms-transition:  max-height 1s ease,  height 1s ease;;
+    transition:  max-height 1s ease,  height 1s ease;;
+    
    overflow: hidden;
 }
 

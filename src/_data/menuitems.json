@@ -65,7 +65,7 @@
       },
       {
         "name": "dark mode",
-        "action": "",
+        "action": "toggledark",
         "dark": true,
         "newtab": false
       }

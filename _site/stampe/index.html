@@ -97,6 +97,8 @@
             
                     <a href="/en/prints/" data-target="language-switcher"  class="btn-link ">english</a>
             
+            
+                    <span id="nav-toggledark" data-target="toggledark" class="btn-link dark">dark mode</span>
             </div>
 
 </header>
@@ -228,6 +230,14 @@
 
 
 <script async src="/_static/js/snippet.js"></script>
+<script async src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+</script>
+
 </body>
 
 </html>
