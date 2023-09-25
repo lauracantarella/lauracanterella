@@ -218,6 +218,11 @@ a.btn-link, a{
     -ms-transition:  max-height 1s ease;
     transition:  max-height 1s ease;
 
+    -webkit-transition: height 1s ease;
+    -moz-transition:height 1s ease;
+    -o-transition:  height 1s ease;
+    -ms-transition:  height 1s ease;
+    transition:  height 1s ease;
 }
 
 div.close div{
@@ -231,6 +236,12 @@ div.close div{
     -o-transition:  max-height 1s ease;
     -ms-transition:  max-height 1s ease;
     transition:  max-height 1s ease;
+    -webkit-transition: height 1s ease;
+    -moz-transition:height 1s ease;
+    -o-transition:  height 1s ease;
+    -ms-transition:  height 1s ease;
+    transition:  height 1s ease;
+
 }
 
 .arrowopen{

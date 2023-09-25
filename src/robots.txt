@@ -1,0 +1,12 @@
+User-agent: GPTBot
+Disallow: /
+
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+
+Host: https:/lauracantarella.it/
+
+Sitemap:https:/lauracantarella.it/sitemap.xml

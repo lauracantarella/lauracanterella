@@ -1,9 +1,12 @@
 backend:
-  name: gitlab
-  repo: mar_ver/lauracantarelle.it
-  auth_type: pkce # Required for pkce
-  app_id: c3619f8c1e57f147d8a7a11a090873a5da1a32bc203481e9918f66f0c2735fb2
-  #branch: main # Branch to update (optional; defaults to main)
+  name: git-gateway
+  repo: mar-ver/lauracantarella-dev
+  base_url: https://lauracantarella-it.netlify.app/
+  # name: gitlab
+  # repo: mar_ver/lauracantarelle.it
+  # auth_type: pkce # Required for pkce
+  # app_id: c3619f8c1e57f147d8a7a11a090873a5da1a32bc203481e9918f66f0c2735fb2
+  branch: main # Branch to update (optional; defaults to main)
 media_folder: "src/_static/images"
 public_folder: "/_static/images"
 #display_url: https://verdeil.net
@@ -11,7 +14,7 @@ public_folder: "/_static/images"
 media_library:
   max_file_size: 4000000
 
-logo_url: /_static/icons/android-chrome-192x192.png
+logo_url: '/_static/icons/android-chrome-192x192.png'
 
 collections:
 
@@ -54,78 +57,165 @@ collections:
             label: main content
             widget: markdown
           - name: 'links'
-                    required: false
-                    collapsed: true
-                    label_singular: Button
-                    label: 'Button links'
-                    hint: 'Add button links'
-                    widget: 'list'
-                    fields:
-                    - name: name
-                      label: Label
-                      required: false
-                      hint: Button name
-                      widget: 'string'
-                    - name: dark
-                      label: Dark button 
-                      widget: boolean
-                      default: false
-                    - name: newtab
-                      label: Opens in a new tab
-                      widget: boolean
-                      default: false
-                    - name: action
-                      required: false
-                      hint: Select button function
-                      label: Function
-                      widget: select
-                      options:
-                      - label: Image gallery (open image slider)
-                        value: slider
-                      - label: 'Link to a page / url' 
-                        value: linkto
-                      - label: 'Send email (mailto: pre-written email opens in user email box)' 
-                        value: mailto
-                      - label: 'Language switcher' 
-                        value: language
-                      - label: 'Toggle dark mode' 
-                        value: darkmode
-                    - name: target
-                      required: false
-                      label: Button target 
-                      hint: Enter link target (url)
-                      widget: string
-                      condition:
-                        field: action
-                        value: linkto
-                    - name: emailaddress
-                      collapsed: true
-                      required: false
-                      label: e-mail address 
-                      hint: enter email address of recipient 
-                      widget: string 
-                      condition:
-                        field: action
-                        value: mailto
-                    - name: emailsubject
-                      collapsed: true
-                      required: false
-                      label: e-mail subject
-                      hint: enter email subject 
-                      widget: string
-                      condition:
-                        field: action
-                        value: mailto
-                    - name: emailcontent
-                      required: false
-                      collapsed: true
-                      label: e-mail body text
-                      hint: enter email content
-                      widget: markdown
-                      condition:
-                        field: action
-                        value: mailto
-          
+            required: false
+            collapsed: true
+            label_singular: Button
+            label: 'Button links'
+            hint: 'Add button links'
+            widget: 'list'
+            fields:
+            - name: name
+              label: Label
+              required: false
+              hint: Button name
+              widget: 'string'
+            - name: dark
+              label: Dark button 
+              widget: boolean
+              default: false
+            - name: newtab
+              label: Opens in a new tab
+              widget: boolean
+              default: false
+            - name: action
+              required: false
+              hint: Select button function
+              label: Function
+              widget: select
+              options:
+              - label: Image gallery (open image slider)
+                value: slider
+              - label: 'Link to a page / url' 
+                value: linkto
+              - label: 'Send email (mailto: pre-written email opens in user email box)' 
+                value: mailto
+              - label: 'Language switcher' 
+                value: language
+              - label: 'Toggle dark mode' 
+                value: darkmode
+            - name: target
+              required: false
+              label: Button target 
+              hint: Enter link target (url)
+              widget: string
+              condition:
+                field: action
+                value: linkto
+            - name: emailaddress
+              collapsed: true
+              required: false
+              label: e-mail address 
+              hint: enter email address of recipient 
+              widget: string 
+              condition:
+                field: action
+                value: mailto
+            - name: emailsubject
+              collapsed: true
+              required: false
+              label: e-mail subject
+              hint: enter email subject 
+              widget: string
+              condition:
+                field: action
+                value: mailto
+            - name: emailcontent
+              required: false
+              collapsed: true
+              label: e-mail body text
+              hint: enter email content
+              widget: markdown
+              condition:
+                field: action
+                value: mailto
+      - label: "404 Not Found - EN"
+        name: notfoundEN
+        delete: false
+        file: "src/en/404en.md"
+        fields:
+          - name: title
+            label: Page title
+            widget: string
+          - name: layout
+            widget: hidden
+          - name: permalink
+            widget: hidden
+          - name: body
+            label: main content
+            widget: markdown
+          - name: 'links'
+            required: false
+            collapsed: true
+            label_singular: Button
+            label: 'Button links'
+            hint: 'Add button links'
+            widget: 'list'
+            fields:
+            - name: name
+              label: Label
+              required: false
+              hint: Button name
+              widget: 'string'
+            - name: dark
+              label: Dark button 
+              widget: boolean
+              default: false
+            - name: newtab
+              label: Opens in a new tab
+              widget: boolean
+              default: false
+            - name: action
+              required: false
+              hint: Select button function
+              label: Function
+              widget: select
+              options:
+              - label: Image gallery (open image slider)
+                value: slider
+              - label: 'Link to a page / url' 
+                value: linkto
+              - label: 'Send email (mailto: pre-written email opens in user email box)' 
+                value: mailto
+              - label: 'Language switcher' 
+                value: language
+              - label: 'Toggle dark mode' 
+                value: darkmode
+            - name: target
+              required: false
+              label: Button target 
+              hint: Enter link target (url)
+              widget: string
+              condition:
+                field: action
+                value: linkto
+            - name: emailaddress
+              collapsed: true
+              required: false
+              label: e-mail address 
+              hint: enter email address of recipient 
+              widget: string 
+              condition:
+                field: action
+                value: mailto
+            - name: emailsubject
+              collapsed: true
+              required: false
+              label: e-mail subject
+              hint: enter email subject 
+              widget: string
+              condition:
+                field: action
+                value: mailto
+            - name: emailcontent
+              required: false
+              collapsed: true
+              label: e-mail body text
+              hint: enter email content
+              widget: markdown
+              condition:
+                field: action
+                value: mailto
+           
 
 
  # NAVGATION MENU
@@ -139,23 +229,16 @@ collections:
         file: "src/_data/menuitems.json"
         fields:
           - name: nav
-            collapsed: true
             label: Main menu 
-            widget: list
+            widget: object
             fields: 
               - name: it
-                label: Italian navigation
+                collapsed: true
+                label: IT - Italian button links
+                label_singular: Nav link
                 hint: fill-in italian menu buttons (in order of appearance)
                 widget: list
                 fields: 
-                  - name: 'links'
-                    required: false
-                    collapsed: true
-                    label_singular: Button
-                    label: 'Button links'
-                    hint: 'Add button links'
-                    widget: 'list'
-                    fields:
                     - name: name
                       label: Label
                       required: false
@@ -221,18 +304,12 @@ collections:
                         field: action
                         value: mailto
               - name: en
-                label: English navigation
-                hint: fill-in italian menu buttons (in order of appearance)
+                collapsed: true
+                label: EN - english button links
+                label_singular: Nav link
+                hint: fill-in english menu buttons (in order of appearance)
                 widget: list
                 fields: 
-                  - name: 'links'
-                    required: false
-                    collapsed: true
-                    label_singular: Button
-                    label: 'Button links'
-                    hint: 'Add button links'
-                    widget: 'list'
-                    fields:
                     - name: name
                       label: Label
                       required: false
@@ -254,7 +331,7 @@ collections:
                       options:
                       - label: Image gallery (open image slider)
                         value: slider
-                      - label: 'Link to a page' 
+                      - label: 'Link to a page / url' 
                         value: linkto
                       - label: 'Send email (mailto: pre-written email opens in user email box)' 
                         value: mailto
@@ -297,12 +374,14 @@ collections:
                       condition:
                         field: action
                         value: mailto
+
           - name: copyright
-            collapsed: true
-            label: Copyrigh text 
-            widget: list
+            label: Copyrigt text 
+            hint: copyright mention in bottom left corner of footer.
+            widget: object
             fields: 
               - name: it
+                collapsed: true
                 label: Italian copyright text
                 widget: object
                 fields: 
@@ -312,167 +391,154 @@ collections:
               - name: en
                 label: English copyright text
                 widget: object
+                collapsed: true
                 fields: 
                   - name: name
                     label: Copyright mention
                     widget: string
-          - name: footer
-            collapsed: true
+          - name: footer     
             label: Footer nav
-            widget: list
+            widget: object
             fields: 
               - name: it
-                label: Italian footer text
+                collapsed: true
+                label: Italian footer links
+                label_singular: Footer link 
                 widget: list
                 fields: 
-                  - name: 'links'
+                  - name: name
+                    label: Label
+                    required: false
+                    hint: Button name
+                    widget: 'string'
+                  - name: dark
+                    label: Dark button 
+                    widget: boolean
+                    default: false
+                  - name: newtab
+                    label: Opens in a new tab
+                    widget: boolean
+                    default: false
+                  - name: action
+                    required: false
+                    hint: Select button function
+                    label: Function
+                    widget: select
+                    options:
+                    - label: Image gallery (open image slider)
+                      value: slider
+                    - label: 'Link to a page / url' 
+                      value: linkto
+                    - label: 'Send email (mailto: pre-written email opens in user email box)' 
+                      value: mailto
+                    - label: 'Language switcher' 
+                      value: language
+                    - label: 'Toggle dark mode' 
+                      value: darkmode
+                  - name: target
+                    required: false
+                    label: Button target 
+                    hint: Enter link target (url)
+                    widget: string
+                    condition:
+                      field: action
+                      value: linkto
+                  - name: emailaddress
+                    collapsed: true
+                    required: false
+                    label: e-mail address 
+                    hint: enter email address of recipient 
+                    widget: string 
+                    condition:
+                      field: action
+                      value: mailto
+                  - name: emailsubject
+                    collapsed: true
+                    required: false
+                    label: e-mail subject
+                    hint: enter email subject 
+                    widget: string
+                    condition:
+                      field: action
+                      value: mailto
+                  - name: emailcontent
                     required: false
                     collapsed: true
-                    label_singular: Button
-                    label: 'Button links'
-                    hint: 'Add button links'
-                    widget: 'list'
-                    fields:
-                    - name: name
-                      label: Label
-                      required: false
-                      hint: Button name
-                      widget: 'string'
-                    - name: dark
-                      label: Dark button 
-                      widget: boolean
-                      default: false
-                    - name: newtab
-                      label: Opens in a new tab
-                      widget: boolean
-                      default: false
-                    - name: action
-                      required: false
-                      hint: Select button function
-                      label: Function
-                      widget: select
-                      options:
-                      - label: Image gallery (open image slider)
-                        value: slider
-                      - label: 'Link to a page / url' 
-                        value: linkto
-                      - label: 'Send email (mailto: pre-written email opens in user email box)' 
-                        value: mailto
-                      - label: 'Language switcher' 
-                        value: language
-                      - label: 'Toggle dark mode' 
-                        value: darkmode
-                    - name: target
-                      required: false
-                      label: Button target 
-                      hint: Enter link target (url)
-                      widget: string
-                      condition:
-                        field: action
-                        value: linkto
-                    - name: emailaddress
-                      collapsed: true
-                      required: false
-                      label: e-mail address 
-                      hint: enter email address of recipient 
-                      widget: string 
-                      condition:
-                        field: action
-                        value: mailto
-                    - name: emailsubject
-                      collapsed: true
-                      required: false
-                      label: e-mail subject
-                      hint: enter email subject 
-                      widget: string
-                      condition:
-                        field: action
-                        value: mailto
-                    - name: emailcontent
-                      required: false
-                      collapsed: true
-                      label: e-mail body text
-                      hint: enter email content
-                      widget: markdown
-                      condition:
-                        field: action
-                        value: mailto
+                    label: e-mail body text
+                    hint: enter email content
+                    widget: markdown
+                    condition:
+                      field: action
+                      value: mailto
               - name: en
+                collapsed: true
                 label: English footer text
                 widget: list
                 fields: 
-                  - name: 'links'
+                  - name: name
+                    label: Label
+                    required: false
+                    hint: Button name
+                    widget: 'string'
+                  - name: dark
+                    label: Dark button 
+                    widget: boolean
+                    default: false
+                  - name: newtab
+                    label: Opens in a new tab
+                    widget: boolean
+                    default: false
+                  - name: action
+                    required: false
+                    hint: Select button function
+                    label: Function
+                    widget: select
+                    options:
+                    - label: Image gallery (open image slider)
+                      value: slider
+                    - label: 'Link to a page / url' 
+                      value: linkto
+                    - label: 'Send email (mailto: pre-written email opens in user email box)' 
+                      value: mailto
+                    - label: 'Language switcher' 
+                      value: language
+                    - label: 'Toggle dark mode' 
+                      value: darkmode
+                  - name: target
+                    required: false
+                    label: Button target 
+                    hint: Enter link target (url)
+                    widget: string
+                    condition:
+                      field: action
+                      value: linkto
+                  - name: emailaddress
+                    collapsed: true
+                    required: false
+                    label: e-mail address 
+                    hint: enter email address of recipient 
+                    widget: string 
+                    condition:
+                      field: action
+                      value: mailto
+                  - name: emailsubject
+                    collapsed: true
+                    required: false
+                    label: e-mail subject
+                    hint: enter email subject 
+                    widget: string
+                    condition:
+                      field: action
+                      value: mailto
+                  - name: emailcontent
                     required: false
                     collapsed: true
-                    label_singular: Button
-                    label: 'Button links'
-                    hint: 'Add button links'
-                    widget: 'list'
-                    fields:
-                    - name: name
-                      label: Label
-                      required: false
-                      hint: Button name
-                      widget: 'string'
-                    - name: dark
-                      label: Dark button 
-                      widget: boolean
-                      default: false
-                    - name: newtab
-                      label: Opens in a new tab
-                      widget: boolean
-                      default: false
-                    - name: action
-                      required: false
-                      hint: Select button function
-                      label: Function
-                      widget: select
-                      options:
-                      - label: Image gallery (open image slider)
-                        value: slider
-                      - label: 'Link to a page / url' 
-                        value: linkto
-                      - label: 'Send email (mailto: pre-written email opens in user email box)' 
-                        value: mailto
-                      - label: 'Language switcher' 
-                        value: language
-                      - label: 'Toggle dark mode' 
-                        value: darkmode
-                    - name: target
-                      required: false
-                      label: Button target 
-                      hint: Enter link target (url)
-                      widget: string
-                      condition:
-                        field: action
-                        value: linkto
-                    - name: emailaddress
-                      collapsed: true
-                      required: false
-                      label: e-mail address 
-                      hint: enter email address of recipient 
-                      widget: string 
-                      condition:
-                        field: action
-                        value: mailto
-                    - name: emailsubject
-                      collapsed: true
-                      required: false
-                      label: e-mail subject
-                      hint: enter email subject 
-                      widget: string
-                      condition:
-                        field: action
-                        value: mailto
-                    - name: emailcontent
-                      required: false
-                      collapsed: true
-                      label: e-mail body text
-                      hint: enter email content
-                      widget: markdown
-                      condition:
-                        field: action
-                        value: mailto
+                    label: e-mail body text
+                    hint: enter email content
+                    widget: markdown
+                    condition:
+                      field: action
+                      value: mailto
 
 #SUBPAGES 
   - name: 'subpages' # Used in routes, e.g., /admin/collections/blog

@@ -15,6 +15,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/_static");
     eleventyConfig.addPassthroughCopy("src/admin");
     eleventyConfig.addPassthroughCopy("src/*.pdf");
+    eleventyConfig.addPassthroughCopy('src/robots.txt' );
 
 
     eleventyConfig.addCollection("project_en", function (collection) {
