@@ -22,7 +22,7 @@ yearlist:
       - Enien deligene culpa eosam res untem eatius
       - Enien deligene culpa eosam res untem eatius
 links:
-  - name: none
+  - name: NONE
     dark: true
     newtab: true
     action: slider
