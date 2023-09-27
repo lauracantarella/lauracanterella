@@ -18,8 +18,9 @@
              {% set counter = counter + 1 %} 
             </div>  
             {% for img in item.data.media %}
+              
                 <div class="con-slide con-imgfit" id="slide-{{counter}}" title="{{item.data.title}}">
-                       
+                    {% if img.file and img.type %}
                             {% if img.type == 'image' %}
                             {# maybe add scr/ to file path #}
                             {% set alt = 'No alt was provided yet.' %}
@@ -28,8 +29,15 @@
                             {% elif img.type == 'video'%}
                             {% endif %} 
                             {% set counter = counter + 1 %} 
-                </div>  
+                          {% else %}
+                            <div class="con-slide con-imgbg landing-slide" id="" title="" >
+                            Missing metadata field for media. Please check again that the fields are completed and registered. 
+                            </div>
+                    {% endif %}  
+                </div> 
+          
             {% endfor %}  
+            
         {% endfor %}
         {% else %}
         {%- for img in media -%}

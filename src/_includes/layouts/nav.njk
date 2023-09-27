@@ -21,7 +21,7 @@
 
         {%- for item in menuitems.nav[locale]-%}
    
-
+        {% if item.action and item.name%}
 
          {# {%- for item in links -%} #}
             {% if item.action == "linkto"%}
@@ -35,6 +35,9 @@
             {% elif item.action == "language" %}
                     <a href="{{pointerurl}}" data-target="language-switcher" {% if item.newtab == true %}target="_blank"{% endif %} class="btn-link {% if item.dark == true-%} dark{% endif %}">{{item.name}}</a>
             {% endif %}
+        {% else %}
+         <a href="" class="btn-link">Button is missing info</a>
+        {% endif %}
         {%- endfor -%}
        
     </div>

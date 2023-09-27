@@ -16,6 +16,7 @@ layout: layouts/base.njk
         {% if yearlist %}
         <div class="pada">
             {%- for item in yearlist -%}
+             {% if item.year and item.data%}
             <div class="con-cv">
                 <span class="f-menu cv-year">{{item.year}}</span>
                 <ul class="f-para cv-ul">
@@ -24,6 +25,7 @@ layout: layouts/base.njk
                     {%- endfor -%}
                 </ul>
             </div>
+             {% endif %}
             {%- endfor -%}
         </div>
         {% endif %}
@@ -40,15 +42,19 @@ layout: layouts/base.njk
         {% endfor %}
 
         {%- for item in links -%}
+        {% if item.action and item.name%}
             {% if item.action == "linkto"%}
-                   <a href="{{ item.target  | url }}" {% if item.newtab == true %}target="_blank"{% endif %} data-target="{% if 'slider' in item.target %}slider{% else%}{{ item.target | trim }}{%endif%}" class="btn-link {% if item.dark == true-%} dark{% endif %}">{{item.name}}</a>
+                   <a href="{{ item.target  | url }}" {% if item.newtab == true %} target="_blank"{% endif %} data-target="{% if 'slider' in item.target %}slider{% else%}{{ item.target | trim }}{%endif%}" class="btn-link {% if item.dark == true-%} dark{% endif %}">{{item.name}}</a>
             {% elif item.action == "mailto"%}
                     <a href="mailto:{%if item.emailaddress%}{{item.emailaddress |trim| urlencode |safe }}{%endif%}{%if item.emailsubject%}?subject={{item.emailsubject |  urlencode |safe}}{%endif%}{%if item.emailcontent%}&body={{item.emailcontent | urlencode| safe}}{%endif%}" target="_blank" data-target="mailto" class="btn-link {% if item.dark == true-%}dark{% endif %}">{{item.name}}</a>
             {% elif item.action == "slider" %}
                       <span data-target="slider" class="btn-link {% if item.dark == true-%} dark{% endif %}">{{item.name}}</span>
             {% elif item.action == "language" %}
-                    <a href="{{pointerurl}}" {% if item.newtab == true %}target="_blank"{% endif %} data-target="language-switcher" class="btn-link {% if item.dark == true-%} dark{% endif %}">{{item.name}}</a>
+                    <a href="{{pointerurl}}" {% if item.newtab == true %} target="_blank"{% endif %} data-target="language-switcher" class="btn-link {% if item.dark == true-%} dark{% endif %}">{{item.name}}</a>
             {% endif %}
+        {% else %}
+         <a href="" class="btn-link">Button is missing info</a>
+        {% endif %}
         {%- endfor -%}
         </div>
 </div>

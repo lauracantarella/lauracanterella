@@ -2,35 +2,41 @@
 <div  class="con-slider" id="con-landing-slider"> 
 <div class="con-slider" id="landing-slider" > 
     {%- for img in media -%}
-    {% if img.type == 'image' %}
-    <div class="con-slide con-imgbg landing-slide" id="{{img.file | slugify | reverse |truncate (10 , true, "")}}" title="{{img.alt}}" >
-    {% set imgdiv = '#' + img.file | slugify | reverse |truncate (10 , true, "") %}
-     {% setAsync "imgbig" %}
-        {% imagebg img.file, 1920 %} 
-    {% endsetAsync %}
-     {% if img.filephone %}
-    {% setAsync "imgphone" %}
-        {% imagebg img.filephone, 800 %} 
-    {% endsetAsync %}
-    {% else %}
-     {% setAsync "imgphone" %}
-        {% imagebg img.file, 1200 %} 
-    {% endsetAsync %} {% endif %}
-    <style> 
-         {{imgdiv}}{
-         background-image: url({{imgbig }})
-         }
-        @media (max-width: 600px) {
-          {{imgdiv}}{
-          background-image: url({{imgphone}})
-         }
-    </style>     
-    </div>
-    {% elif img.type == 'video'%}
-    <div class="con-slide con-imgbg landing-slide" id="" title="" >
-        {# video embed code #}
-    </div>
-    {% endif %}
+    {% if img.file and img.type %}
+        {% if img.type == 'image' %}
+        <div class="con-slide con-imgbg landing-slide" id="{{img.file | slugify | reverse |truncate (10 , true, "")}}" title="{{img.alt}}" >
+        {% set imgdiv = '#' + img.file | slugify | reverse |truncate (10 , true, "") %}
+        {% setAsync "imgbig" %}
+            {% imagebg img.file, 1920 %} 
+        {% endsetAsync %}
+        {% if img.filephone %}
+        {% setAsync "imgphone" %}
+            {% imagebg img.filephone, 800 %} 
+        {% endsetAsync %}
+        {% else %}
+        {% setAsync "imgphone" %}
+            {% imagebg img.file, 1200 %} 
+        {% endsetAsync %} {% endif %}
+        <style> 
+            {{imgdiv}}{
+            background-image: url({{imgbig }})
+            }
+            @media (max-width: 600px) {
+            {{imgdiv}}{
+            background-image: url({{imgphone}})
+            }
+        </style>  
+        </div>
+        {% elif img.type == 'video'%}
+        <div class="con-slide con-imgbg landing-slide" id="" title="" >
+            {# video embed code #}
+        </div>
+        {% endif %}
+       {% else %}
+       <div class="con-slide con-imgbg landing-slide" id="" title="" >
+     Missing metadata field for media. Please check again that the fields are completed and registered. 
+      </div>
+       {% endif %}  
     {%- endfor -%}
 
 </div>
