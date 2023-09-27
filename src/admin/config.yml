@@ -416,19 +416,11 @@ collections:
               - name: it
                 collapsed: true
                 label: Italian copyright text
-                widget: object
-                fields: 
-                  - name: name
-                    label: Copyright mention
-                    widget: string
-              - name: en
-                label: English copyright text
-                widget: object
+                widget: string
+               - name: en
                 collapsed: true
-                fields: 
-                  - name: name
-                    label: Copyright mention
-                    widget: string
+                label: English copyright text
+                widget: string
           - name: footer     
             label: Footer nav
             widget: object
