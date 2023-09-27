@@ -3,6 +3,7 @@ title: Home
 permalink: /index.html
 media:
   - type: image
+    file: /_static/images/placeholder1.png
   - type: image
     file: /_static/images/03_ga_cantarella.jpg
   - type: image
