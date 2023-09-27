@@ -6,68 +6,100 @@
         "action": "linkto",
         "target": "/",
         "dark": false,
-        "newtab": false
+        "newtab": false,
+        "emailaddress": "none",
+        "emailsubject": "none",
+        "emailcontent": "none"
       },
       {
         "name": "IMMAGINI",
         "action": "linkto",
         "target": "/#slider",
         "dark": false,
-        "newtab": false
+        "newtab": false,
+        "emailaddress": "none",
+        "emailsubject": "none",
+        "emailcontent": "none"
       },
       {
         "name": "LAVORI",
         "action": "linkto",
         "target": "/#lavori",
         "dark": false,
-        "newtab": false
+        "newtab": false,
+        "emailaddress": "none",
+        "emailsubject": "none",
+        "emailcontent": "none"
       },
       {
         "name": "didattica",
         "action": "linkto",
         "target": "/didattica/",
         "dark": false,
-        "newtab": false
+        "newtab": false,
+        "emailaddress": "none",
+        "emailsubject": "none",
+        "emailcontent": "none"
       },
       {
         "name": "FOTOGRAFIA D'ARCHITETTURA",
         "action": "linkto",
         "target": "/fotografia-d-architettura/",
         "dark": false,
-        "newtab": false
+        "newtab": false,
+        "emailaddress": "none",
+        "emailsubject": "none",
+        "emailcontent": "none"
       },
       {
         "name": "stampe",
         "action": "linkto",
         "target": "/stampe/",
         "dark": false,
-        "newtab": false
+        "newtab": false,
+        "emailaddress": "none",
+        "emailsubject": "none",
+        "emailcontent": "none"
       },
       {
         "name": "bio & Cv",
         "action": "linkto",
         "target": "/bio-e-cv/",
         "dark": false,
-        "newtab": false
+        "newtab": false,
+        "emailaddress": "none",
+        "emailsubject": "none",
+        "emailcontent": "none"
       },
       {
         "name": "contatti",
         "action": "linkto",
         "target": "/contatti/",
         "dark": false,
-        "newtab": false
+        "newtab": false,
+        "emailaddress": "none",
+        "emailsubject": "none",
+        "emailcontent": "none"
       },
       {
         "name": "english",
         "action": "language",
         "dark": false,
-        "newtab": false
+        "newtab": false,
+        "target": "none",
+        "emailaddress": "none",
+        "emailsubject": "",
+        "emailcontent": "none"
       },
       {
         "name": "dark mode",
-        "action": "",
+        "action": "darkmode",
         "dark": true,
-        "newtab": false
+        "newtab": false,
+        "target": "",
+        "emailaddress": "",
+        "emailsubject": "",
+        "emailcontent": "none"
       }
     ],
     "en": [
@@ -76,68 +108,100 @@
         "action": "linkto",
         "target": "/en/",
         "dark": false,
-        "newtab": false
+        "newtab": false,
+        "emailaddress": "",
+        "emailsubject": "",
+        "emailcontent": "none"
       },
       {
         "name": "IMAGES",
         "action": "linkto",
         "target": "/en/#slider",
         "dark": false,
-        "newtab": false
+        "newtab": false,
+        "emailaddress": "",
+        "emailsubject": "",
+        "emailcontent": "none"
       },
       {
         "name": "WORKS",
         "action": "linkto",
         "target": "/en/#works",
         "dark": false,
-        "newtab": false
+        "newtab": false,
+        "emailaddress": "",
+        "emailsubject": "",
+        "emailcontent": "none"
       },
       {
         "name": "didattica",
         "action": "linkto",
         "target": "/en/didattica/",
         "dark": false,
-        "newtab": false
+        "newtab": false,
+        "emailaddress": "",
+        "emailsubject": "",
+        "emailcontent": "none"
       },
       {
         "name": "FOTOGRAFIA D'ARCHITETTURA",
         "action": "linkto",
         "target": "/en/fotografia-d-architettura/",
         "dark": false,
-        "newtab": false
+        "newtab": false,
+        "emailaddress": "",
+        "emailsubject": "",
+        "emailcontent": "none"
       },
       {
         "name": "stampe",
         "action": "linkto",
         "target": "/en/prints/",
         "dark": false,
-        "newtab": false
+        "newtab": false,
+        "emailaddress": "",
+        "emailsubject": "",
+        "emailcontent": "none"
       },
       {
         "name": "bio & Cv",
         "action": "linkto",
         "target": "/en/bio-e-cv/",
         "dark": false,
-        "newtab": false
+        "newtab": false,
+        "emailaddress": "",
+        "emailsubject": "",
+        "emailcontent": "none"
       },
       {
         "name": "contatti",
         "action": "linkto",
         "target": "/en/contatti/",
         "dark": false,
-        "newtab": false
+        "newtab": false,
+        "emailaddress": "",
+        "emailsubject": "",
+        "emailcontent": "none"
       },
       {
         "name": "italiano",
         "action": "language",
         "dark": false,
-        "newtab": false
+        "newtab": false,
+        "target": "",
+        "emailaddress": "",
+        "emailsubject": "",
+        "emailcontent": "none"
       },
       {
         "name": "dark mode",
         "action": "",
         "dark": true,
-        "newtab": false
+        "newtab": false,
+        "target": "",
+        "emailaddress": "",
+        "emailsubject": "",
+        "emailcontent": "none"
       }
     ]
   },
@@ -162,35 +226,50 @@
         "action": "linkto",
         "target": "/",
         "dark": false,
-        "newtab": false
+        "newtab": false,
+        "emailaddress": "",
+        "emailsubject": "",
+        "emailcontent": "none"
       },
       {
         "name": "instagram",
         "action": "linkto",
         "target": "/",
         "dark": false,
-        "newtab": false
+        "newtab": false,
+        "emailaddress": "",
+        "emailsubject": "",
+        "emailcontent": "none"
       },
       {
         "name": "linkedin",
         "action": "linkto",
         "target": "/",
         "dark": false,
-        "newtab": false
+        "newtab": false,
+        "emailaddress": "",
+        "emailsubject": "",
+        "emailcontent": "none"
       },
       {
         "name": "privacy",
         "action": "linkto",
         "target": "/privacy-policy/",
         "dark": false,
-        "newtab": false
+        "newtab": false,
+        "emailaddress": "",
+        "emailsubject": "",
+        "emailcontent": "none"
       },
       {
         "name": "note legali",
         "action": "linkto",
         "target": "/note-legali/",
         "dark": false,
-        "newtab": false
+        "newtab": false,
+        "emailaddress": "",
+        "emailsubject": "",
+        "emailcontent": "none"
       }
     ],
     "en": [
@@ -199,35 +278,50 @@
         "action": "linkto",
         "target": "/",
         "dark": false,
-        "newtab": false
+        "newtab": false,
+        "emailaddress": "",
+        "emailsubject": "",
+        "emailcontent": "none"
       },
       {
         "name": "instagram",
         "action": "linkto",
         "target": "/",
         "dark": false,
-        "newtab": false
+        "newtab": false,
+        "emailaddress": "",
+        "emailsubject": "",
+        "emailcontent": "none"
       },
       {
         "name": "linkedin",
         "action": "linkto",
         "target": "/",
         "dark": false,
-        "newtab": false
+        "newtab": false,
+        "emailaddress": "",
+        "emailsubject": "",
+        "emailcontent": "none"
       },
       {
         "name": "privacy",
         "action": "linkto",
         "target": "/privacy-policy/",
         "dark": false,
-        "newtab": false
+        "newtab": false,
+        "emailaddress": "",
+        "emailsubject": "",
+        "emailcontent": "none"
       },
       {
         "name": "note legali",
         "action": "linkto",
         "target": "/note-legali/",
         "dark": false,
-        "newtab": false
+        "newtab": false,
+        "emailaddress": "",
+        "emailsubject": "",
+        "emailcontent": "none"
       }
     ]
   }
