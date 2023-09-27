@@ -638,6 +638,7 @@ collections:
         - name: name
           label: Label
           required: false
+          default: Button name
           hint: Button name
           widget: 'string'
         - name: dark
@@ -649,6 +650,7 @@ collections:
           required: false
           hint: Select button function
           label: Function
+          default: none
           widget: select
           options:
           - label: Image gallery (open image slider)
