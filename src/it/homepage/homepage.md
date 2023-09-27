@@ -5,8 +5,5 @@ media:
   - type: image
   - type: image
     file: /_static/images/03_ga_cantarella.jpg
-  - type: image
 ---
-
-Mi interessano i luoghi e il modo in cui le persone li abitano, trasformandoli e costruendo storie. Me ne occupo con la progettazione culturale e
-la fotografia. Preferisco la dimensione collettiva del lavoro. Mi piace esplorare, camminare sulle montagne, pedalare in riva al mare.
+Mi interessano i luoghi e il modo in cui le persone li abitano, trasformandoli e costruendo storie. Me ne occupo con la progettazione culturale e la fotografia. Preferisco la dimensione collettiva del lavoro. Mi piace esplorare, camminare sulle montagne, pedalare in riva al mare. x
