@@ -11,6 +11,23 @@
     <script src="https://unpkg.com/@staticcms/app@^3.0.0/dist/static-cms-app.js"></script>
     <script>
       window.CMS.init();
+
+
+      const PostPreview = ({ widgetFor, entry, collection, fields }) => {
+  const imageField = useMemo(() => fields.find(field => field.name === 'image'), [fields]);
+  const imageUrl = useMediaAsset(entry.data.image, collection, imageField, entry);
+
+  return h(
+    'div',
+    {},
+    h('h1', {}, entry.data.title),
+    h('img', { src: imageUrl }),
+    h('div', { className: 'text' }, widgetFor('body')),
+  );
+};
+
+CMS.registerPreviewTemplate('posts', PostPreview);
+
       CMS.registerPreviewStyle('https://unpkg.com/bamboo.css');
     </script>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
