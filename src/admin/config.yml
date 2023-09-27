@@ -417,7 +417,7 @@ collections:
                 collapsed: true
                 label: Italian copyright text
                 widget: string
-               - name: en
+              - name: en
                 collapsed: true
                 label: English copyright text
                 widget: string
