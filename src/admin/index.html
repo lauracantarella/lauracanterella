@@ -13,20 +13,6 @@
       window.CMS.init();
 
 
-      const PostPreview = ({ widgetFor, entry, collection, fields }) => {
-  const imageField = useMemo(() => fields.find(field => field.name === 'media'), [fields]);
-  const imageUrl = useMediaAsset(entry.data.image, collection, imageField, entry);
-
-  return h(
-    'div',
-    {},
-    h('h1', {}, entry.data.title),
-    h('img', { src: imageUrl }),
-    h('div', { className: 'text' }, widgetFor('body')),
-  );
-};
-
-CMS.registerPreviewTemplate('posts', PostPreview);
 
       CMS.registerPreviewStyle('https://unpkg.com/bamboo.css');
     </script>
