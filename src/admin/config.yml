@@ -681,7 +681,6 @@ collections:
           default: none
           label: Label
           required: false
-          default: Button name
           hint: Button name
           widget: 'string'
         - name: dark
