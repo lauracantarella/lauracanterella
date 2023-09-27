@@ -16,17 +16,5 @@ links:
       dark: "true"
       action: action
       target: "other"
-media: 
-    - file: /_static/images/laptop_website005.jpg
-      type: image
-      alt: null
-    - file: /_static/images/placeholder2.png
-      filephone:  /_static/images/phone2.png
-      type: image 
-      alt: This text is shown when the image isn't visible and for visually impaired people.
-    - file: /_static/images/placeholder3.png
-      filephone:  /_static/images/phone3.png
-      type: image
-      alt: This text is shown when the image isn't visible and for visually impaired people.
 ---
 Nisi tempor fugiat duis duis duis aute elit minim laboris enim. Mollit labore ullamco sit pariatur voluptate aliqua ut et exercitation commodo. Voluptate officia ipsum consequat dolor incididunt ex. Excepteur aliqua nostrud incididunt eu labore mollit ea reprehenderit ea proident anim eiusmod.
