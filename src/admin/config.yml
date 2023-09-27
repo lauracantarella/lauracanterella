@@ -71,6 +71,7 @@ collections:
               widget: 'string'
             - name: dark
               label: Dark button 
+              required: false
               widget: boolean
               default: false
             - name: newtab
@@ -158,6 +159,7 @@ collections:
               widget: 'string'
             - name: dark
               label: Dark button 
+              required: false
               widget: boolean
               default: false
             - name: newtab
@@ -246,6 +248,7 @@ collections:
                       widget: 'string'
                     - name: dark
                       label: Dark button 
+                      required: false
                       widget: boolean
                       default: false
                     - name: newtab
@@ -316,7 +319,8 @@ collections:
                       hint: Button name
                       widget: 'string'
                     - name: dark
-                      label: Dark button 
+                      label: Dark button
+                      required: false 
                       widget: boolean
                       default: false
                     - name: newtab
@@ -413,6 +417,7 @@ collections:
                     widget: 'string'
                   - name: dark
                     label: Dark button 
+                    required: false
                     widget: boolean
                     default: false
                   - name: newtab
@@ -483,6 +488,7 @@ collections:
                   - name: dark
                     label: Dark button 
                     widget: boolean
+                    required: false
                     default: false
                   - name: newtab
                     label: Opens in a new tab
@@ -635,6 +641,7 @@ collections:
           hint: Button name
           widget: 'string'
         - name: dark
+          required: false
           label: Dark button 
           widget: boolean
           default: false
@@ -825,6 +832,7 @@ collections:
         hint: Button name
         widget: 'string'
       - name: dark
+        required: false
         label: Dark button 
         widget: boolean
         default: false
