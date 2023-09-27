@@ -14,7 +14,7 @@
 
 
       const PostPreview = ({ widgetFor, entry, collection, fields }) => {
-  const imageField = useMemo(() => fields.find(field => field.name === 'image'), [fields]);
+  const imageField = useMemo(() => fields.find(field => field.name === 'media'), [fields]);
   const imageUrl = useMediaAsset(entry.data.image, collection, imageField, entry);
 
   return h(
