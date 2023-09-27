@@ -69,6 +69,7 @@ collections:
               required: false
               hint: Button name
               widget: 'string'
+              default: none
             - name: dark
               label: Dark button 
               required: false
@@ -78,10 +79,12 @@ collections:
               label: Opens in a new tab
               widget: boolean
               default: false
+              required: false
             - name: action
               required: false
               hint: Select button function
               label: Function
+              default: none
               widget: select
               options:
               - label: Image gallery (open image slider)
@@ -96,6 +99,7 @@ collections:
                 value: darkmode
             - name: target
               required: false
+              default: none
               label: Button target 
               hint: Enter link target (url)
               widget: string
@@ -104,6 +108,7 @@ collections:
                 value: linkto
             - name: emailaddress
               collapsed: true
+              default: none
               required: false
               label: e-mail address 
               hint: enter email address of recipient 
@@ -113,6 +118,7 @@ collections:
                 value: mailto
             - name: emailsubject
               collapsed: true
+              default: none
               required: false
               label: e-mail subject
               hint: enter email subject 
@@ -123,6 +129,7 @@ collections:
             - name: emailcontent
               required: false
               collapsed: true
+              default: none
               label: e-mail body text
               hint: enter email content
               widget: markdown
@@ -154,6 +161,7 @@ collections:
             fields:
             - name: name
               label: Label
+              default: none
               required: false
               hint: Button name
               widget: 'string'
@@ -166,10 +174,12 @@ collections:
               label: Opens in a new tab
               widget: boolean
               default: false
+              required: false
             - name: action
               required: false
               hint: Select button function
               label: Function
+              default: none
               widget: select
               options:
               - label: Image gallery (open image slider)
@@ -183,6 +193,7 @@ collections:
               - label: 'Toggle dark mode' 
                 value: darkmode
             - name: target
+              default: none
               required: false
               label: Button target 
               hint: Enter link target (url)
@@ -192,6 +203,7 @@ collections:
                 value: linkto
             - name: emailaddress
               collapsed: true
+              default: none
               required: false
               label: e-mail address 
               hint: enter email address of recipient 
@@ -202,6 +214,7 @@ collections:
             - name: emailsubject
               collapsed: true
               required: false
+              default: none
               label: e-mail subject
               hint: enter email subject 
               widget: string
@@ -210,6 +223,7 @@ collections:
                 value: mailto
             - name: emailcontent
               required: false
+              default: none
               collapsed: true
               label: e-mail body text
               hint: enter email content
@@ -243,6 +257,7 @@ collections:
                 fields: 
                     - name: name
                       label: Label
+                      default: none
                       required: false
                       hint: Button name
                       widget: 'string'
@@ -255,8 +270,10 @@ collections:
                       label: Opens in a new tab
                       widget: boolean
                       default: false
+                      required: false
                     - name: action
                       required: false
+                      default: none
                       hint: Select button function
                       label: Function
                       widget: select
@@ -272,6 +289,7 @@ collections:
                       - label: 'Toggle dark mode' 
                         value: darkmode
                     - name: target
+                      default: none
                       required: false
                       label: Button target 
                       hint: Enter link target (url)
@@ -281,6 +299,7 @@ collections:
                         value: linkto
                     - name: emailaddress
                       collapsed: true
+                      default: none
                       required: false
                       label: e-mail address 
                       hint: enter email address of recipient 
@@ -290,6 +309,7 @@ collections:
                         value: mailto
                     - name: emailsubject
                       collapsed: true
+                      default: none
                       required: false
                       label: e-mail subject
                       hint: enter email subject 
@@ -299,6 +319,7 @@ collections:
                         value: mailto
                     - name: emailcontent
                       required: false
+                      default: none
                       collapsed: true
                       label: e-mail body text
                       hint: enter email content
@@ -314,6 +335,7 @@ collections:
                 widget: list
                 fields: 
                     - name: name
+                      default: none
                       label: Label
                       required: false
                       hint: Button name
@@ -321,14 +343,17 @@ collections:
                     - name: dark
                       label: Dark button
                       required: false 
+                      default: none
                       widget: boolean
                       default: false
                     - name: newtab
                       label: Opens in a new tab
                       widget: boolean
                       default: false
+                      required: false
                     - name: action
                       required: false
+                      default: none
                       hint: Select button function
                       label: Function
                       widget: select
@@ -345,6 +370,7 @@ collections:
                         value: darkmode
                     - name: target
                       required: false
+                      default: none
                       label: Button target 
                       hint: Enter link target (url)
                       widget: string
@@ -353,6 +379,7 @@ collections:
                         value: linkto
                     - name: emailaddress
                       collapsed: true
+                      default: none
                       required: false
                       label: e-mail address 
                       hint: enter email address of recipient 
@@ -361,6 +388,7 @@ collections:
                         field: action
                         value: mailto
                     - name: emailsubject
+                      default: none
                       collapsed: true
                       required: false
                       label: e-mail subject
@@ -371,6 +399,7 @@ collections:
                         value: mailto
                     - name: emailcontent
                       required: false
+                      default: none
                       collapsed: true
                       label: e-mail body text
                       hint: enter email content
@@ -412,6 +441,7 @@ collections:
                 fields: 
                   - name: name
                     label: Label
+                    default: none
                     required: false
                     hint: Button name
                     widget: 'string'
@@ -423,9 +453,11 @@ collections:
                   - name: newtab
                     label: Opens in a new tab
                     widget: boolean
+                    required: false
                     default: false
                   - name: action
                     required: false
+                    default: none
                     hint: Select button function
                     label: Function
                     widget: select
@@ -441,6 +473,7 @@ collections:
                     - label: 'Toggle dark mode' 
                       value: darkmode
                   - name: target
+                    default: none
                     required: false
                     label: Button target 
                     hint: Enter link target (url)
@@ -449,6 +482,7 @@ collections:
                       field: action
                       value: linkto
                   - name: emailaddress
+                    default: none
                     collapsed: true
                     required: false
                     label: e-mail address 
@@ -458,6 +492,7 @@ collections:
                       field: action
                       value: mailto
                   - name: emailsubject
+                    default: none
                     collapsed: true
                     required: false
                     label: e-mail subject
@@ -468,6 +503,7 @@ collections:
                       value: mailto
                   - name: emailcontent
                     required: false
+                    default: none
                     collapsed: true
                     label: e-mail body text
                     hint: enter email content
@@ -484,6 +520,7 @@ collections:
                     label: Label
                     required: false
                     hint: Button name
+                    default: none
                     widget: 'string'
                   - name: dark
                     label: Dark button 
@@ -493,8 +530,10 @@ collections:
                   - name: newtab
                     label: Opens in a new tab
                     widget: boolean
+                    required: false
                     default: false
                   - name: action
+                    default: none
                     required: false
                     hint: Select button function
                     label: Function
@@ -511,6 +550,7 @@ collections:
                     - label: 'Toggle dark mode' 
                       value: darkmode
                   - name: target
+                    default: none
                     required: false
                     label: Button target 
                     hint: Enter link target (url)
@@ -519,6 +559,7 @@ collections:
                       field: action
                       value: linkto
                   - name: emailaddress
+                    default: none
                     collapsed: true
                     required: false
                     label: e-mail address 
@@ -528,6 +569,7 @@ collections:
                       field: action
                       value: mailto
                   - name: emailsubject
+                    default: none
                     collapsed: true
                     required: false
                     label: e-mail subject
@@ -537,6 +579,7 @@ collections:
                       field: action
                       value: mailto
                   - name: emailcontent
+                    default: none
                     required: false
                     collapsed: true
                     label: e-mail body text
@@ -636,6 +679,7 @@ collections:
         widget: 'list'
         fields:
         - name: name
+          default: none
           label: Label
           required: false
           default: Button name
@@ -645,6 +689,11 @@ collections:
           required: false
           label: Dark button 
           widget: boolean
+          default: false
+        - name: newtab
+          label: Opens in a new tab
+          widget: boolean
+          required: false
           default: false
         - name: action
           required: false
@@ -664,6 +713,7 @@ collections:
           - label: 'Toggle dark mode' 
             value: darkmode
         - name: target
+          default: none
           required: false
           label: Button target 
           hint: Enter link target (url)
@@ -672,6 +722,7 @@ collections:
             field: action
             value: linkto
         - name: emailaddress
+          default: none
           collapsed: true
           required: false
           label: e-mail address 
@@ -682,6 +733,7 @@ collections:
             value: mailto
         - name: emailsubject
           collapsed: true
+          default: none
           required: false
           label: e-mail subject
           hint: enter email subject 
@@ -690,6 +742,7 @@ collections:
             field: action
             value: mailto
         - name: emailcontent
+          default: none
           required: false
           collapsed: true
           label: e-mail body text
@@ -833,6 +886,7 @@ collections:
         required: false
         hint: Button name
         widget: 'string'
+        default: none
       - name: dark
         required: false
         label: Dark button 
@@ -842,10 +896,12 @@ collections:
         label: Opens in a new tab
         widget: boolean
         default: false
+        required: false
       - name: action
         required: false
         hint: Select button function
         label: Function
+        default: none
         widget: select
         options:
         - label: Image gallery (open image slider)
@@ -863,12 +919,14 @@ collections:
         label: Button target 
         hint: Enter link target (url)
         widget: string
+        default: none
         condition:
           field: action
           value: linkto
       - name: emailaddress
         collapsed: true
         required: false
+        default: none
         label: e-mail address 
         hint: enter email address of recipient 
         widget: string 
@@ -878,6 +936,7 @@ collections:
       - name: emailsubject
         collapsed: true
         required: false
+        default: none
         label: e-mail subject
         hint: enter email subject 
         widget: string
@@ -887,6 +946,7 @@ collections:
       - name: emailcontent
         required: false
         collapsed: true
+        default: none
         label: e-mail body text
         hint: enter email content
         widget: markdown
