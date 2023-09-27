@@ -206,18 +206,8 @@
     ]
   },
   "copyright": {
-    "it": [
-      {
-        "name": "© LAURA CANTARELLA",
-        "target": ""
-      }
-    ],
-    "en": [
-      {
-        "name": "© LAURA CANTARELLA",
-        "target": ""
-      }
-    ]
+    "it": "Laura",
+    "en": "Laura"
   },
   "footer": {
     "it": [
