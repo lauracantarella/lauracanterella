@@ -12,6 +12,7 @@ public_folder: "/_static/images"
 #display_url: https://verdeil.net
 
 media_library:
+  name: Media
   max_file_size: 4000000
 
 logo_url: '/_static/icons/android-chrome-192x192.png'
