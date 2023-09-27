@@ -343,7 +343,6 @@ collections:
                     - name: dark
                       label: Dark button
                       required: false 
-                      default: none
                       widget: boolean
                       default: false
                     - name: newtab
