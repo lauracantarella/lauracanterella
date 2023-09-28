@@ -1,6 +1,6 @@
 ---
 title: Orditure
-order: "8"
+order: "7"
 category: Residenza per fotografi e mostra
 role: cocuratrice con federica Barletta
 year: "2019"
@@ -14,7 +14,7 @@ links:
   - name: none
     dark: false
     newtab: false
-    action: none
+    action: ""
     target: none
     emailaddress: none
     emailsubject: none
