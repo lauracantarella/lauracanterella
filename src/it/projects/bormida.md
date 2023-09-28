@@ -14,7 +14,7 @@ media:
     alt: fotogramma del film Bormida
     file: /_static/images/fotogramma-10.jpg
 links:
-  - name: il film sul sito della FCTP
+  - name: guarda il film sul sito della FCTP
     action: linkto
     target: " https://www.fctp.it/movie_item.php?id=4277 "
     emailaddress: none
