@@ -11,7 +11,7 @@ summary: Il riuso è un procedimento che non riguarda solo gli oggetti, i
   questo meno necessario.
 media: []
 links:
-  - name: archalp
+  - name: l'articolo su archalp
     dark: false
     newtab: true
     action: linkto
