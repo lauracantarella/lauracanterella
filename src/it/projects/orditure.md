@@ -11,15 +11,7 @@ media:
   - type: image
     alt: "null"
 links:
-  - name: none
-    dark: false
-    newtab: false
-    action: ""
-    target: none
-    emailaddress: none
-    emailsubject: none
-    emailcontent: none
-  - name: il progetto su arte.go.it
+  - name: il progetto su arte.go
     action: linkto
     target: https://www.arte.go.it/event/orditure-mostra-collettiva-2/
     emailaddress: none
