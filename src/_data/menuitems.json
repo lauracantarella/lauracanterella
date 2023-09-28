@@ -195,7 +195,7 @@
       },
       {
         "name": "dark mode",
-        "action": "toggledark",
+        "action": "",
         "dark": true,
         "newtab": false,
         "target": "",
@@ -208,16 +208,15 @@
   "copyright": {
     "it": [
       {
-      "name": "Laura Cantarella"
+        "name": "Laura Cantarella"
       }
     ],
     "en": [
       {
-      "name": "Laura Cantarella"
+        "name": "Laura Cantarella"
       }
     ]
-      
-},
+  },
   "footer": {
     "it": [
       {
