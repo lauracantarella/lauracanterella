@@ -16,6 +16,6 @@ links:
     emailsubject: none
     emailcontent: none
     dark: false
-    newtab: false
+    newtab: true
 ---
 "Time after time" è un dialogo a distanza sul futuro dell'architettura tra l'autore, una fotografa, un architetto e un critico. Le idee, discusse da Marco Navarra con Laura Cantarella, Eduard Bru e Kurt W. Forster, acquistano profondità di campo grazie a un atlante, che confronta una selezione di testi critici e racconti fotografici.”
