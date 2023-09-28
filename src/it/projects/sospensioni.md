@@ -9,11 +9,11 @@ summary: “Infine, in alcune delle loro esplorazioni fotografiche, gli autori
   un fondale di ben più lungo periodo e profondità.
 media: []
 links:
-  - name: none
+  - name: ""
     dark: false
-    newtab: false
-    action: ""
-    target: none
+    newtab: true
+    action: linkto
+    target: https://www.torinoelealpi.it/sospensioni/
     emailaddress: none
     emailsubject: none
     emailcontent: none
@@ -27,4 +27,4 @@ links:
     newtab: true
     dark: false
 ---
-Il grande vuoto lasciato in poco tempo dal ghiacciaio Sommelier, dove fino a pochi anni fa si praticava lo sci estivo, mette in evidenza tutta l’inadeguatezza del nostro guardare odierno, facendo intravedere la stanchezza di un ideale di modernità che durante il pieno Novecento aveva significato progresso e sviluppo, libertà e emancipazione. E questo appannamento, oramai trentennale, apre a una serie di domande, tutte difficili, che pongono un problema, oramai non più rinviabile, di confronto progettuale col domani.” — Antonio De Rossi
+Il grande vuoto lasciato in poco tempo dal ghiacciaio Sommelier, dove fino a pochi anni fa si praticava lo sci estivo, mette in evidenza tutta l’inadeguatezza del nostro guardare odierno, facendo intravedere la stanchezza di un ideale di modernità che durante il pieno Novecento aveva significato progresso e sviluppo, libertà e emancipazione. E questo appannamento, oramai trentennale, apre a una serie di domande, tutte difficili, che pongono un problema, oramai non più rinviabile, di confronto progettuale col domani.” – Antonio De Rossi
