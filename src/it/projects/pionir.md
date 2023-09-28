@@ -10,18 +10,18 @@ summary: "Il lavoro sulla comunità russa in Costa del Sol (spagna) nasce da due
   città dei poveri"
 media: []
 links:
-  - name: none
-    dark: false
-    newtab: false
-    action: none
-    target: none
-    emailaddress: none
-    emailsubject: none
-    emailcontent: none
   - name: recensione su planum.net
     action: linkto
     target: "www.planum.net/journals-books/territories-in-crisis-br-architecture-an\
       d-urbanism-br-facing-changes-in-europe "
+    emailaddress: none
+    emailsubject: none
+    emailcontent: none
+    dark: false
+    newtab: true
+  - name: recensione su planum magazine
+    action: linkto
+    target: http://www.planum.net/journals-books/territories-in-crisis-br-architecture-and-urbanism-br-facing-changes-in-europe
     emailaddress: none
     emailsubject: none
     emailcontent: none
