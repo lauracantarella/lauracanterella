@@ -16,7 +16,7 @@ links:
     dark: false
     newtab: true
     action: linkto
-    target: www.atlasbormida.eu
+    target: http://www.atlasbormida.eu/
     emailaddress: none
     emailsubject: none
     emailcontent: none
