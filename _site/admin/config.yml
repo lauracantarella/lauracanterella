@@ -97,7 +97,7 @@ collections:
               - label: 'Language switcher' 
                 value: language
               - label: 'Toggle dark mode' 
-                value: darkmode
+                value: toggledark
             - name: target
               required: false
               default: none
@@ -192,7 +192,7 @@ collections:
               - label: 'Language switcher' 
                 value: language
               - label: 'Toggle dark mode' 
-                value: darkmode
+                value: toggledark
             - name: target
               default: none
               required: false
@@ -288,7 +288,7 @@ collections:
                       - label: 'Language switcher' 
                         value: language
                       - label: 'Toggle dark mode' 
-                        value: darkmode
+                        value: toggledark
                     - name: target
                       default: none
                       required: false
@@ -367,7 +367,7 @@ collections:
                       - label: 'Language switcher' 
                         value: language
                       - label: 'Toggle dark mode' 
-                        value: darkmode
+                        value: toggledark
                     - name: target
                       required: false
                       default: none
@@ -471,7 +471,7 @@ collections:
                     - label: 'Language switcher' 
                       value: language
                     - label: 'Toggle dark mode' 
-                      value: darkmode
+                      value: toggledark
                   - name: target
                     default: none
                     required: false
@@ -548,7 +548,7 @@ collections:
                     - label: 'Language switcher' 
                       value: language
                     - label: 'Toggle dark mode' 
-                      value: darkmode
+                      value: toggledark
                   - name: target
                     default: none
                     required: false
@@ -710,7 +710,7 @@ collections:
           - label: 'Language switcher' 
             value: language
           - label: 'Toggle dark mode' 
-            value: darkmode
+            value: toggledark
         - name: target
           default: none
           required: false
@@ -912,7 +912,7 @@ collections:
         - label: 'Language switcher' 
           value: language
         - label: 'Toggle dark mode' 
-          value: darkmode
+          value: toggledark
       - name: target
         required: false
         label: Button target 

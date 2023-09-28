@@ -33,10 +33,18 @@
     --bianco: "Bianco", Georgia, 'Times New Roman', Times, serif;
 }   
 
-.dark-mode{
+.dark-mode {
      /* COLORS */
      --cbg: #000;
      --ctext: #fff;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    body{
+        /* COLORS */
+        --cbg: #000;
+        --ctext: #fff;
+   }
 }
 
 html{
