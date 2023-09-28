@@ -11,7 +11,12 @@
     <script src="https://unpkg.com/@staticcms/app@^3.0.0/dist/static-cms-app.js"></script>
     <script>
       window.CMS.init();
-      CMS.registerPreviewStyle('./_static/css/text.css');
+
+
+
+      CMS.registerPreviewStyle('https://unpkg.com/bamboo.css');
+      CMS.registerPreviewStyle('li > div { padding: 10px;  border: 1px solid grey; background-color: white; border-radius: 20px; color: black; } li{ padding: 40px 20px; border-bottom: 1px lightgrey solid;} ', { raw: true });
+
     </script>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
