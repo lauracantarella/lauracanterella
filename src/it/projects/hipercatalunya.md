@@ -14,7 +14,7 @@ media:
 links:
   - name: Andrea Botto
     action: linkto
-    target: www.andreabotto.it
+    target: https://www.andreabotto.it/
     emailaddress: none
     emailsubject: none
     emailcontent: none
