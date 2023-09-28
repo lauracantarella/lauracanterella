@@ -14,21 +14,13 @@ media:
     alt: fotogramma del film Bormida
     file: /_static/images/fotogramma-10.jpg
 links:
-  - name: gallery
-    action: slider
-    target: none
+  - name: il film sul sito della FCTP
+    action: linkto
+    target: " https://www.fctp.it/movie_item.php?id=4277 "
     emailaddress: none
     emailsubject: none
     emailcontent: none
     dark: false
-    newtab: false
-  - name: none
-    dark: false
-    newtab: false
-    action: ""
-    target: none
-    emailaddress: none
-    emailsubject: none
-    emailcontent: none
+    newtab: true
 ---
 Il film deve la sua genesi al lavoro appassionato di alcuni studenti della facoltà di architettura di Torino. Si è arricchito del contributo del fotografo Andrea Botto e dei suoni dell’artista Alessandro Sciaraffa che ne ha curato la colonna sonora. È stato colorato (in rosso) da frammenti dell’Archivio del cinema d’impresa e da fotogrammi dipinti da Paolo Leonardo. È dedicato a Marina Garbarino (1960-2016) e a tutti gli attivisti che si sono mobilitati nella prima lotta ambientalista italiana.
