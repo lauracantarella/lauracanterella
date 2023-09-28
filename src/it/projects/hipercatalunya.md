@@ -12,22 +12,20 @@ media:
   - type: image
     alt: "null"
 links:
-  - name: order
+  - name: none
+    action: none
+    target: none
+    emailaddress: none
+    emailsubject: none
+    emailcontent: none
+  - name: Andrea Botto
     action: linkto
-    target: mailto:francescatambussi.com
-    dark: false
-    newtab: false
-    emailaddress: ""
-    emailsubject: ""
+    target: www.andreabotto.it
+    emailaddress: none
+    emailsubject: none
     emailcontent: none
-  - name: Pictures
-    action: ""
-    target: slider
     dark: false
-    newtab: false
-    emailaddress: ""
-    emailsubject: ""
-    emailcontent: none
+    newtab: true
 ---
 Osserviamo che cosa significhi materialmente abbandonare un saper fare consolidato, cambiare gli strumenti di analisi e rappresentazione, chiedendoci quale impatto e quale influenza possano avere i metodi, i dispositivi (più ancora che gli esiti formali) e le strategie messe in gioco sulla percezione collettiva dei fenomeni che affrontano. La produzione artistica internazionale ha infatti elaborato negli ultimi anni strategie e pratiche fotografiche inedite, in qualche modo divergenti rispetto alla propria tradizione, anche tramite l’utilizzo di nuovi strumenti, spesso allargando lo spazio di lavoro a modalità collettive di indagine, ricerche di lungo periodo e un’intensa pratica dei luoghi.
 
