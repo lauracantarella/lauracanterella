@@ -12,15 +12,17 @@ media:
   - type: image
     alt: "null"
 links:
-  - name: none
-    action: none
-    target: none
-    emailaddress: none
-    emailsubject: none
-    emailcontent: none
   - name: Andrea Botto
     action: linkto
     target: www.andreabotto.it
+    emailaddress: none
+    emailsubject: none
+    emailcontent: none
+    dark: false
+    newtab: true
+  - name: rivista studi di fotografia
+    action: linkto
+    target: https://rsf-rivistastudifotografia.it/article/view/1489/
     emailaddress: none
     emailsubject: none
     emailcontent: none
