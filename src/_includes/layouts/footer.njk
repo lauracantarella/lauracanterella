@@ -1,7 +1,7 @@
 <footer>
     <div class="foot-left">
         {%- for item in menuitems.copyright[locale] -%}
-               <span id="{{item.name}}" class="f-menu">{{item.name}}</span>
+               <span id="{{item.name | slugify}}" class="f-menu">{{item.name}}</span>
         {%- endfor -%}
     </div>
     <div class="foot-right">

@@ -97,7 +97,7 @@ collections:
               - label: 'Language switcher' 
                 value: language
               - label: 'Toggle dark mode' 
-                value: darkmode
+                value: "toggledark"
             - name: target
               required: false
               default: none
