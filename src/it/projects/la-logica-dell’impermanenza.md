@@ -10,9 +10,9 @@ media: []
 links:
   - name: " il libro edito da lettera ventidue"
     dark: false
-    newtab: false
-    action: none
-    target: none
+    newtab: true
+    action: linkto
+    target: https://www.letteraventidue.com/it/prodotto/230/terre-fragili
     emailaddress: none
     emailsubject: none
     emailcontent: none
