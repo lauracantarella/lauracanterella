@@ -18,4 +18,12 @@ links:
     emailcontent: none
     dark: false
     newtab: true
+  - name: fabrizio rosso
+    action: linkto
+    target: https://www.fabriziorosso.it/about
+    emailaddress: none
+    emailsubject: none
+    emailcontent: none
+    dark: false
+    newtab: true
 ---
