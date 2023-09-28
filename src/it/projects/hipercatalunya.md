@@ -1,16 +1,36 @@
 ---
-title: "Giocatori divergenti: strategie fotografiche per il New Climatic regime"
-category: "FOTOGRAFIE PER TERRE FRAGILI. ARCHITETTURA E CATASTROFE"
-role: "SOCIA FONDATRICE E VICE PRESIDENTE"
-year: "DAL 2020"
-order: 2
-summary: "HiperCatalunya is a territorial analysis and research project promoted by the Government of Catalonia, directed by Metàpolis and undertaken at the Institute of Advanced Architecture of Catalonia (IaaC)."
+title: "Giocatori divergenti: strategie fotografiche per il New Climatic Regime"
+order: "3"
+category: Saggio per RSF. Rivista di studi di fotografia
+role: coautrice con Andrea Botto
+year: "2020"
+summary: About a new photographic research, one that can shift from the notion
+  of ‘landscape’ – implying a unique, anthropocentric point of view – to that of
+  ‘environment’ – suggesting a multiplicity of view- points, strategies, and
+  divergent players
+media:
+  - type: image
+    alt: "null"
 links:
-    - name: order 
-      action: linkto
-      target: "mailto:francescatambussi.com"
-    - name: Pictures
-      action: action
-      target: "slider"
+  - name: order
+    action: linkto
+    target: mailto:francescatambussi.com
+    dark: false
+    newtab: false
+    emailaddress: ""
+    emailsubject: ""
+    emailcontent: none
+  - name: Pictures
+    action: ""
+    target: slider
+    dark: false
+    newtab: false
+    emailaddress: ""
+    emailsubject: ""
+    emailcontent: none
 ---
-In an advanced prospecting of today's territory, HiperCatalunya seeks to import tomorrow's potentials to interrogate the territory to bring out its capacities and latencies. A multidisciplinary approach to our environment, encouraging interpretations open to potential interaction between the existing and the imaginable, in accordance with an innovative dimension of contemporary culture tending of foster new spaces for new ways of life, alongside new logics and new aesthetics for different scenarios of progress.
+Osserviamo che cosa significhi materialmente abbandonare un saper fare consolidato, cambiare gli strumenti di analisi e rappresentazione, chiedendoci quale impatto e quale influenza possano avere i metodi, i dispositivi (più ancora che gli esiti formali) e le strategie messe in gioco sulla percezione collettiva dei fenomeni che affrontano. La produzione artistica internazionale ha infatti elaborato negli ultimi anni strategie e pratiche fotografiche inedite, in qualche modo divergenti rispetto alla propria tradizione, anche tramite l’utilizzo di nuovi strumenti, spesso allargando lo spazio di lavoro a modalità collettive di indagine, ricerche di lungo periodo e un’intensa pratica dei luoghi.
+
+
+
+
