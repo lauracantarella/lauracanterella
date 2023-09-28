@@ -93,7 +93,7 @@
       },
       {
         "name": "dark mode",
-        "action": "darkmode",
+        "action": "toggledark",
         "dark": true,
         "newtab": false,
         "target": "",
@@ -195,7 +195,7 @@
       },
       {
         "name": "dark mode",
-        "action": "",
+        "action": "toggledark",
         "dark": true,
         "newtab": false,
         "target": "",
