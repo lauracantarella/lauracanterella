@@ -3,6 +3,8 @@ title: Home
 permalink: /index.html
 media:
   - type: image
+    file: /_static/images/etna.jpg
+  - type: image
     file: /_static/images/lauracantarella_slider_l1.jpg
     filephone: /_static/images/lauracantarella_slider_v1.jpg
   - type: image
