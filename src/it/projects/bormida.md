@@ -1,6 +1,6 @@
 ---
 title: Bormida
-order: "9"
+order: "8"
 category: film
 role: coautrice con Alberto Momo, fotografia e sceneggiatura
 year: "2018"
@@ -20,10 +20,12 @@ links:
     emailaddress: none
     emailsubject: none
     emailcontent: none
+    dark: false
+    newtab: false
   - name: none
     dark: false
     newtab: false
-    action: none
+    action: ""
     target: none
     emailaddress: none
     emailsubject: none
