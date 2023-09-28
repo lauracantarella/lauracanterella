@@ -14,7 +14,7 @@ media:
   - type: image
     alt: "null"
 links:
-  - name: Il sito della BVA
+  - name: Il sito della biblioteca
     dark: false
     newtab: true
     action: linkto
