@@ -10,7 +10,12 @@ summary: "Atlas Bormida, esito di un lavoro culturale e investigativo sui luoghi
   percorsi: il disvelamento di ciò che non è immediatamente visibile o
   riscoperto da un punto di vista decentrato rispetto alle narrazioni
   consolidate, evitando rappresentazioni semplicistiche e celebrative. "
-media: []
+media:
+  - type: image
+    alt: "null"
+  - type: image
+    alt: "null"
+    file: /_static/images/fotogramma-02.jpg
 links:
   - name: Atlas Bormida
     dark: false
@@ -20,4 +25,12 @@ links:
     emailaddress: none
     emailsubject: none
     emailcontent: none
+  - name: gallery
+    action: slider
+    target: none
+    emailaddress: none
+    emailsubject: none
+    emailcontent: none
+    dark: false
+    newtab: false
 ---
