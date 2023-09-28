@@ -20,6 +20,7 @@ document.getElementById("main-page").addEventListener('click', function() {
 document.getElementById("menu-link").addEventListener('click', function() {
     document.getElementById("menumore").classList.remove("open");
     document.getElementById("loc").classList.remove("hidden");
+    
     checkarrow();
     checkmarquee();
 });

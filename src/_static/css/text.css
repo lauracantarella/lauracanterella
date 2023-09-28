@@ -22,7 +22,7 @@
     --pad-btn: .9em;
     /* height */
     --hei-b: calc( 90px + var(--pad-c) );
-    --maxh: 500px;
+    --maxh: 800px;
     --hei-h: 46px;
 
     /* TEXT */
@@ -149,7 +149,7 @@ a.btn-link, a{
 @media (max-width: 1080px) {
     :root {
         --hei-b: calc( 100px + var(--pad-c) );
-        --maxh: 700px;
+        --maxh: 1000px;
     }
     .f-display{
         font-size: 2.9em;

@@ -52,6 +52,7 @@ var slider2 = tns({
   });
   
 
+
   window.onload = (event) => {
     checkdark()
     url = window.location.href

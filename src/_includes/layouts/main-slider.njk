@@ -22,14 +22,14 @@
                 <div class="con-slide con-imgfit" id="slide-{{counter}}" title="{{item.data.title}}">
                     {% if img.file and img.type %}
 
-                            {# {% if img.type == 'image' %}
+                            {% if img.type == 'image' %}
                           
                             {% set alt = 'No alt was provided yet.' %}
                             {% if img.alt !== null %} {% set alt = img.alt %}{% endif %} 
                             {% imagefit img.file, alt, "100%" %} 
                             {% elif img.type == 'video'%}
                             {% endif %}  
-                            {% set counter = counter + 1 %}  #}
+                          
                           {% else %}
                        
                         
@@ -37,7 +37,7 @@
                          
                     {% endif %}  
                 </div> 
-          
+            {% set counter = counter + 1 %} 
             {% endfor %}  
             
         {% endfor %}
@@ -52,12 +52,12 @@
             {% imagefit img.file, alt, "100%" %} 
             {% elif img.type == 'video'%}
             {% endif %}
-            {% set counter = counter + 1 %} 
+          
                {% else %}
                     
                             Missing metadata field for media. Please check again that the fields are completed and registered. 
                          
-                    {% endif %} 
+                    {% endif %}   {% set counter = counter + 1 %} 
             </div>  
         {% endfor %}
         {% endif %}
