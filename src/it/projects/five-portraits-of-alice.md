@@ -4,7 +4,8 @@ order: "5"
 category: Video installazione e cortometraggio
 role: direzione della fotografia e camera
 year: "2019"
-summary: Cinematografia per il cortometraggio di Fabrizio Rosso
+summary: Cinematografia per il cortometraggio del compositore e filmmaker
+  Fabrizio Rosso.
 media:
   - type: image
     alt: "null"
