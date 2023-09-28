@@ -17,7 +17,7 @@ links:
     emailcontent: none
     dark: false
     newtab: true
-  - name: articolo su orticalab
+  - name: l'articolo su orticalab
     action: linkto
     target: https://www.orticalab.it/Dalle-Alpi-un-esempio-di-innovazione
     emailaddress: none
