@@ -9,17 +9,17 @@ summary: Viso è uno dei modi in cui viene chiamato il Monviso, la Montagna che
   confrontarci.
 media: []
 links:
-  - name: articolo su orticalab
+  - name: il sito dell'associazione
     action: linkto
-    target: https://www.orticalab.it/Dalle-Alpi-un-esempio-di-innovazione
+    target: https://www.visoaviso.it/
     emailaddress: none
     emailsubject: none
     emailcontent: none
     dark: false
     newtab: true
-  - name: il sito dell'associazione
+  - name: articolo su orticalab
     action: linkto
-    target: https://www.visoaviso.it/
+    target: https://www.orticalab.it/Dalle-Alpi-un-esempio-di-innovazione
     emailaddress: none
     emailsubject: none
     emailcontent: none
