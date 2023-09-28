@@ -7,14 +7,9 @@ year: "2018"
 summary: Bormida è un film che si pensa come paesaggio. Si nutre di archivi e
   costruisce mappe. Come un paesaggio è una sedimentazione di sguardi e di tempi
   differenti. Il luogo diventa narrazione, anche sensoriale ed emotiva.
-media:
-  - type: image
-    alt: "null"
-  - type: image
-    alt: fotogramma del film Bormida
-    file: /_static/images/fotogramma-10.jpg
+media: []
 links:
-  - name: guarda il film sul sito della FCTP
+  - name: guarda il film
     action: linkto
     target: " https://www.fctp.it/movie_item.php?id=4277 "
     emailaddress: none
