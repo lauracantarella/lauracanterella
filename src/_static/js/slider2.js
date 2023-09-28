@@ -53,6 +53,7 @@ var slider2 = tns({
   
 
   window.onload = (event) => {
+    checkdark()
     url = window.location.href
     if (url.includes('slider')){
           document.getElementById("con-main-slider").classList.remove("hidden");

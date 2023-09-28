@@ -409,24 +409,29 @@ collections:
                         value: mailto
 
           - name: copyright
+            required: false
             label: Copyrigt text 
             hint: copyright mention in bottom left corner of footer.
             widget: object
             fields: 
               - name: it
+                required: false
                 collapsed: true
                 label: Italian copyright text
                 widget: object
                 fields: 
                   - name: name
+                    required: false
                     label: Copyright text
                     widget: string
               - name: en
+                required: false
                 collapsed: true
                 label: English copyright text
                 widget: object
                 fields: 
                   - name: name
+                    required: false
                     label: Copyright text
                     widget: string
           - name: footer     

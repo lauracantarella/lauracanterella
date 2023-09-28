@@ -39,13 +39,10 @@
      --ctext: #fff;
 }
 
-@media screen and (prefers-color-scheme: dark) {
-    body{
-        /* COLORS */
-        --cbg: #000;
-        --ctext: #fff;
-   }
-}
+.darkmode-layer, .darkmode-toggle {
+    z-index: 500;
+  }
+  
 
 html{
     background-color: var(--cbg);
