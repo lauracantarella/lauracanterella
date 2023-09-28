@@ -23,6 +23,4 @@ links:
     emailsubject: none
     emailcontent: none
 ---
-Con questa visione Viso A Viso cura progetti, attività e servizi per residenti e visitatori, creando nuova economia sul territorio: welfare culturale e di comunità, accoglienza, turismo sostenibile e inclusivo. La cooperazione per Viso A Viso è tanto strumento quanto pratica quotidiana. 
-
-*Viso è uno dei modi in cui viene chiamato il Monviso, la Montagna che occupa maestosamente il nostro orizzonte. Viso A Viso è il nostro modo di confrontarci.
+Con questa visione Viso A Viso cura progetti, attività e servizi per residenti e visitatori, creando nuova economia sul territorio: welfare culturale e di comunità, accoglienza, turismo sostenibile e inclusivo. La cooperazione per Viso A Viso è tanto strumento quanto pratica quotidiana. `br`*Viso è uno dei modi in cui viene chiamato il Monviso, la Montagna che occupa maestosamente il nostro orizzonte. Viso A Viso è il nostro modo di confrontarci.
