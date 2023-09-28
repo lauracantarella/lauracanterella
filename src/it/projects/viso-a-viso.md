@@ -1,6 +1,6 @@
 ---
 title: Viso A Viso
-order: 3
+order: "2"
 category: Cooperativa di comunità
 role: Socia fondatrice e vice presidente
 year: Dal 2024
@@ -10,6 +10,18 @@ summary: Viso A Viso* nasce nel 2020 durante la pandemia Covid-19 come possibile
   accoglie, con entusiasmo e impegno, la sfida per la montagna contemporanea e
   la sua abitabilità in una dimensione europea, sperimentando un modello di
   rigenerazione a base culturale, con particolare attenzione ai giovani.
+media:
+  - type: image
+    alt: "null"
+links:
+  - name: none
+    dark: false
+    newtab: false
+    action: ""
+    target: none
+    emailaddress: none
+    emailsubject: none
+    emailcontent: none
 ---
 Con questa visione Viso A Viso cura progetti, attività e servizi per residenti e visitatori, creando nuova economia sul territorio: welfare culturale e di comunità, accoglienza, turismo sostenibile e inclusivo. La cooperazione per Viso A Viso è tanto strumento quanto pratica quotidiana. 
 
