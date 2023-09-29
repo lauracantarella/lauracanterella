@@ -8,7 +8,7 @@ summary: Non c’erano luoghi sacri una volta per sempre, destinati, ombelicali,
   come quelli dei templi.
 media: []
 links:
-  - name: " il libro edito da lettera ventidue"
+  - name: " il libro edito da letteraventidue"
     dark: false
     newtab: true
     action: linkto
