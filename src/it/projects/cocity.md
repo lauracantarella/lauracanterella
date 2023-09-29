@@ -7,8 +7,28 @@ year: "2020"
 summary: Nel progetto Co-City Torino i cittadini sono artefici materiali e
   consapevoli del cambiamento. In questo modo si costruiscono nuovi vincoli di
   appartenenza e si innescano processi di responsabilizzazione.
-media: []
+media:
+  - type: image
+    alt: "null"
+  - type: image
+    alt: "null"
+  - type: image
+    alt: "null"
+  - type: image
+    alt: "null"
+  - type: image
+    alt: "null"
+    file: /_static/images/co-city5.jpg
+  - type: image
+    alt: "null"
+    file: /_static/images/co-city6.jpg
 links:
+  - name: gallery
+    action: none
+    target: none
+    emailaddress: none
+    emailsubject: none
+    emailcontent: none
   - name: co-city
     dark: false
     newtab: true
