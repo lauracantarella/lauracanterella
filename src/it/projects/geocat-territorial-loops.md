@@ -1,6 +1,6 @@
 ---
 title: Geocat Territorial Loops
-order: "19"
+order: "20"
 category: libro
 role: autrice
 year: "2019"
@@ -13,7 +13,7 @@ links:
   - name: il libro su lens culture
     dark: false
     newtab: false
-    action: none
+    action: ""
     target: none
     emailaddress: none
     emailsubject: none
