@@ -7,7 +7,25 @@ year: "2018"
 summary: Bormida è un film che si pensa come paesaggio. Si nutre di archivi e
   costruisce mappe. Come un paesaggio è una sedimentazione di sguardi e di tempi
   differenti. Il luogo diventa narrazione, anche sensoriale ed emotiva.
-media: []
+media:
+  - file: /_static/images/do-not-delete.png
+    type: image
+    alt: "null"
+  - file: /_static/images/bormida1.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/do-not-delete.png
+    type: image
+    alt: "null"
+  - file: /_static/images/do-not-delete.png
+    type: image
+    alt: "null"
+  - file: /_static/images/bormida4.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/bormida5.jpg
+    type: image
+    alt: "null"
 links:
   - name: film commission torino piemonte
     action: linkto
@@ -17,8 +35,8 @@ links:
     emailcontent: none
     dark: false
     newtab: true
-  - name: none
-    action: ""
+  - name: gallery
+    action: slider
     target: none
     emailaddress: none
     emailsubject: none
