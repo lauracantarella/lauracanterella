@@ -36,7 +36,7 @@ media:
     type: image
     alt: "null"
 links:
-  - name: ""
+  - name: la mostra
     dark: false
     newtab: true
     action: linkto
