@@ -10,11 +10,11 @@ summary: “GeoCat sets out to follow the tradition of charting or map-making as
   environment.
 media: []
 links:
-  - name: il libro su lens culture
+  - name: la recensione su lens culture
     dark: false
     newtab: false
-    action: ""
-    target: none
+    action: linkto
+    target: "https://www.lensculture.com/books/12216-geocat-territorial-loops "
     emailaddress: none
     emailsubject: none
     emailcontent: none
