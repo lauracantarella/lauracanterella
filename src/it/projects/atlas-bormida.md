@@ -1,6 +1,6 @@
 ---
 title: Atlas Bormida
-order: "11"
+order: "12"
 category: opera collettiva ipermediale
 role: curatrice
 year: "2016"
@@ -10,13 +10,7 @@ summary: "Atlas Bormida, esito di un lavoro culturale e investigativo sui luoghi
   percorsi: il disvelamento di ciò che non è immediatamente visibile o
   riscoperto da un punto di vista decentrato rispetto alle narrazioni
   consolidate, evitando rappresentazioni semplicistiche e celebrative. "
-media:
-  - type: image
-    alt: Atlas Bormida
-    file: /_static/images/bormida1.jpg
-  - type: image
-    alt: "null"
-    file: /_static/images/do-not-delete.png
+media: []
 links:
   - name: Atlas Bormida
     dark: false
@@ -26,12 +20,4 @@ links:
     emailaddress: none
     emailsubject: none
     emailcontent: none
-  - name: gallery
-    action: slider
-    target: none
-    emailaddress: none
-    emailsubject: none
-    emailcontent: none
-    dark: false
-    newtab: false
 ---
