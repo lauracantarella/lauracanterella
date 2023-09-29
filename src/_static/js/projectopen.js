@@ -1,4 +1,4 @@
-var btn_more = document.querySelectorAll(".con-contents, .con-title")
+var btn_more = document.querySelectorAll(".proj, .con-title")
     //console.log(btn_more)
 for (var i = 0; i < btn_more.length; i++) {
     btn_more[i].addEventListener('click', function() {

@@ -18,9 +18,9 @@ layout: layouts/base.njk
             <span class="f-menu prole">{{ item.data.role}}</span>
             <span class="f-menu pyear">{{ item.data.year}}</span>
         </div>
-        <div class="con-contents" data-target="{{ item.data.title | truncate (5, true, "") | slugify  | trim }}{{projectnum}}" id="{{ item.data.title | truncate (5, true, "") | slugify }}{{projectnum}}">
-            <div class="f-title psum">{{ item.data.summary | in_markdownify }}</div>
-            <div class="f-para pdes">{{ item.templateContent | safe }}</div>
+        <div class="con-contents" id="{{ item.data.title | truncate (5, true, "") | slugify }}{{projectnum}}">
+            <div class="f-title psum proj" data-target="{{ item.data.title | truncate (5, true, "") | slugify  | trim }}{{projectnum}}" >{{ item.data.summary | in_markdownify }}</div>
+            <div class="f-para pdes proj" data-target="{{ item.data.title | truncate (5, true, "") | slugify  | trim }}{{projectnum}}" >{{ item.templateContent | safe }}</div>
             <div class="f-menu con-link">
                        {% set slidecount = slidecount + 1 %}
                 {%- for item in item.data.links -%}
