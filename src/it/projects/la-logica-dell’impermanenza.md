@@ -16,6 +16,24 @@ media:
   - file: /_static/images/terrefragili3.jpg
     type: image
     alt: "null"
+  - file: /_static/images/do-not-delete.png
+    type: image
+    alt: "null"
+  - file: /_static/images/do-not-delete.png
+    type: image
+    alt: "null"
+  - file: /_static/images/do-not-delete.png
+    type: image
+    alt: "null"
+  - file: /_static/images/do-not-delete.png
+    type: image
+    alt: "null"
+  - file: /_static/images/do-not-delete.png
+    type: image
+    alt: "null"
+  - file: /_static/images/terrefragili12.jpg
+    type: image
+    alt: "null"
 links:
   - name: " il libro edito da letteraventidue"
     dark: false
