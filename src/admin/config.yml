@@ -630,6 +630,7 @@ collections:
           required: false
           label: media path
           widget: image
+          default: /_static/images/do-not-delete.png 
         - name: type
           required: false
           label: Type of media
@@ -787,6 +788,7 @@ collections:
               required: false
               label: media path
               widget: image
+              default: /_static/images/do-not-delete.png 
             - name: filephone
               required: false
               label: Media path for phone viewport 
@@ -860,6 +862,7 @@ collections:
         required: false
         label: media path
         widget: image
+        default: /_static/images/do-not-delete.png 
       - name: type
         required: false
         label: Type of media
