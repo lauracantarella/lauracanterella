@@ -3,10 +3,10 @@ title: Stampe
 layout: layouts/subpage.njk
 pagecode: prints
 media:
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/lauracantarella_prints1.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/lauracantarella_prints2.jpg
     type: image
     alt: "null"
   - file: /_static/images/lauracantarella_prints3.jpg
@@ -15,7 +15,7 @@ media:
 yearlist:
   - year: 2000
 links:
-  - name: prints
+  - name: galleria stampe
     action: slider
     target: ""
     dark: false
