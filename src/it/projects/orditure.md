@@ -7,10 +7,7 @@ year: "2019"
 summary: Residenza e mostra collettiva per raccontare la storia e l'evoluzione
   di Miagliano, in provincia di Biella, tra passato industriale e nuove realtà
   culturali.
-media:
-  - type: image
-    alt: "null"
-    file: /_static/images/do-not-delete.png
+media: []
 links:
   - name: il progetto su arte.go
     action: linkto
