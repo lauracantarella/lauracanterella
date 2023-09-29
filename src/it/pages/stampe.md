@@ -1,19 +1,17 @@
 ---
 title: Stampe
+layout: layouts/subpage.njk
 pagecode: prints
+media:
+  - file: /_static/images/do-not-delete.png
+    type: image
+    alt: "null"
+yearlist:
+  - year: 2000
 links:
-    - name: print gallery
-      action: slider
-      dark: true
-    - name: Button 2 
-      action: "mailto"
-      emailaddress: "prints@lauracantarella.it"
-      emailsubject: "email subject"
-      emailcontent: "email content"
-    - name: print gallery
-      action: linkto
-      target: https://test.com
-      dark: true 
-
+  - name: prints
+    action: slider
+    target: ""
+    dark: false
 ---
-Mi occupo di educazione e didattica nell'ambito della Raerorruptae. Ugitaspienda comnia nonsect otaturitia andit, es digenisti tem. Tur aut quae occus, quae et dollore ssimil iura. Ebis si cus rerat harchil ium hitatis aut quis dolut.
+I miei lavori fotografici sono disponibili per l'acquisizione in formato di stampe numerate in alta qualità. Nella galleria sono presenti alcuni esempi. Per richieste particolari contattatemi via email.
