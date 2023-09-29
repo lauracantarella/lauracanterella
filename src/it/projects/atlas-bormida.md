@@ -13,9 +13,10 @@ summary: "Atlas Bormida, esito di un lavoro culturale e investigativo sui luoghi
 media:
   - type: image
     alt: Atlas Bormida
+    file: /_static/images/bormida1.jpg
   - type: image
     alt: "null"
-    file: 
+    file: /_static/images/do-not-delete.png
 links:
   - name: Atlas Bormida
     dark: false
