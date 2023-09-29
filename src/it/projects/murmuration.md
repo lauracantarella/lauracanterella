@@ -12,7 +12,54 @@ summary: >-
   An act or instance of murmuring.
 
   A flock of starlings.
-media: []
-links: []
+media:
+  - file: /_static/images/do-not-delete.png
+    type: image
+    alt: "null"
+  - file: /_static/images/do-not-delete.png
+    type: image
+    alt: "null"
+  - file: /_static/images/do-not-delete.png
+    type: image
+    alt: "null"
+  - file: /_static/images/do-not-delete.png
+    type: image
+    alt: "null"
+  - file: /_static/images/do-not-delete.png
+    type: image
+    alt: "null"
+  - file: /_static/images/do-not-delete.png
+    type: image
+    alt: "null"
+  - file: /_static/images/do-not-delete.png
+    type: image
+    alt: "null"
+  - file: /_static/images/do-not-delete.png
+    type: image
+    alt: "null"
+  - file: /_static/images/do-not-delete.png
+    type: image
+    alt: "null"
+  - file: /_static/images/do-not-delete.png
+    type: image
+    alt: "null"
+  - file: /_static/images/do-not-delete.png
+    type: image
+    alt: "null"
+  - file: /_static/images/do-not-delete.png
+    type: image
+    alt: "null"
+  - file: /_static/images/murmuration15.jpg
+    type: image
+    alt: "null"
+links:
+  - name: gallery
+    action: slider
+    target: none
+    emailaddress: none
+    emailsubject: none
+    emailcontent: none
+    dark: false
+    newtab: false
 ---
 Migration, the physical movement of a living being from one area to another , is widely and positively accepted as something “natural” if related to animals, critically perceived if related to human beings. Animal migration is a liberating and rewarding subject for our glance, while human migrations, even though overexposed in the mainstream media, deeply question our static position, thus generating some kind of blindness, an incapacity of seeing.  The overlapping maps of both animal and human migrations generate, in this work, a kind of visual question. Murmuration was born in 2016 from this very simple observation. Murmuration investigates the way we as humans observe and control the crossing of borders, frontiers, but also mountains and other spaces. A society focused on control weakens and narrows the concept of citizenship, showing visible evidence of fragility instead of strength, as one could expect.  The making of the project has been possible thanks to scientific and social partners. Murmuration is a long term project aimed to be a book.
