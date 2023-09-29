@@ -7,10 +7,7 @@ year: "2019"
 summary: >-
   
   Fabrizio Rosso creates and directs films, performances and music-theatre. He studied music (piano/composition) at the conservatoires of Turin, Zürich, Lugano and film direction at the USC School of Cinematic Arts, Los Angeles (US). He collaborated with Karlheinz Stockhausen on several projects including the premiere of Sonntags-Abschied, the last piece of the LICHT cycle Operas.
-media:
-  - type: image
-    alt: "null"
-    file: /_static/images/do-not-delete.png
+media: []
 links:
   - name: guarda il cortometraggio
     action: linkto
