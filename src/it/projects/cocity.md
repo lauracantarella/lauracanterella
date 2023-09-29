@@ -1,6 +1,6 @@
 ---
 title: " Co-city"
-order: "5"
+order: "4"
 category: fotografie
 role: assignment
 year: "2020"
@@ -17,19 +17,19 @@ media:
   - type: image
     alt: "null"
     file: /_static/images/co-city4.jpg
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/co-city1.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/co-city2.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/co-city3.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/co-city8.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/co-city9.jpg
     type: image
     alt: "null"
 links:
