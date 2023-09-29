@@ -10,10 +10,17 @@ summary: Nel progetto Co-City Torino i cittadini sono artefici materiali e
 media:
   - type: image
     alt: "null"
-    file: /_static/images/co-city5.jpg
+  - type: image
+    alt: "null"
   - type: image
     alt: "null"
     file: /_static/images/co-city6.jpg
+  - type: image
+    alt: "null"
+    file: /_static/images/co-city5.jpg
+  - type: image
+    alt: "null"
+    file: /_static/images/co-city4.jpg
 links:
   - name: gallery
     action: slider
