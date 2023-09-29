@@ -6,7 +6,16 @@ role: autrice
 year: "2017"
 summary: Non c’erano luoghi sacri una volta per sempre, destinati, ombelicali,
   come quelli dei templi.
-media: []
+media:
+  - file: /_static/images/do-not-delete.png
+    type: image
+    alt: "null"
+  - file: /_static/images/do-not-delete.png
+    type: image
+    alt: "null"
+  - file: /_static/images/terrefragili3.jpg
+    type: image
+    alt: "null"
 links:
   - name: " il libro edito da letteraventidue"
     dark: false
