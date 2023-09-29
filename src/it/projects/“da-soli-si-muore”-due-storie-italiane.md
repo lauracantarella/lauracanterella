@@ -14,7 +14,25 @@ summary: “Pubblico è lo spazio che ci rende visibili agli altri” scrive Han
   questo caso dall’emergenza, dalla velocità della realizzazione, dalla scala
   dell’intervento, dalla prostrazione psicologica ampiamente diffusa tra le
   persone.
-media: []
+media:
+  - file: /_static/images/do-not-delete.png
+    type: image
+    alt: "null"
+  - file: /_static/images/do-not-delete.png
+    type: image
+    alt: "null"
+  - file: /_static/images/do-not-delete.png
+    type: image
+    alt: "null"
+  - file: /_static/images/do-not-delete.png
+    type: image
+    alt: "null"
+  - file: /_static/images/do-not-delete.png
+    type: image
+    alt: "null"
+  - file: /_static/images/dasolisimuore6.jpg
+    type: image
+    alt: "null"
 links:
   - name: biennale spazio pubblico
     action: linkto
@@ -32,5 +50,13 @@ links:
     emailcontent: none
     dark: false
     newtab: true
+  - name: gallery
+    action: slider
+    target: none
+    emailaddress: none
+    emailsubject: none
+    emailcontent: none
+    dark: false
+    newtab: false
 ---
 Osservo questo territorio come qualcosa di stranamente familiare: l’assenza di città, lo spazio pubblico sostituito da un giardino consolatorio. La modalità di lavoro proposta da Confotografia, nell’ambito del quale questo lavoro è stato prodotto, basata sullo scambio di conoscenze tra fotografi e cittadini, ha innescato una narrazione che è frutto dell’incontro di uno sguardo esterno e di una esperienza vissuta in prima persona. Questa messa in relazione ha prodotto un lavoro che si compone, da un lato, da una serie di fotografie, necessariamente mute, che interrogano gli spazi del post terremoto, dall’altro da un dialogo possibile, sotto forma di video, tra Nicoletta Bardi, Anna Barile, Sara Bulma, Isabella Tomassi. Attraverso le loro narrazioni emergono i processi e i luoghi condivisi che hanno contribuito a generare: un orto insorto, un bibliobus, un centro sociale occupato, un eco-villaggio autocostruito. Emerge una distanza incolmabile tra i luoghi nati per iniziativa di cittadini o associazioni e gli spazi previsti e realizzati dal piano della Protezione civile. Due storie antitetiche.
