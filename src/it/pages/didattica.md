@@ -1,23 +1,35 @@
 ---
 title: Didattica
-pagecode : teaching
-yearlist: 
-    - year: 2023
-      data:
-        - Enien deligene c# ulpa eosam res untem eatius
-        - itas disintur re ea illanto volorio rerendam iminctatam,.
-        - Enien deligene culpa eosam res untem eatius
-    - year: 2022
-      data: 
-        - Enien deligene culpa eosam res untem eatius
-        - Enien deligene culpa eosam res untem eatius
-    - year: 2021
-      data: 
-        - Enien deligene culpa eosam res untem eatius
-        - itas disintur re ea illanto volorio rerendam iminctatam,.
-        - Enien deligene culpa eosam res untem eatius
-        - Enien deligene culpa eosam res untem eatius
+layout: layouts/subpage.njk
+pagecode: teaching
+media:
+  - file: /_static/images/atlasbormida2.jpg
+    type: image
+    alt: "null"
+yearlist:
+  - year: 2023
+    data:
+      - Nome progetto
+      - Nome Scuola
+      - Credits aggiuntivi
+  - year: 2022
+    data:
+      - Nome progetto
+      - Nome Scuola
+  - year: 2021
+    data:
+      - Progetto
+      - Nome Istituzione
+      - Credits
+      - Enien deligene culpa eosam res untem eatius
+links:
+  - name: gallery
+    dark: false
+    newtab: false
+    action: slider
+    target: none
+    emailaddress: none
+    emailsubject: none
+    emailcontent: none
 ---
-Trained as an architect at Politecnico di Torino, in the Architecture faculty, Laura Cantarella is
-a landscape and architecture photographer. Her works has been shown at: Biennal de paisatge, Barcelona; Rapallo Fotografia Contemporanea, Rapallo; Chelsea Art Museum, New York; Palazzo delle esposizioni, Roma; Fundaciò Espais d’Art Contemporani, Girona; II Architecture Biennal Rotterdam; Centre de Cultura Contemporània.
-Professor at Politecnico di Torino, Architecture.
+Parallelamente alla progettazione culturale mi occupo di educazione civica ed ecologica attraverso il medium fotografico, l'immagine e la riflessione critica.
