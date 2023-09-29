@@ -15,7 +15,7 @@ media:
     alt: Atlas Bormida
   - type: image
     alt: "null"
-    file: /_static/images/fotogramma-02.jpg
+    file: 
 links:
   - name: Atlas Bormida
     dark: false
