@@ -18,8 +18,7 @@ media: []
 links:
   - name: biennale spazio pubblico
     action: linkto
-    target: "www.biennalespaziopubblico.it/2014/10/laquila-2013-metodi-e-pratiche-d\
-      i-interazione-nel-territorio/  "
+    target: http://www.biennalespaziopubblico.it/2014/10/laquila-2013-metodi-e-pratiche-di-interazione-nel-territorio/
     emailaddress: none
     emailsubject: none
     emailcontent: none
@@ -27,7 +26,7 @@ links:
     newtab: true
   - name: da soli si muore
     action: linkto
-    target: http://www.biennalespaziopubblico.it/2014/10/laquila-2013-metodi-e-pratiche-di-interazione-nel-territorio/
+    target: "https://www.youtube.com/watch?v=f7AUmDSxZME "
     emailaddress: none
     emailsubject: none
     emailcontent: none
