@@ -12,9 +12,9 @@
         "emailcontent": "none"
       },
       {
-        "name": "IMMAGINI",
+        "name": "LAVORI",
         "action": "linkto",
-        "target": "/#slider",
+        "target": "/#lavori",
         "dark": false,
         "newtab": false,
         "emailaddress": "none",
@@ -22,9 +22,19 @@
         "emailcontent": "none"
       },
       {
-        "name": "LAVORI",
+        "name": "bio & Cv",
         "action": "linkto",
-        "target": "/#lavori",
+        "target": "/bio-e-cv/",
+        "dark": false,
+        "newtab": false,
+        "emailaddress": "none",
+        "emailsubject": "none",
+        "emailcontent": "none"
+      },
+      {
+        "name": "IMMAGINI",
+        "action": "linkto",
+        "target": "/#slider",
         "dark": false,
         "newtab": false,
         "emailaddress": "none",
@@ -55,16 +65,6 @@
         "name": "stampe",
         "action": "linkto",
         "target": "/stampe/",
-        "dark": false,
-        "newtab": false,
-        "emailaddress": "none",
-        "emailsubject": "none",
-        "emailcontent": "none"
-      },
-      {
-        "name": "bio & Cv",
-        "action": "linkto",
-        "target": "/bio-e-cv/",
         "dark": false,
         "newtab": false,
         "emailaddress": "none",
@@ -232,9 +232,9 @@
       {
         "name": "instagram",
         "action": "linkto",
-        "target": "/",
+        "target": "https://www.instagram.com/ilcielogira/",
         "dark": false,
-        "newtab": false,
+        "newtab": true,
         "emailaddress": "",
         "emailsubject": "",
         "emailcontent": "none"
@@ -242,9 +242,9 @@
       {
         "name": "linkedin",
         "action": "linkto",
-        "target": "/",
+        "target": "https://it.linkedin.com/in/laura-cantarella-353318b",
         "dark": false,
-        "newtab": false,
+        "newtab": true,
         "emailaddress": "",
         "emailsubject": "",
         "emailcontent": "none"
@@ -284,9 +284,9 @@
       {
         "name": "instagram",
         "action": "linkto",
-        "target": "/",
+        "target": "https://www.instagram.com/ilcielogira/",
         "dark": false,
-        "newtab": false,
+        "newtab": true,
         "emailaddress": "",
         "emailsubject": "",
         "emailcontent": "none"
@@ -294,9 +294,9 @@
       {
         "name": "linkedin",
         "action": "linkto",
-        "target": "/",
+        "target": "https://it.linkedin.com/in/laura-cantarella-353318b",
         "dark": false,
-        "newtab": false,
+        "newtab": true,
         "emailaddress": "",
         "emailsubject": "",
         "emailcontent": "none"
