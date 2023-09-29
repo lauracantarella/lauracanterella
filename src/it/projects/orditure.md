@@ -1,6 +1,6 @@
 ---
 title: Orditure
-order: "7"
+order: "8"
 category: Residenza per fotografi e mostra
 role: cocuratrice con federica Barletta
 year: "2019"
@@ -10,6 +10,7 @@ summary: Residenza e mostra collettiva per raccontare la storia e l'evoluzione
 media:
   - type: image
     alt: "null"
+    file: /_static/images/do-not-delete.png
 links:
   - name: il progetto su arte.go
     action: linkto
