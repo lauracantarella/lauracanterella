@@ -24,6 +24,14 @@ links:
     emailcontent: none
     dark: false
     newtab: true
+  - name: gallery
+    action: slider
+    target: none
+    emailaddress: none
+    emailsubject: none
+    emailcontent: none
+    dark: false
+    newtab: false
 ---
 Il luogo sacro era la scena del sacrificio, che andava scelta ogni volta seguendo criteri fissi: "Oltre a stare in alto, quel luogo dovrà essere piano; e, oltre ad essere piano, dovrà essere compatto; e, oltre ad essere compatto dovrà essere inclinato verso est, perché est è la direzione degli dei [...]". Alto, piano, compatto: questi i primi requisiti del luogo del sacrificio. Come se si volesse definire una superficie neutra, una tela di fondo su cui disegnare i gesti con perfetta naturalezza. È l’origine della scena come luogo predisposto ad accogliere tutti i possibili significati. Quanto di più moderno, anzi, la scena stessa del moderno. _Calasso Roberto, L'ardore, Adelphi, Milano 2010, pp. 21-22._
 
