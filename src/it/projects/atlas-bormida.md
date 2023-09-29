@@ -12,7 +12,7 @@ summary: "Atlas Bormida, esito di un lavoro culturale e investigativo sui luoghi
   consolidate, evitando rappresentazioni semplicistiche e celebrative. "
 media:
   - type: image
-    alt: "null"
+    alt: Atlas Bormida
   - type: image
     alt: "null"
     file: /_static/images/fotogramma-02.jpg
