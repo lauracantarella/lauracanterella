@@ -10,9 +10,7 @@ summary: >+
   favorire il dialogo interculturale e transgenerazionale, così come la
   condivisione del patrimonio immateriale di una comunità.
 
-media:
-  - type: image
-    alt: "null"
+media: []
 links:
   - name: Il sito della biblioteca
     dark: false
