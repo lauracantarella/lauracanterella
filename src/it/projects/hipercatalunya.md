@@ -8,9 +8,7 @@ summary: About a new photographic research, one that can shift from the notion
   of ‘landscape’ – implying a unique, anthropocentric point of view – to that of
   ‘environment’ – suggesting a multiplicity of view- points, strategies, and
   divergent players
-media:
-  - type: image
-    alt: "null"
+media: []
 links:
   - name: Andrea Botto
     action: linkto
