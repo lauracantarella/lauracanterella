@@ -8,7 +8,7 @@ var slider2 = tns({
     items: 1,
     controlsContainer: "#main-controls",
     "controls": true,
-    "speed": 400,
+    "speed": 600,
     "arrowKeys": true,
     nav: false
     

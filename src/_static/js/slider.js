@@ -12,7 +12,7 @@ var slider = tns({
     controlsContainer: "#lan-controls",
     "controls": true,
     "autoplayTimeout": 2000,
-    "speed": 400,
+    "speed": 600,
     "arrowKeys": true,
     nav: false
 });

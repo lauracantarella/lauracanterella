@@ -173,7 +173,7 @@ a.btn-link, a{
         --pad-c: 2.5em;
         --pad-a: 3vw;
         --hei-b: auto;
-        --maxh: 1100px;
+        --maxh: 2500px;
     }
     .f-display, .f-title{
         font-size: 2.5em;
@@ -230,11 +230,11 @@ div.close div{
 
 .open{
     max-height: var(--maxh);
-    -webkit-transition: max-height 1s ease, height 1s ease;;
-    -moz-transition: max-height 1s ease,  height 1s ease;;
-    -o-transition:  max-height 1s ease,  height 1s ease;;
-    -ms-transition:  max-height 1s ease,  height 1s ease;;
-    transition:  max-height 1s ease,  height 1s ease;;
+    -webkit-transition: max-height .5s ease, height 1s ease;;
+    -moz-transition: max-height .5s ease,  height 1s ease;;
+    -o-transition:  max-height .5s ease,  height 1s ease;;
+    -ms-transition:  max-height .5s ease,  height 1s ease;;
+    transition:  max-height .5s ease,  height 1s ease;;
 
 }
 
