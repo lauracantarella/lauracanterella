@@ -1,6 +1,6 @@
 ---
 title: "Giocatori divergenti: strategie fotografiche per il New Climatic Regime"
-order: "3"
+order: 3
 category: Saggio per RSF. Rivista di studi di fotografia
 role: coautrice con Andrea Botto
 year: "2020"

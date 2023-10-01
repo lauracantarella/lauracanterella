@@ -2,11 +2,15 @@ backend:
   name: git-gateway
   repo: mar-ver/lauracantarella-dev
   base_url: https://lauracantarella-it.netlify.app/
-  # name: gitlab
+ 
+ # name: gitlab
   # repo: mar_ver/lauracantarelle.it
   # auth_type: pkce # Required for pkce
   # app_id: c3619f8c1e57f147d8a7a11a090873a5da1a32bc203481e9918f66f0c2735fb2
   branch: main # Branch to update (optional; defaults to main)
+
+local_backend: true
+
 media_folder: "src/_static/images"
 public_folder: "/_static/images"
 #display_url: https://verdeil.net
@@ -810,6 +814,11 @@ collections:
   - name: 'projects' # Used in routes, e.g., /admin/collections/blog
     label: 'IT - Projects' # Used in the UI
     label_singular: Project
+    sortable_fields:
+      fields: ['order', 'title']
+      default:
+        field: order
+        direction: Ascending
     folder: 'src/it/projects/' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields:  # The fields for each document, usually in front matter
@@ -821,6 +830,9 @@ collections:
       label: Order of appearance
       hint: 1 is a the top   
       widget: number
+      min: 1
+      max: 99
+      value_type: int
       required: true
     - name: category
       label: Category 

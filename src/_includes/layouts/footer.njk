@@ -1,12 +1,19 @@
 <footer>
     <div class="foot-left">
         {%- for item in menuitems.copyright[locale] -%}
+        
                <span id="{{item.name | slugify}}" class="f-menu">{{item.name}}</span>
         {%- endfor -%}
     </div>
     <div class="foot-right">
         {%- for item in menuitems.footer[locale] -%}  
-            <a href="{{ item.target  | url }}"  class="f-menu foot-link">{{item.name}}</a>
+        {% if item.action and item.name%}
+         {% if item.action == "linkto"%}
+            <a href="{{ item.target  | url }}" {% if item.newtab == true %}target="_blank"{% endif %} class="f-menu foot-link">{{item.name}}</a>
+        {% endif %}
+        {% else %}
+         <a href="" class="btn-link">Button is missing info</a>
+        {% endif %}
         {%- endfor -%}
     </div>
 

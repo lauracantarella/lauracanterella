@@ -1,6 +1,6 @@
 ---
 title: La logica dell’impermanenza
-order: "10"
+order: 10
 category: fotografie per “Terre Fragili. Architettura e Catastrofe"
 role: autrice
 year: "2017"

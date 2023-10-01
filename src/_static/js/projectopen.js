@@ -5,6 +5,7 @@ for (var i = 0; i < btn_more.length; i++) {
         target = this.getAttribute('data-target')
         console.log("click")
         document.getElementById(target).classList.toggle("open")
+        this.classList.toggle("openstatus")
     })
 
 }

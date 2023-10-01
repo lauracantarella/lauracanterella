@@ -67,6 +67,7 @@ header.mock{
     height: 20px;
     overflow: hidden;
     float: left;
+    width: 100%;
 
 }
 
@@ -223,7 +224,7 @@ picture, img, .videoembed{
 
 
 .controls{
-    width: 100%;
+    width: 100%; 
     height: 100%;
     display: flex;
    position: absolute;
@@ -238,10 +239,17 @@ picture, img, .videoembed{
 }
 
 .prev{
-    cursor: w-resize;
+    cursor: 
+        url(/_static/cursors/left.svg), w-resize;
 }
 .next{
-    cursor: e-resize;
+    cursor: 
+    url(/_static/cursors/right.svg), e-resize;
+}
+
+.anchor{
+    cursor: 
+        url(/_static/cursors/down.svg),auto;
 }
 
 #lavori>div:last-child{
@@ -293,6 +301,12 @@ picture, img, .videoembed{
     align-items: baseline;
     padding-bottom: var(--pad-c);
     height: var(--hei-b);
+    cursor: 
+        url(/_static/cursors/open.svg), pointer;
+}
+.con-title.openstatus, .con-contents{
+    cursor: 
+    url(/_static/cursors/close.svg), pointer;
 }
 
 .con-title>span:not(:last-child){

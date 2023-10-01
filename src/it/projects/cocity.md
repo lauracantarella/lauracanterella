@@ -1,6 +1,6 @@
 ---
 title: " Co-city"
-order: "4"
+order: 4
 category: fotografie
 role: assignment
 year: "2020"

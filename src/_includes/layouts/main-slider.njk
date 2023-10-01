@@ -8,15 +8,17 @@
         {% if homepage %} 
          {% set project = collections["project_" + locale] %}
         {% for item in project |  sortByOrder %}
+         {% if item.data.media | length !== 0  %}
             <div class="con-slide con-imgfit" id="slide-{{counter}}" title="{{item.data.title}}">
             <div class=text-center>
                 <div class="f-title ">{{ item.data.title}}</div>
                 <div class="f-menu">{{ item.data.category}}</div>
                 <div class="f-menu">{{ item.data.role}}</div>
                 <div class="f-menu">{{ item.data.year}}</div>
-            </div>  
+            </div>
              {% set counter = counter + 1 %} 
             </div>  
+              {% endif %}  
             {% for img in item.data.media %}
               
                 <div class="con-slide con-imgfit" id="slide-{{counter}}" title="{{item.data.title}}">

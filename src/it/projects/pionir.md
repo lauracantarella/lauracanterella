@@ -1,6 +1,6 @@
 ---
 title: Pionir
-order: "15"
+order: 15
 category: Serie fotografica in Territories in Crisis
 role: autrice
 year: "2015"

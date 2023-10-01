@@ -1,6 +1,6 @@
 ---
 title: Atlas Bormida
-order: "12"
+order: 12
 category: opera collettiva ipermediale
 role: curatrice
 year: "2016"

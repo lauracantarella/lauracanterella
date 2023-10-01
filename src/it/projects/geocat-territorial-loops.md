@@ -1,6 +1,6 @@
 ---
 title: Geocat Territorial Loops
-order: "20"
+order: 20
 category: libro
 role: autrice
 year: "2019"

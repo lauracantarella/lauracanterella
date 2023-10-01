@@ -1,6 +1,6 @@
 ---
 title: Sospensioni
-order: "14"
+order: 14
 category: serie fotografica
 role: autrice
 year: "2016"

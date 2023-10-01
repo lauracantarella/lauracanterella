@@ -1,6 +1,6 @@
 ---
 title: Biblioteca Vivente delle Alpi
-order: "4"
+order: 4
 category: progetto culturale
 role: cocuratrice con Angela Nasso
 year: dal 2020

@@ -1,6 +1,6 @@
 ---
 title: Murmuration
-order: "13"
+order: 13
 category: serie fotografica
 role: autrice
 year: "2017"

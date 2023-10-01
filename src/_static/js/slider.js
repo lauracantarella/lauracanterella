@@ -11,7 +11,7 @@ var slider = tns({
     autoplayButtonOutput: false,
     controlsContainer: "#lan-controls",
     "controls": true,
-    "autoplayTimeout": 4000,
+    "autoplayTimeout": 3500,
     "speed": 800,
     "arrowKeys": true,
     nav: false
@@ -28,7 +28,7 @@ var customizedFunction = function (info, eventName) {
     if (cur>=len) {
         setTimeout(() => {
        disableslider()
-          }, 1700);
+          }, 2000);
        
         
     }
@@ -38,8 +38,8 @@ var customizedFunction = function (info, eventName) {
   
 function disableslider(){
     document.getElementById("con-landing-slider").classList.add("close");
-    slider.events.off('indexChanged', customizedFunction);
-   // slider.destroy();
+    //slider.events.off('indexChanged', customizedFunction);
+    slider.destroy();
 
 }
   // bind function to event

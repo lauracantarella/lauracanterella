@@ -1,6 +1,6 @@
 ---
 title: Ich bin den erste (Io sono il primo) + Vanitas Vanitatum
-order: "17"
+order: 17
 category: serie fotografica
 role: autrice
 year: "2016"

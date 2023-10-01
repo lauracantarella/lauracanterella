@@ -1,6 +1,6 @@
 ---
 title: “Da soli si muore”. Due storie italiane
-order: "16"
+order: 16
 category: serie fotografica e interviste
 role: autrice
 year: "2013"

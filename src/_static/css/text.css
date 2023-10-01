@@ -217,11 +217,11 @@ a.btn-link, a{
 .close{
     height: 0;
     overflow: hidden;
-    -webkit-transition: max-height 1s ease, height 1s ease;;
-    -moz-transition: max-height 1s ease,  height 1s ease;;
-    -o-transition:  max-height 1s ease,  height 1s ease;;
-    -ms-transition:  max-height 1s ease,  height 1s ease;;
-    transition:  max-height 1s ease,  height 1s ease;;
+    -webkit-transition: max-height 1s ease, height .5s ease;;
+    -moz-transition: max-height 1s ease,  height .5s ease;;
+    -o-transition:  max-height 1s ease,  height .5s ease;;
+    -ms-transition:  max-height 1s ease,  height .5s ease;;
+    transition:  max-height 1s ease,  height .5s ease;;
 }
 
 div.close div{

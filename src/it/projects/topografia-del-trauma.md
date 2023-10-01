@@ -1,6 +1,6 @@
 ---
 title: Topografia del Trauma
-order: "19"
+order: 19
 category: progetto di ricerca interdisciplinare
 role: cocuratrice con Lucia Giuliano
 year: 2008/2010

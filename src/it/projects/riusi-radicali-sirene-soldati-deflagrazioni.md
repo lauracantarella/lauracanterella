@@ -1,6 +1,6 @@
 ---
 title: Riusi radicali. Sirene, soldati, deflagrazioni
-order: "6"
+order: 6
 category: articolo su ArchAlp, rivista internazionale di architettura e paesaggio alpino
 role: coautrice con Alberto Momo
 year: "2019"

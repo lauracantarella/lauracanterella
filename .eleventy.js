@@ -155,7 +155,7 @@ module.exports = function(eleventyConfig) {
         module: "@11ty/eleventy-server-browsersync",
     
         // Default Browsersync options shown:
-        port: 8082,
+        port: 8081,
         open: true,
         notify: true,
         ui: false,

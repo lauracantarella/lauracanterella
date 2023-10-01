@@ -1,6 +1,6 @@
 ---
 title: Viso A Viso
-order: "2"
+order: 2
 category: Cooperativa di comunità
 role: Socia fondatrice e vice presidente
 year: Dal 2024
