@@ -9,7 +9,10 @@ summary: Featuring photographic details of artist Laura Cantarella and selected
   will not die entirely is an object embodying both the oeuvre of a touring
   exhibition and its catalogue at once.
 media:
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/monteverde1.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/monteverde2.jpg
     type: image
     alt: "null"
   - file: /_static/images/monteverde3.jpg

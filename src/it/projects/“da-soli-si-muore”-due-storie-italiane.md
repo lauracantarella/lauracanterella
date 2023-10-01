@@ -15,19 +15,19 @@ summary: “Pubblico è lo spazio che ci rende visibili agli altri” scrive Han
   dell’intervento, dalla prostrazione psicologica ampiamente diffusa tra le
   persone.
 media:
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/dasolisimuore1.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/dasolisimuore2.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/dasolisimuore3.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/dasolisimuore4.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/dasolisimuore5.jpg
     type: image
     alt: "null"
   - file: /_static/images/dasolisimuore6.jpg

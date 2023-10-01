@@ -7,28 +7,40 @@ year: "2017"
 summary: Non c’erano luoghi sacri una volta per sempre, destinati, ombelicali,
   come quelli dei templi.
 media:
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/terrefragili1.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/terrefragili1.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/terrefragili2.jpg
     type: image
     alt: "null"
   - file: /_static/images/terrefragili3.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/terrefragili4.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/terrefragili5.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/terrefragili6.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/terrefragili7.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/terrefragili8.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/terrefragili9.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/terrefragili10.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/terrefragili11.jpg
     type: image
     alt: "null"
   - file: /_static/images/terrefragili12.jpg

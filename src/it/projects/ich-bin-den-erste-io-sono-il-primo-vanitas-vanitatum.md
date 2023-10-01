@@ -8,7 +8,58 @@ summary: >-
   
   Francesco Foglia attraversa attivamente il fascismo e la Resistenza, sopravvive a due campi di sterminio e opera in due continenti. La sua storia, straordinaria per intensità e contraddizioni, affonda le radici, insieme a molte altre, nell’Ospizio del Moncenisio, fondato da Ludovico il Pio nell’anno 814, poi raso al suolo e sommerso dalle acque del lago artificiale della diga nel 1969. Esempio paradigmatico di pulizia culturale, di cancellazione di un luogo.
 media:
-  - file: /_static/images/lauracantarella_slider_v3.jpg
+  - file: /_static/images/ichbin02.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/ichbin03.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/ichbin07.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/ichbin08.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/ichbin09.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/ichbin10.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/ichbin11.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/ichbin12.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/ichbin13.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/ichbin14.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/ichbin15.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/ichbin16.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/ichbin17.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/ichbin18.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/ichbin19.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/ichbin20.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/ichbin21.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/ichbin22.jpg
     type: image
     alt: "null"
 links:

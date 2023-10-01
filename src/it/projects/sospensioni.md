@@ -8,31 +8,40 @@ summary: “Infine, in alcune delle loro esplorazioni fotografiche, gli autori
   hanno provato a proiettare la storia della modernità in Valle di Susa dentro
   un fondale di ben più lungo periodo e profondità.
 media:
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/sospensioni1.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/sospensioni2.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/sospensioni3.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/sospensioni4.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/sospensioni5.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/sospensioni6.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/sospensioni7.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/sospensioni8.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/sospensioni10.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/sospensioni11.jpg
     type: image
     alt: "null"
   - file: /_static/images/sospensioni12.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/sospensioni13.jpg
     type: image
     alt: "null"
 links:

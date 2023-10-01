@@ -13,40 +13,46 @@ summary: >-
 
   A flock of starlings.
 media:
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/murmuration1.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/murmuration2.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/murmuration3.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/murmuration4.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/murmuration05.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/murmuration5.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/murmuration6.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/murmuration7.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/murmuration8.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/murmuration9.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/murmuration10.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/murmuration12.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/murmuration13.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/murmuration14.jpg
     type: image
     alt: "null"
   - file: /_static/images/murmuration15.jpg

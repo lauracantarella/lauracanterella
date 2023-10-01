@@ -9,40 +9,49 @@ summary: "Il lavoro sulla comunità russa in Costa del Sol (spagna) nasce da due
   del nostro futuro possa nascondervisi.” — B.Secchi, La città dei ricchi e la
   città dei poveri"
 media:
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/lauracantarella_pionir_01.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/lauracantarella_pionir_02.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/lauracantarella_pionir_03.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/lauracantarella_pionir_04.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/lauracantarella_pionir_05.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/lauracantarella_pionir_06.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/lauracantarella_pionir_07.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/lauracantarella_pionir_08.jpg
     type: image
     alt: "null"
-  - file: /_static/images/do-not-delete.png
-    type: image
-    alt: "null"
-  - file: /_static/images/do-not-delete.png
-    type: image
-    alt: "null"
-  - file: /_static/images/do-not-delete.png
+  - file: /_static/images/lauracantarella_pionir_09.jpg
     type: image
     alt: "null"
   - file: /_static/images/lauracantarella_pionir_10.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/lauracantarella_pionir_11.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/lauracantarella_pionir_12.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/lauracantarella_pionir_13.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/lauracantarella_pionir_14.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/lauracantarella_pionir_15.jpg
     type: image
     alt: "null"
 links:
