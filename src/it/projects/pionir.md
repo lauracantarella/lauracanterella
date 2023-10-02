@@ -55,23 +55,6 @@ media:
     type: image
     alt: "null"
 links:
-  - name: recensione su planum.net
-    action: linkto
-    target: "www.planum.net/journals-books/territories-in-crisis-br-architecture-an\
-      d-urbanism-br-facing-changes-in-europe "
-    emailaddress: none
-    emailsubject: none
-    emailcontent: none
-    dark: false
-    newtab: true
-  - name: recensione su planum magazine
-    action: linkto
-    target: http://www.planum.net/journals-books/territories-in-crisis-br-architecture-and-urbanism-br-facing-changes-in-europe
-    emailaddress: none
-    emailsubject: none
-    emailcontent: none
-    dark: false
-    newtab: true
   - name: gallery
     action: slider
     target: none
@@ -80,5 +63,21 @@ links:
     emailcontent: none
     dark: false
     newtab: false
+  - name: recensione su planum magazine
+    action: linkto
+    target: http://www.planum.net/journals-books/territories-in-crisis-br-architecture-and-urbanism-br-facing-changes-in-europe
+    emailaddress: none
+    emailsubject: none
+    emailcontent: none
+    dark: false
+    newtab: true
+  - name: jovis verlag
+    action: slider
+    target: https://www.jovis.de/en/books/territories-in-crisis.html
+    emailaddress: none
+    emailsubject: none
+    emailcontent: none
+    dark: false
+    newtab: true
 ---
 “È già entrata in vigore in Spagna la legge per gli imprenditori, che prevede la concessione dei permessi di soggiorno per gli stranieri che investono in spagna. La normativa prevede che gli stranieri non residenti possano ottenere il permesso di soggiorno purché effettuino un investimento di capitale rilevante o acquistino una casa superiore a 500.000 euro.”
