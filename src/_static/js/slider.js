@@ -28,7 +28,7 @@ var customizedFunction = function (info, eventName) {
     if (cur>=len) {
         setTimeout(() => {
        disableslider()
-          }, 2000);
+          }, 1000);
        
         
     }
@@ -37,9 +37,8 @@ var customizedFunction = function (info, eventName) {
 
   
 function disableslider(){
-    document.getElementById("con-landing-slider").classList.add("close");
-    //slider.events.off('indexChanged', customizedFunction);
-    slider.destroy();
+    document.getElementById("description").scrollIntoView();
+    //slider.destroy();
 
 }
   // bind function to event

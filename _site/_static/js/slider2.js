@@ -36,7 +36,7 @@ var slider2 = tns({
           slide=this.getAttribute('data-slide')
           slider2.goTo(slide)
           document.getElementById("con-main-slider").classList.remove("hidden");
-          document.getElementById("loc").classList.remove("hidden");
+          //document.getElementById("loc").classList.remove("hidden");
           document.getElementById("close-cross").classList.remove("hidden");
           checkarrow();
           checkmarquee();
@@ -46,7 +46,7 @@ var slider2 = tns({
 
   document.getElementById("close-cross").addEventListener('click', function() {
     document.getElementById("con-main-slider").classList.add("hidden");
-    document.getElementById("loc").classList.add("hidden");
+    //document.getElementById("loc").classList.add("hidden");
     document.getElementById("close-cross").classList.add("hidden");
     checkmarquee();
   });
@@ -58,14 +58,14 @@ var slider2 = tns({
     url = window.location.href
     if (url.includes('slider')){
           document.getElementById("con-main-slider").classList.remove("hidden");
-          document.getElementById("loc").classList.remove("hidden");
+          //document.getElementById("loc").classList.remove("hidden");
           document.getElementById("close-cross").classList.remove("hidden");
           checkarrow();
           checkmarquee();
     }
     if (url.includes('archit')) {
       document.getElementById("con-main-slider").classList.remove("hidden");
-      document.getElementById("loc").classList.remove("hidden");
+      //document.getElementById("loc").classList.remove("hidden");
       document.getElementById("close-cross").classList.add("hidden");
       
     }

@@ -3,9 +3,9 @@ layout: layouts/base.njk
 ---
  
       {% include './landing-slider.njk' %}
-    <div id=description class="anchor con-display f-display pada pbot">
+    <a id=description href="#lavori" class="anchor con-display f-display pada pbot">
         {{ content | safe }}  
-    </div> 
+    </a> 
     <div id=lavori class=anchor title="{{menuitems.nav[2].name}}"><span id=works></span>
     {% set slidecount = 0 %}   
     {% set projectnum = 0 %}   
