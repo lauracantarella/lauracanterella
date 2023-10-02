@@ -22,10 +22,11 @@ layout: layouts/base.njk
             <div class="f-title psum proj" data-target="{{ item.data.title | truncate (5, true, "") | slugify  | trim }}{{projectnum}}" >{{ item.data.summary | in_markdownify }}</div>
             <div class="f-para pdes proj" data-target="{{ item.data.title | truncate (5, true, "") | slugify  | trim }}{{projectnum}}" >{{ item.templateContent | safe }}</div>
             <div class="f-menu con-link">
-
-                       {% set slidecount = slidecount + 1 %}
-                {%- for item in item.data.links -%}
-                    {% if item.action and item.name%}
+               {% if item.data.media | length !== 0  %}   
+          {% set slidecount = slidecount + 1 %}
+        {% endif %}
+          {%- for item in item.data.links -%}
+            {% if item.action and item.name%}
                     {% if item.action == "linkto"%}
                         <a href="{{ item.target  | url }}" {% if item.newtab == true %}target="_blank"{% endif %} data-target="{% if 'slider' in item.target %}slider{% else%}{{ item.target | trim }}{%endif%}" class="btn-link {% if item.dark == true-%} dark{% endif %}">{{item.name}}</a>
                     {% elif item.action == "mailto"%}
@@ -36,17 +37,16 @@ layout: layouts/base.njk
                             <a href="{{pointerurl}}" {% if item.newtab == true %}target="_blank"{% endif %} data-target="language-switcher" class="btn-link {% if item.dark == true-%} dark{% endif %}">{{item.name}}</a>
                     {% endif %}
 
-                    {% else %}
+            {% else %}
                     <a href="" class="btn-link">Button is missing info</a>
-                  {% endif %}
-                {% endfor %}
-                {% for img in item.data.media %}
-                   {% if item.data.media | length !== 0  %}
+            {% endif %}
+          {% endfor %}
+        {% for img in item.data.media %}
+                {% if img.file %}   
                 {% set slidecount = slidecount + 1 %}
-                 {% endif %}
+             {% endif %}
         {% endfor %}
-        
-
+       
             </div>
         </div>
      </div>
