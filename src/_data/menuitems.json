@@ -12,9 +12,9 @@
         "emailcontent": "none"
       },
       {
-        "name": "LAVORI",
+        "name": "bio & Cv",
         "action": "linkto",
-        "target": "/#lavori",
+        "target": "/bio-e-cv/",
         "dark": false,
         "newtab": false,
         "emailaddress": "none",
@@ -22,9 +22,9 @@
         "emailcontent": "none"
       },
       {
-        "name": "bio & Cv",
+        "name": "LAVORI",
         "action": "linkto",
-        "target": "/bio-e-cv/",
+        "target": "/#lavori",
         "dark": false,
         "newtab": false,
         "emailaddress": "none",
@@ -79,16 +79,6 @@
         "newtab": false,
         "emailaddress": "none",
         "emailsubject": "none",
-        "emailcontent": "none"
-      },
-      {
-        "name": "english",
-        "action": "language",
-        "dark": false,
-        "newtab": false,
-        "target": "none",
-        "emailaddress": "none",
-        "emailsubject": "",
         "emailcontent": "none"
       },
       {
