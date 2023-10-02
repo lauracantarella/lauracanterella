@@ -12,7 +12,7 @@ media: []
 links:
   - name: la recensione su lens culture
     dark: false
-    newtab: false
+    newtab: true
     action: linkto
     target: "https://www.lensculture.com/books/12216-geocat-territorial-loops "
     emailaddress: none
