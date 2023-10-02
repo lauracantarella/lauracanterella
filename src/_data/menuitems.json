@@ -22,7 +22,7 @@
         "emailcontent": "none"
       },
       {
-        "name": "LAVORI",
+        "name": "lavori",
         "action": "linkto",
         "target": "/#lavori",
         "dark": false,
@@ -32,7 +32,7 @@
         "emailcontent": "none"
       },
       {
-        "name": "IMMAGINI",
+        "name": "immagini",
         "action": "linkto",
         "target": "/#slider",
         "dark": false,
@@ -42,17 +42,7 @@
         "emailcontent": "none"
       },
       {
-        "name": "didattica",
-        "action": "linkto",
-        "target": "/didattica/",
-        "dark": false,
-        "newtab": false,
-        "emailaddress": "none",
-        "emailsubject": "none",
-        "emailcontent": "none"
-      },
-      {
-        "name": "FOTOGRAFIA D'ARCHITETTURA",
+        "name": "fotografia d'architettura",
         "action": "linkto",
         "target": "/fotografia-d-architettura/",
         "dark": false,
