@@ -200,16 +200,6 @@
   "footer": {
     "it": [
       {
-        "name": "google maps",
-        "action": "linkto",
-        "target": "/",
-        "dark": false,
-        "newtab": false,
-        "emailaddress": "",
-        "emailsubject": "",
-        "emailcontent": "none"
-      },
-      {
         "name": "instagram",
         "action": "linkto",
         "target": "https://www.instagram.com/ilcielogira/",
@@ -225,26 +215,6 @@
         "target": "https://it.linkedin.com/in/laura-cantarella-353318b",
         "dark": false,
         "newtab": true,
-        "emailaddress": "",
-        "emailsubject": "",
-        "emailcontent": "none"
-      },
-      {
-        "name": "privacy",
-        "action": "linkto",
-        "target": "/privacy-policy/",
-        "dark": false,
-        "newtab": false,
-        "emailaddress": "",
-        "emailsubject": "",
-        "emailcontent": "none"
-      },
-      {
-        "name": "note legali",
-        "action": "linkto",
-        "target": "/note-legali/",
-        "dark": false,
-        "newtab": false,
         "emailaddress": "",
         "emailsubject": "",
         "emailcontent": "none"
