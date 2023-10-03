@@ -8,6 +8,18 @@ summary: >-
   
   Francesco Foglia attraversa attivamente il fascismo e la Resistenza, sopravvive a due campi di sterminio e opera in due continenti. La sua storia, straordinaria per intensità e contraddizioni, affonda le radici, insieme a molte altre, nell’Ospizio del Moncenisio, fondato da Ludovico il Pio nell’anno 814, poi raso al suolo e sommerso dalle acque del lago artificiale della diga nel 1969. Esempio paradigmatico di pulizia culturale, di cancellazione di un luogo.
 media:
+  - file: /_static/images/lauracantarella_slider_v3.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/lauracantarella_slider_l6.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/ichbin05.jpg
+    type: image
+    alt: "null"
+  - file: /_static/images/ichbin06.jpg
+    type: image
+    alt: "null"
   - file: /_static/images/ichbin02.jpg
     type: image
     alt: "null"
