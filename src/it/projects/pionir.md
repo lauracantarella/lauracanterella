@@ -72,7 +72,7 @@ links:
     dark: false
     newtab: true
   - name: jovis verlag
-    action: slider
+    action: linkto
     target: https://www.jovis.de/en/books/territories-in-crisis.html
     emailaddress: none
     emailsubject: none
