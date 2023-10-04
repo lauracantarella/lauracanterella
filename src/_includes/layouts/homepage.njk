@@ -3,8 +3,10 @@ layout: layouts/base.njk
 ---
  
       {% include './landing-slider.njk' %}
+    
     <a id=description href="#lavori" class="anchor con-display f-display pada pbot">
-        {{ content | safe }}  
+     
+       <span id=up></span>   {{ content | safe }}  
     </a> 
     <div id=lavori class=anchor title="{{menuitems.nav[2].name}}"><span id=works></span>
     {% set slidecount = 0 %}   

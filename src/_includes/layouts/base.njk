@@ -14,29 +14,27 @@
     <link rel="stylesheet" href="{{ '/_static/css/text.css' | url }}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <script  src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>      
-    <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    
 
 </head>
 
 <body id="{{title | safe }}">
- 
+
 {% include './nav.njk' %}
 
 <main id=main-page>
-{# {% include './fakenav.njk' %} #}
+
  {%block content %}
-
         {{ content | safe }}   
-
  {%endblock content %}
-  <a href="#up" class="up">
+
  {% include './footer.njk' %}
- </a>
+
 </main>
 
 
 <script async src="{{ '/_static/js/snippet.js' | url }}"></script>
-
+<script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 </body>
 

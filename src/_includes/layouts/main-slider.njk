@@ -27,7 +27,7 @@
                             {% if img.type == 'image' %}
                           
                             {% set alt = 'No alt was provided yet.' %}
-                            {% if img.alt !== null %} {% set alt = img.alt %}{% endif %} 
+                            {% if img.alt !== null %} {% if img.alt !== 'null' %} {% set alt = img.alt %}{% endif %} {% endif %} 
                             {% imagefit img.file, alt, "100%" %} 
                             {% elif img.type == 'video'%}
                             <div style="padding:56.25% 0 0 0;position:relative;" class=videoembed><iframe src="https://player.vimeo.com/video/869486572?autoplay=1&muted=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Founç"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
@@ -76,4 +76,5 @@
             </div>  
     </div> 
 </div>
+
 <script src="{{ '/_static/js/slider2.js' | url }}"></script>

@@ -4,12 +4,8 @@ layout: layouts/base.njk
 
 
  <div class="subpage">
-      {# {% if media%} #}
-
-   {# {% import './main-slider.njk' %} #}
-   
- {# {% include './main-slider.njk' %} #}
- {# {% endif %} #}
+    <span id=up></span>
+     
         <div class="con-display f-display pada pbot">
             {{ content | safe }}
         </div>
@@ -60,5 +56,6 @@ layout: layouts/base.njk
 </div>
 
   {% include 'layouts/main-slider.njk' %}
+
 
 {# {%if item.emailaddress%}{{item.emailaddress |trim| urlencode |safe }}{%endif%}{%if item.emailsubject%}{{item.emailsubject | safe| urlencode}}{%endif%}{%if item.emailcontent%}{{item.emailcontent | urlencode safe}}{%endif%} #}

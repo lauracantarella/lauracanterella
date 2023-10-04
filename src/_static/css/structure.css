@@ -61,17 +61,7 @@ header.mock{
   cursor: pointer;
 }
 
-.up{
-    display: block;
-    cursor: 
-        url(/_static/cursors/up.svg), n-resize;
-}
 
-.dark-mode .up{
-    cursor: 
- url(/_static/cursors/upwhite.svg), n-resize;
-
-}
 
 .con-link{
     padding-bottom: var(--pad-d) ;
@@ -117,17 +107,32 @@ header.mock{
 
 /* FOOTER */
 
+.up{
+    height: calc(var(--pad-menu) + var(--pad-e));
+
+    display: block;
+    cursor: 
+        url(/_static/cursors/up.svg), n-resize;
+}
+
+.dark-mode .up{
+    cursor: 
+ url(/_static/cursors/upwhite.svg), n-resize;
+
+}
+
 footer{
 width: 100%;
 overflow: auto;
-  padding:  calc(var(--pad-menu) + var(--pad-e))var(--pad-a) var(--pad-menu);
 }
 .foot-left{
     float: left;
+    padding: 0 0 var(--pad-menu) var(--pad-a);
     
 }
 .foot-right{
     float: right;
+    padding: 0 var(--pad-a) var(--pad-menu) 0;
 
 }
 
@@ -167,9 +172,7 @@ overflow: auto;
 /* SLIDERS */
 
 .con-slider{
-  
-    /* height: calc(100vh - var(--hei-h)); */
-    height: calc(var(--vh) - var(--hei-h));
+    height: calc(100vh - var(--hei-h)); 
     width: 100vw;
     position: relative;
    
@@ -441,6 +444,9 @@ width: 21%;
     .cv-ul{
         padding: 0;
         padding-bottom: var(--pad-btn);
+    }
+    .con-slider{
+        height: calc(var(--vh) - var(--hei-h));
     }
 }
 
