@@ -11,14 +11,14 @@ layout: layouts/base.njk
     {% set projectnum = 0 %}   
     {% set project = collections["project_" + locale] %}
     {%- for item in project |  sortByOrder -%}
-     <div class="con-project pada btop" lang=it id="{{ item.data.title | slugify }}">
-        <div class="con-title" data-target="{{ item.data.title | truncate (5, true, "") | slugify  | trim }}{{projectnum}}">
+     <div class="con-project  btop" lang=it id="{{ item.data.title | slugify }}">
+        <div class="con-title pada" data-target="{{ item.data.title | truncate (5, true, "") | slugify  | trim }}{{projectnum}}">
             <span class="f-title ptitle">{{ item.data.title}}</span>
             <span class="f-menu pcat">{{ item.data.category}}</span>
             <span class="f-menu prole">{{ item.data.role}}</span>
             <span class="f-menu pyear">{{ item.data.year}}</span>
         </div>
-        <div class="con-contents" id="{{ item.data.title | truncate (5, true, "") | slugify }}{{projectnum}}">
+        <div class="con-contents pada" id="{{ item.data.title | truncate (5, true, "") | slugify }}{{projectnum}}">
             <div class="f-title psum proj" data-target="{{ item.data.title | truncate (5, true, "") | slugify  | trim }}{{projectnum}}" >{{ item.data.summary | in_markdownify }}</div>
             <div class="f-para pdes proj" data-target="{{ item.data.title | truncate (5, true, "") | slugify  | trim }}{{projectnum}}" >{{ item.templateContent | safe }}</div>
             <div class="f-menu con-link">

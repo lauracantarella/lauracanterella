@@ -1,7 +1,8 @@
+ 
 <footer>
+  
     <div class="foot-left">
         {%- for item in menuitems.copyright[locale] -%}
-        
                <span id="{{item.name | slugify}}" class="f-menu">{{item.name}}</span>
         {%- endfor -%}
     </div>
@@ -15,6 +16,3 @@
          <a href="" class="btn-link">Button is missing info</a>
         {% endif %}
         {%- endfor -%}
-    </div>
-
-</footer>

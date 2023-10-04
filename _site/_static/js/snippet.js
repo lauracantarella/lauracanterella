@@ -1,13 +1,9 @@
-// DARK MODE
-
-// document.getElementById("nav-toggledark").addEventListener('click', function() {
-//     document.querySelector("body").classList.toggle("dark-mode");
-//   checkdark()
-//     //console.log('dark')
-// });
+//calculte vh from innerheight
+let vh = window.innerHeight;
+// Then we set the value in the --vh custom property to the root of the document
+document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 function checkdark() {
-  
 
   if (document.querySelector("body").classList.contains("dark-mode")){
     document.getElementById("nav-toggledark").innerText= 'Light mode';

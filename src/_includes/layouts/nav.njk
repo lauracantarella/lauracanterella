@@ -1,11 +1,13 @@
-<header id="menumore">
-    <div class="head f-menu " >
-        <div id="con-menu-left" class="btn-menu">
+  <span id=up></span>
+ <span id=close-cross class="cross btn hidden">✗</span>
+<header id="top" class="btn-menu">
+    <div class="head f-menu" >
+        <div id="con-menu-left">
             <span class="name btn">{{ metadata.author | upper }}</span>
             <span class="btn" id="arrow">→</span>
         <span class="loc" id=loc> {% if permalink !== '/index.html' %} {{title | upper }} {% endif %}</span>
          </div>
-        <span id=close-cross class="cross btn hidden">✗</span>
+       
     </div>
     <div class="con-link pada" id="menu-link">
         {% set pcode = "home" %}

@@ -2,25 +2,22 @@
 
 //OPEN CLOSE MENU
 
-var menubtn =  document.getElementsByClassName("btn-menu")
-for (var i = 0; i < menubtn.length; i++) {
-    menubtn[i].addEventListener('click', function() {
-        document.getElementById("menumore").classList.toggle("open")
-        
+
+document.getElementById("top").addEventListener('click', function() {
+        console.log("click")
+       this.classList.toggle("open")
+        this.classList.toggle("openstatus")
         checkarrow();
-    });
-}
+});
 
 document.getElementById("main-page").addEventListener('click', function() {
-    document.getElementById("menumore").classList.remove("open");
-
+    document.getElementById("top").classList.remove("open");
+    document.getElementById("top").classList.remove("openstatus");
     checkarrow();
 });
 
 document.getElementById("menu-link").addEventListener('click', function() {
-    document.getElementById("menumore").classList.remove("open");
-  //  document.getElementById("loc").classList.remove("hidden");
-    
+  
     checkarrow();
     checkmarquee();
 });
@@ -28,15 +25,14 @@ document.getElementById("menu-link").addEventListener('click', function() {
 // ROTATE ARROW 
 
 function checkarrow() {
-    isopen = document.getElementById("menumore")
+    isopen = document.getElementById("top")
     if (isopen.classList.contains("open")){
         document.getElementById("arrow").classList.add("arrowopen")
-        //document.getElementById("loc").classList.add("hidden");
-        //document.getElementById("con-mennu-left").classList.remove("marquee");
+   
     }
     else{
         document.getElementById("arrow").classList.remove("arrowopen")
-      //  document.getElementById("loc").classList.remove("hidden");
+
     }
 }
 

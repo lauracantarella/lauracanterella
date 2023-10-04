@@ -12,6 +12,7 @@
     --ctext: #000;
     --cshadow: grey;
 
+   
     /* PADDING */
     --pad-a: 3vw;  /* 5VW */
     --pad-c: 1em;
@@ -21,7 +22,7 @@
     --pad-menu: 15px;
     --pad-btn: .9em;
     /* height */
-    --hei-b: calc( 90px + var(--pad-c) );
+    --hei-b: calc( 90px + var(--pad-c)*2 );
     --maxh: 800px;
     --hei-h: 46px;
 
@@ -50,6 +51,7 @@ html{
     font-synthesis: none;
     font-weight: 400;
     -webkit-text-size-adjust: none;
+    font-family: var(--inter);
 }
 
 
@@ -65,9 +67,7 @@ html{
 
     /* button */
 
-.btn {
-cursor: pointer;
-}    
+   
 
 a.btn-link, a{
    color: var(--ctext);

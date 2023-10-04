@@ -48,6 +48,7 @@ var slider2 = tns({
     document.getElementById("con-main-slider").classList.add("hidden");
     //document.getElementById("loc").classList.add("hidden");
     document.getElementById("close-cross").classList.add("hidden");
+    document.getElementById("top").classList.remove("open");
     checkmarquee();
   });
   
