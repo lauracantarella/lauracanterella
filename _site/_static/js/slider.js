@@ -16,7 +16,7 @@ var slider = tns({
     "arrowKeys": true,
     nav: false
 });
-
+var sliderinview = false
 
 slider.getInfo();
 
@@ -35,6 +35,34 @@ var customizedFunction = function (info, eventName) {
   }
 
 
+  //change anchor 
+function handleIntersection(entries) {
+  entries.forEach(({ isIntersecting } )=> {
+    console.log("sliderin view", sliderinview);
+   
+      if (isIntersecting) {
+      //anchor = target.getAttribute('title')
+      sliderinview = true
+      }
+      else {
+        sliderinview = false
+      }
+
+     
+  
+})
+}
+
+const observer = new IntersectionObserver(handleIntersection, {
+  threshold: 0.5
+});
+document.querySelectorAll("#con-landing-slider").forEach(el => observer.observe(el));
+
+
+
+
+
+
   
 function disableslider(){
     document.getElementById("description").scrollIntoView();
@@ -43,6 +71,7 @@ function disableslider(){
 }
   // bind function to event
   slider.events.on('transitionEnd', customizedFunction);
+
 
 
 

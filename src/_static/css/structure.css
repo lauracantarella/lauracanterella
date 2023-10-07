@@ -423,8 +423,8 @@ width: 21%;
     .ptitle, .pcat, .pyear, .prole{
         width: auto;
     }
-    .ptitle, .pcat{
-        padding-bottom: .8em;
+    .ptitle{
+        padding-bottom: 15px;
     }
     .con-title>span:not(:last-child){
         padding-right: 0;

@@ -23,7 +23,7 @@ layout: layouts/base.njk
         <div class="con-contents pada" id="{{ item.data.title | truncate (5, true, "") | slugify }}{{projectnum}}">
             <div class="f-title psum proj" data-target="{{ item.data.title | truncate (5, true, "") | slugify  | trim }}{{projectnum}}" >{{ item.data.summary | in_markdownify }}</div>
             <div class="f-para pdes proj" data-target="{{ item.data.title | truncate (5, true, "") | slugify  | trim }}{{projectnum}}" >{{ item.templateContent | safe }}</div>
-            <div class="f-menu con-link">
+            <div class="f-menu con-link proj" data-target="{{ item.data.title | truncate (5, true, "") | slugify  | trim }}{{projectnum}}">
                {% if item.data.media | length !== 0  %}   
           {% set slidecount = slidecount + 1 %}
         {% endif %}
