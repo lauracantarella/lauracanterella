@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  repo: lauracantarella/lauracanterella
+  repo: lauracantarella/lauracanterella.it
   base_url: https://laura-cantarella-site.netlify.app/
  
  # name: gitlab
