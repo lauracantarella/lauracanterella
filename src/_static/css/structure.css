@@ -405,6 +405,10 @@ width: 21%;
     .foot-right{
         float: left;
         width: 100%;
+        padding-left: var(--pad-a);
+    }
+    .foot-left{
+        padding-bottom: 0%;
     }
 }
 
