@@ -114,16 +114,6 @@
         "emailcontent": "none"
       },
       {
-        "name": "didattica",
-        "action": "linkto",
-        "target": "/en/didattica/",
-        "dark": false,
-        "newtab": false,
-        "emailaddress": "",
-        "emailsubject": "",
-        "emailcontent": "none"
-      },
-      {
         "name": "FOTOGRAFIA D'ARCHITETTURA",
         "action": "linkto",
         "target": "/en/fotografia-d-architettura/",
@@ -146,7 +136,7 @@
       {
         "name": "bio & Cv",
         "action": "linkto",
-        "target": "/en/bio-e-cv/",
+        "target": "/en/bio-and-cv/",
         "dark": false,
         "newtab": false,
         "emailaddress": "",
