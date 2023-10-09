@@ -16,7 +16,7 @@
     /* PADDING */
     --pad-a: 3vw;  /* 5VW */
     --pad-c: 1em;
-    --pad-d: 1.6em;
+    --pad-d: 32px;
     --pad-e: 100px;
     --pad-f: 50px;
     --pad-menu: 15px;
@@ -166,7 +166,7 @@ a.btn-link, a{
     }
 
 } */
-@media (max-width: 600px) {
+@media (max-width: 655px) {
     :root {
         --fsize: 13px;
         font-size: var(--fsize);
