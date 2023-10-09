@@ -2,10 +2,7 @@
 title: Bio and Cv
 layout: layouts/subpage.njk
 pagecode: bio
-media:
-  - type: image
-    alt: "null"
-    file: /_static/images/do-not-delete.png
+media: []
 yearlist: []
 links: []
 ---
