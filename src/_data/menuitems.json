@@ -42,6 +42,16 @@
         "emailcontent": "none"
       },
       {
+        "name": "didattica",
+        "action": "linkto",
+        "target": "/didattica/",
+        "emailaddress": "none",
+        "emailsubject": "none",
+        "emailcontent": "none",
+        "dark": false,
+        "newtab": false
+      },
+      {
         "name": "fotografia d'architettura",
         "action": "linkto",
         "target": "/fotografia-d-architettura/",
@@ -80,6 +90,16 @@
         "emailaddress": "",
         "emailsubject": "",
         "emailcontent": "none"
+      },
+      {
+        "name": "none",
+        "action": "",
+        "target": "none",
+        "emailaddress": "none",
+        "emailsubject": "none",
+        "emailcontent": "none",
+        "dark": false,
+        "newtab": false
       }
     ],
     "en": [
